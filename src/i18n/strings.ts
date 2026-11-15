@@ -81,7 +81,6 @@ export const strings = {
 
   // Deck
   options: { ar: 'خيارات', en: 'Options' },
-  activeFilters: { ar: 'تصفيات مفعّلة: {n}', en: '{n} active filters' },
   next: { ar: 'التالي', en: 'Next' },
   previous: { ar: 'السابق', en: 'Previous' },
   goDeeper: { ar: 'لنتعمّق أكثر', en: 'Tell me more' },
@@ -90,6 +89,7 @@ export const strings = {
   removeFavorite: { ar: 'إزالة من المفضّلة', en: 'Remove from favorites' },
   share: { ar: 'مشاركة', en: 'Share' },
   copied: { ar: 'تم النسخ', en: 'Copied' },
+  shareFailed: { ar: 'تعذّرت المشاركة', en: "Couldn't share" },
   progress: { ar: '{current} من {total}', en: '{current} of {total}' },
   depthAny: { ar: 'كل المستويات', en: 'Any depth' },
   depthLight: { ar: 'خفيف', en: 'Light' },
@@ -138,6 +138,7 @@ export const strings = {
   },
   letsStart: { ar: 'لنبدأ', en: "Let's start" },
   playAgain: { ar: 'جولة جديدة', en: 'Play again' },
+  changeNames: { ar: 'تغيير الأسماء', en: 'Change names' },
   roundOf: { ar: 'الجولة {current} من {total}', en: 'Round {current} of {total}' },
   turnOf: { ar: 'دور {name}', en: "{name}'s turn" },
   results: { ar: 'النتيجة', en: 'Results' },

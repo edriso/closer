@@ -73,7 +73,7 @@ src/
 │   ├── art/        Animated SVG illustrations (hero, section art, moon, logo)
 │   ├── deck/       The question deck (cards, follow-ups, done state)
 │   ├── game/       Shared game pieces (players setup, stage, results)
-│   ├── layout/     Header, bottom tab bar, footer, theme/lang sync
+│   ├── layout/     Header, bottom tab bar, home footer, theme/lang sync
 │   └── ui/         Buttons, chips, cards, mode picker, favorites, feedback
 ├── content/        All content as typed data, plus integrity tests
 ├── hooks/          Persistent stores, preferences, favorites, arrow keys
@@ -107,7 +107,7 @@ Before writing, read the [content guide](docs/CONTENT_GUIDE.md). Arabic is easy 
 
 ## Deployment
 
-Every push to `main` runs `npm run check` and `npm run build`, then deploys `dist/` to GitHub Pages (`.github/workflows/deploy.yml`). The site is served from `/closer/`. `public/404.html` restores deep links such as `/closer/talk/love`, because GitHub Pages has no SPA fallback.
+Every push to `main` runs `npm run check` and `npm run build`, then deploys `dist/` to GitHub Pages (`.github/workflows/deploy.yml`). The site is served from `/closer/`. The build writes a page for every route, so deep links such as `/closer/talk/love/` load directly, and it also generates `sitemap.xml`. Unknown paths fall back to `public/404.html`, which redirects into the app.
 
 ## Roadmap
 

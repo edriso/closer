@@ -35,7 +35,7 @@ export function TwoTruthsGame() {
       />
       <div className={styles.wrap}>
         {firstTheme ? (
-          <Game firstTheme={firstTheme} />
+          <Game firstTheme={firstTheme} onChangeNames={() => setFirstTheme(undefined)} />
         ) : (
           <PlayersSetup onStart={() => setFirstTheme(nextTheme())} />
         )}
@@ -44,7 +44,13 @@ export function TwoTruthsGame() {
   )
 }
 
-function Game({ firstTheme }: { firstTheme: TruthsTheme }) {
+function Game({
+  firstTheme,
+  onChangeNames,
+}: {
+  firstTheme: TruthsTheme
+  onChangeNames: () => void
+}) {
   const { t, l } = useI18n()
   const players = usePlayers()
   const [round, setRound] = useState(0)
@@ -66,6 +72,7 @@ function Game({ firstTheme }: { firstTheme: TruthsTheme }) {
             />
           </>
         }
+        onChangeNames={onChangeNames}
         onAgain={() => {
           setRound(0)
           setSpotted([0, 0])

@@ -24,15 +24,16 @@ Always finish with `npm run check` and `npm run build`. Both must pass.
 4. **Privacy.** There is no backend, no analytics, no third-party requests and no external fonts or CDNs. Persist only via `src/lib/storage.ts` (always guarded).
 5. **Content IDs are permanent.** Favorites are stored by ID. Never renumber, reuse or rename an ID; to retire an item, delete it.
 6. **Family-friendly content.** It can be romantic but never sexual. No guilt, pressure or exes, and no assumptions about marriage, children, wealth, living parents or faith.
-7. **Minimal and accessible.** Respect `prefers-reduced-motion`, keep visible focus states and roughly 40px tap targets, and label icon-only buttons with `aria-label`.
+7. **Minimal and accessible.** Respect `prefers-reduced-motion`, keep visible focus states and tap targets of at least 40px, and label icon-only buttons with `aria-label`. When a focused control disappears, move focus somewhere sensible (see `useFocusOnMount`, and use `aria-disabled` rather than `disabled` on buttons that can hold focus).
+8. **Calm, uncluttered UI.** One primary action per screen. Inner pages use a single narrow column. Navigation uses a featured card plus grouped list rows, not grids of cards. Secondary controls hide behind progressive disclosure (the deck's "Options", expandable activity rows). The footer appears on Home only. Before adding UI, ask whether it can be removed instead.
 
 ## Conventions
 
 - **Styling:** CSS Modules next to components (`Foo.tsx` + `Foo.module.css`). Use the design tokens in `src/styles/tokens.css`; don't hardcode colors. Tint with `data-tone`.
-- **Components:** function components with named exports. Reuse `Button`/`ButtonLink`, `Chips`, `PageHeader`, `TopicCard`, `FeatureCard`, `FavoriteButton` and `ActivityCard` before making new ones.
+- **Components:** function components with named exports. Reuse `Button`/`ButtonLink`, `Chips`, `PageHeader`, `FeatureCard`, `List`/`ListRow`, `ActivityRow`, `ActivityCard`, `FavoriteButton` and `DeckOptions` before making new ones.
 - **Page titles:** render `<title>{`${pageTitle} · ${t('brand')}`}</title>` inside the page (React 19 hoists it).
 - **Motion:** use `m.*` from `motion/react` (LazyMotion is strict, so `motion.*` will throw). For SVG, use the `art-*` CSS classes and never animate an element that has a `transform` attribute.
-- **State:** persistent cross-component state uses `createPersistentStore` + `usePersistentStore`. Don't add a state library.
+- **State:** persistent cross-component state uses `createPersistentStore(key, coerce)` + `usePersistentStore`. The `coerce` function must turn any stored value (old, corrupted, hand-edited) into a valid one. Don't add a state library.
 - **Formatting:** Prettier (no semicolons, single quotes, 100 columns).
 - **Dependencies:** keep them few. Ask before adding anything heavy.
 
@@ -70,4 +71,4 @@ Run `npm run build && npm run preview` and check:
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`: check → build → deploy to GitHub Pages. The Vite `base` is `/closer/`. If the repo is renamed, update `base` in `vite.config.ts`, the paths in `public/404.html` and `public/manifest.webmanifest`, and the absolute URLs in `index.html`.
+Pushing to `main` triggers `.github/workflows/deploy.yml`: check → build → deploy to GitHub Pages. The Vite `base` is `/closer/`. The build writes an `index.html` copy for every known route plus `sitemap.xml` (the `staticPages` plugin in `vite.config.ts`, with routes derived from the content files). If the repo is renamed, update `base` and `SITE` in `vite.config.ts`, the paths in `public/404.html` and `public/manifest.webmanifest`, and the absolute URLs in `index.html`.

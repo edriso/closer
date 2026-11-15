@@ -6,7 +6,7 @@
   display: none;
   grid-template-columns: repeat(5, 1fr);
   padding: var(--space-1) var(--space-2) calc(var(--space-1) + env(safe-area-inset-bottom));
-  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
   backdrop-filter: saturate(1.4) blur(16px);
   -webkit-backdrop-filter: saturate(1.4) blur(16px);
   border-block-start: 1px solid var(--border);
@@ -20,7 +20,7 @@
   gap: 2px;
   min-height: 56px;
   border-radius: var(--radius-sm);
-  color: var(--muted);
+  color: var(--ink-2);
   font-size: 0.72rem;
   transition: color var(--dur) var(--ease);
 }

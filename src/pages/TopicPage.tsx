@@ -76,12 +76,14 @@ function TopicDeck({ topic }: { topic: Topic }) {
         backLabel={sectionTitle}
         tone={topic.tone}
         action={
-          <OptionsButton
-            open={panelOpen}
-            onToggle={() => setOpen((o) => !o)}
-            panelId={panelId}
-            active={activeFilters}
-          />
+          items.length > 0 && (
+            <OptionsButton
+              open={panelOpen}
+              onToggle={() => setOpen((o) => !o)}
+              panelId={panelId}
+              active={activeFilters}
+            />
+          )
         }
       />
 

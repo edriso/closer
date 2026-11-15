@@ -18,7 +18,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link to="/" className={styles.brand} aria-label={t('navHome')}>
+        <Link to="/" className={styles.brand}>
           <LogoMark size={34} />
           <span className={styles.wordmark}>{t('brand')}</span>
         </Link>

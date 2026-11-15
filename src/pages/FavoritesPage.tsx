@@ -1,4 +1,5 @@
 import { Sparkles, X } from 'lucide-react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router'
 import { MoonArt } from '../components/art/MoonArt'
 import { ActivityRow } from '../components/ui/ActivityRow'
@@ -12,6 +13,24 @@ import styles from './FavoritesPage.module.css'
 export function FavoritesPage() {
   const { t, l } = useI18n()
   const { ids, toggle } = useFavorites()
+  const page = useRef<HTMLDivElement>(null)
+  const refocusIndex = useRef<number | null>(null)
+
+  // After removing a question, keep focus on the next one (or the page title).
+  useEffect(() => {
+    const index = refocusIndex.current
+    if (index === null) return
+    refocusIndex.current = null
+    const buttons = page.current?.querySelectorAll<HTMLButtonElement>('[data-remove]') ?? []
+    const target = buttons[Math.min(index, buttons.length - 1)]
+    if (target) target.focus()
+    else page.current?.querySelector<HTMLElement>('h1')?.focus()
+  })
+
+  const remove = (id: string, index: number) => {
+    refocusIndex.current = index
+    toggle(id)
+  }
 
   // Unknown IDs (content retired since saving) are skipped silently.
   const questions = ids.map(getQuestion).filter((x) => x !== undefined)
@@ -19,7 +38,7 @@ export function FavoritesPage() {
   const empty = questions.length === 0 && moments.length === 0
 
   return (
-    <>
+    <div ref={page}>
       <title>{`${t('favoritesTitle')} · ${t('brand')}`}</title>
       <PageHeader title={t('favoritesTitle')} lead={t('favoritesLead')} />
 
@@ -37,7 +56,7 @@ export function FavoritesPage() {
         <section className={styles.group}>
           <h2 className={styles.groupTitle}>{t('favoritesQuestions')}</h2>
           <ul className={styles.questions}>
-            {questions.map(({ question, topic }) => (
+            {questions.map(({ question, topic }, index) => (
               <li key={question.id} className={styles.question} data-tone={topic.tone}>
                 <div className={styles.questionText}>
                   <Link to={`/${topic.section}/${topic.id}`} className={styles.topic}>
@@ -51,7 +70,8 @@ export function FavoritesPage() {
                   iconOnly
                   aria-label={t('removeFavorite')}
                   title={t('removeFavorite')}
-                  onClick={() => toggle(question.id)}
+                  data-remove
+                  onClick={() => remove(question.id, index)}
                   icon={<X aria-hidden="true" />}
                 />
               </li>
@@ -70,6 +90,6 @@ export function FavoritesPage() {
           </ul>
         </section>
       )}
-    </>
+    </div>
   )
 }

@@ -1,5 +1,5 @@
 import type { Lang, Mode } from '../types/content'
-import { createPersistentStore } from './store'
+import { createPersistentStore, isRecord } from './store'
 
 export type ThemePreference = 'system' | 'light' | 'dark'
 
@@ -18,13 +18,25 @@ export const defaultPreferences: Preferences = {
   players: ['', ''],
 }
 
-export const preferencesStore = createPersistentStore<Preferences>('prefs', defaultPreferences)
+const oneOf = <T extends string>(value: unknown, allowed: readonly T[], fallback: T): T =>
+  allowed.includes(value as T) ? (value as T) : fallback
 
-/** Fill in fields added in later versions so old saved prefs keep working. */
-export function readPreferences(): Preferences {
-  return { ...defaultPreferences, ...preferencesStore.get() }
+const name = (value: unknown) => (typeof value === 'string' ? value.slice(0, 24) : '')
+
+/** Accept anything from storage and return valid preferences (unknown fields dropped). */
+export function coercePreferences(raw: unknown): Preferences {
+  const p = isRecord(raw) ? raw : {}
+  const players = Array.isArray(p.players) ? p.players : []
+  return {
+    lang: oneOf(p.lang, ['ar', 'en'], defaultPreferences.lang),
+    theme: oneOf(p.theme, ['system', 'light', 'dark'], defaultPreferences.theme),
+    mode: oneOf(p.mode, ['together', 'call'], defaultPreferences.mode),
+    players: [name(players[0]), name(players[1])],
+  }
 }
 
+export const preferencesStore = createPersistentStore('prefs', coercePreferences)
+
 export function updatePreferences(patch: Partial<Preferences>): void {
-  preferencesStore.set((prev) => ({ ...defaultPreferences, ...prev, ...patch }))
+  preferencesStore.set((prev) => ({ ...prev, ...patch }))
 }

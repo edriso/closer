@@ -49,6 +49,7 @@ export function MomentsPage() {
               activity={picked}
               tone={getActivityCategory(picked.category)?.tone ?? 'lilac'}
               expanded
+              headingLevel={2}
             />
           </div>
         )}

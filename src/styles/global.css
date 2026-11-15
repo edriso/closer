@@ -261,3 +261,8 @@ ol {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Programmatic focus targets (headings, panels) aren't controls: no ring. */
+[tabindex='-1']:focus {
+  outline: none;
+}

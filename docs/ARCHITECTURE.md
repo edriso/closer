@@ -24,7 +24,7 @@ src/lib/deck.ts  ── session decks (order + cursor in sessionStorage)
 | Activity feedback                   | `localStorage` → `closer:feedback`     | Local only, never sent                       |
 | Deck order + position               | `sessionStorage` → `closer:deck:<key>` | No repeats within a session; refresh resumes |
 
-`createPersistentStore` (`src/lib/store.ts`) is a tiny external store used through `useSyncExternalStore`, so every component stays in sync, including across tabs (via the `storage` event). All storage access is wrapped in `try/catch`, so the app keeps working in private mode.
+`createPersistentStore(key, coerce)` (`src/lib/store.ts`) is a tiny external store used through `useSyncExternalStore`, so every component stays in sync, including across tabs (via the `storage` event, including a full clear). Stored data is treated as untrusted: every read passes through `coerce`, so a stale, corrupted or hand-edited value falls back to valid defaults, and session decks are shape-checked the same way. All storage access is wrapped in `try/catch`, so the app keeps working in private mode.
 
 ## Decks (no-repeat engine)
 
@@ -46,16 +46,22 @@ Topic filters (`?sub=` and `?depth=`) live in the URL, so a filtered deck can be
 
 `src/styles/tokens.css` defines the **day sky** (light) and **night sky** (dark) tokens. The theme comes from the OS unless the user picks one with the toggle, which sets `data-theme` on `<html>`. Topic tints use `data-tone="lilac|sky|rose|mint|peach|indigo"`, which maps to `--tone-bg` / `--tone-ink`.
 
+## Fonts (no flash)
+
+- `preloadFonts` (`vite.config.ts`) injects `<link rel="preload">` for the Readex Pro Arabic and Latin subsets.
+- `src/app/fonts.ts` holds the first render until the on-screen fonts are loaded, capped at 1.2s. The app is client-rendered, so this costs nothing visible, and text paints once in the right typeface. Fraunces (English headings) is warmed up in idle time so switching language never flashes.
+- An inline `<style>` in `index.html` paints the theme's background before the stylesheet arrives.
+
 ## Illustrations & motion
 
 - Illustrations are inline SVG React components in `src/components/art/`. They take their colors from CSS variables, so they adapt to the theme and the surrounding tone.
 - SVG animation uses shared CSS classes (`art-float`, `art-drift`, `art-twinkle`, `art-pulse`, …) from `global.css`. **Gotcha:** never put an animation class on an element that also has a `transform` attribute, because the CSS transform replaces it. Wrap the element in a `<g>` instead (see `Cloud` in `shapes.tsx`).
-- Card and page transitions use `motion` with `LazyMotion` (strict, `domAnimation`) and `m.*` components. `MotionConfig reducedMotion="user"` plus a global CSS rule honor `prefers-reduced-motion`.
+- Card and page transitions use `motion` with `LazyMotion` (strict, `domMax`, which is needed for drag) and `m.*` components. Question cards can be swiped: toward the reading direction's start means next. With reduced motion, cards cross-fade in place. `MotionConfig reducedMotion="user"` plus a global CSS rule honor `prefers-reduced-motion`.
 
 ## Routing & hosting
 
 - `createBrowserRouter` with `basename: import.meta.env.BASE_URL` (`/closer/`, set in `vite.config.ts`).
-- GitHub Pages has no SPA fallback. `public/404.html` saves the requested path to `sessionStorage` and redirects to `/closer/`, and then an inline script in `index.html` puts the path back before any module (and the router) loads.
+- GitHub Pages has no SPA fallback, so the `staticPages` build plugin (`vite.config.ts`) writes the app shell to every known route (`talk/love/index.html`, …) and generates `sitemap.xml`. Deep links return HTTP 200 and are indexable. For unknown paths, `public/404.html` saves the requested path to `sessionStorage` and redirects to `/closer/`, and then an inline script in `index.html` puts the path back before any module (and the router) loads.
 - Build output is split into `react`, `motion`, `content` and app chunks for better long-term caching.
 
 ## Testing

@@ -107,7 +107,7 @@ function SurpriseCard({ surprise }: { surprise: Surprise }) {
     return (
       <div className={styles.labeled}>
         <span className={styles.kind}>{t('kindMoment')}</span>
-        <ActivityCard activity={surprise.activity} tone={tone} expanded />
+        <ActivityCard activity={surprise.activity} tone={tone} expanded headingLevel={2} />
       </div>
     )
   }

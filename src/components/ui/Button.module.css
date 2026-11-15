@@ -30,6 +30,12 @@
   pointer-events: none;
 }
 
+/* Unavailable but still focusable, so keyboard focus is never lost. */
+.button[aria-disabled='true'] {
+  opacity: 0.45;
+  cursor: default;
+}
+
 .button svg {
   flex: none;
   width: 1.15em;
@@ -37,7 +43,7 @@
 }
 
 .sm {
-  --btn-h: 38px;
+  --btn-h: 40px;
   padding-inline: var(--space-4);
   font-size: var(--text-sm);
 }
@@ -85,7 +91,7 @@
 }
 
 .soft:hover {
-  background: color-mix(in srgb, var(--primary-soft) 70%, var(--primary) 30%);
+  background: color-mix(in srgb, var(--primary-soft) 94%, var(--primary) 6%);
 }
 
 .ghost {

@@ -1,6 +1,6 @@
 import { AnimatePresence, m, useReducedMotion, type PanInfo, type Variants } from 'motion/react'
 import { ArrowLeft, ArrowRight, Check, Share2, Sparkles } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { QuestionRef } from '../../content'
 import { useArrowKeys } from '../../hooks/useArrowKeys'
 import { useI18n } from '../../i18n/useI18n'
@@ -33,7 +33,10 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
   )
   const [direction, setDirection] = useState<1 | -1>(1)
   const [revealed, setRevealed] = useState(0)
-  const [copied, setCopied] = useState(false)
+  const [shareStatus, setShareStatus] = useState<'copied' | 'failed'>()
+  const nextButton = useRef<HTMLButtonElement>(null)
+  const lastFollowUp = useRef<HTMLLIElement>(null)
+  const focusNextAfterRender = useRef(false)
   const reduceMotion = useReducedMotion()
 
   const byId = new Map(items.map((i) => [i.question.id, i]))
@@ -48,10 +51,11 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
     setDeck(next)
     setDirection(step)
     setRevealed(0)
-    setCopied(false)
+    setShareStatus(undefined)
   }
 
   const reshuffle = () => {
+    focusNextAfterRender.current = true
     setDirection(1)
     setRevealed(0)
     setDeck(
@@ -62,6 +66,17 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
       ),
     )
   }
+
+  // Keep keyboard focus somewhere sensible when the focused control goes away.
+  useEffect(() => {
+    if (focusNextAfterRender.current) {
+      focusNextAfterRender.current = false
+      nextButton.current?.focus()
+    }
+  })
+  useEffect(() => {
+    if (revealed > 0) lastFollowUp.current?.focus()
+  }, [revealed])
 
   useArrowKeys(
     dir,
@@ -81,11 +96,11 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
 
   const onShare = async () => {
     const result = await shareText(l(question.text), siteUrl(`/${topic.section}/${topic.id}`))
-    if (result === 'copied') {
-      setCopied(true)
-      window.setTimeout(() => setCopied(false), 1800)
-    }
+    if (result === 'shared') return
+    setShareStatus(result)
+    window.setTimeout(() => setShareStatus(undefined), 2200)
   }
+  const copied = shareStatus === 'copied'
 
   // Swipe like a deck of cards: toward the reading direction's start = next.
   const onDragEnd = (_: unknown, info: PanInfo) => {
@@ -111,6 +126,9 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
       {/* A stable live region: screen readers announce each new question. */}
       <p className="visually-hidden" aria-live="polite">
         {l(question.text)}
+      </p>
+      <p className="visually-hidden" role="status">
+        {shareStatus === 'copied' ? t('copied') : shareStatus === 'failed' ? t('shareFailed') : ''}
       </p>
 
       <AnimatePresence mode="wait" initial={false} custom={direction}>
@@ -155,6 +173,8 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
                 {followUps.slice(0, revealed).map((f, i) => (
                   <m.li
                     key={i}
+                    ref={i === revealed - 1 ? lastFollowUp : undefined}
+                    tabIndex={-1}
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.25 }}
@@ -185,12 +205,13 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
           variant="ghost"
           iconOnly
           onClick={() => go(-1)}
-          disabled={deck.index === 0}
+          aria-disabled={deck.index === 0}
           aria-label={t('previous')}
           title={t('previous')}
           icon={<BackIcon aria-hidden="true" />}
         />
         <Button
+          ref={nextButton}
           variant="primary"
           size="lg"
           onClick={() => go(1)}

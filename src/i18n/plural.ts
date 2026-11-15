@@ -33,6 +33,16 @@ const nouns = {
     },
     en: { one: '1 min', other: '{n} min' },
   },
+  filter: {
+    ar: {
+      one: 'تصفية واحدة مفعّلة',
+      two: 'تصفيتان مفعّلتان',
+      few: '{n} تصفيات مفعّلة',
+      many: '{n} تصفية مفعّلة',
+      other: '{n} تصفية مفعّلة',
+    },
+    en: { one: '1 active filter', other: '{n} active filters' },
+  },
 } satisfies Record<string, Record<Lang, Forms>>
 
 export type PluralNoun = keyof typeof nouns

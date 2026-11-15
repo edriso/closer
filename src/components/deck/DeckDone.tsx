@@ -1,5 +1,6 @@
 import { m } from 'motion/react'
 import { Shuffle } from 'lucide-react'
+import { useFocusOnMount } from '../../hooks/useFocusOnMount'
 import { useI18n } from '../../i18n/useI18n'
 import { MoonArt } from '../art/MoonArt'
 import { Button, ButtonLink } from '../ui/Button'
@@ -14,6 +15,7 @@ interface DeckDoneProps {
 
 export function DeckDone({ deckKey, moreHref, onReshuffle }: DeckDoneProps) {
   const { t } = useI18n()
+  const heading = useFocusOnMount<HTMLHeadingElement>()
   return (
     <m.section
       className={styles.done}
@@ -22,7 +24,9 @@ export function DeckDone({ deckKey, moreHref, onReshuffle }: DeckDoneProps) {
       transition={{ duration: 0.4 }}
     >
       <MoonArt className={styles.art} />
-      <h2 className={styles.title}>{t('deckDoneTitle')}</h2>
+      <h2 ref={heading} tabIndex={-1} className={styles.title}>
+        {t('deckDoneTitle')}
+      </h2>
       <p className={styles.body}>{t('deckDoneBody')}</p>
       <div className={styles.actions}>
         <Button onClick={onReshuffle} icon={<Shuffle aria-hidden="true" />}>

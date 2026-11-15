@@ -35,7 +35,9 @@ export function PageHeader(props: PageHeaderProps) {
       )}
       <div className={styles.main}>
         <div className={styles.text}>
-          <h1 className={styles.title}>{title}</h1>
+          <h1 className={styles.title} tabIndex={-1}>
+            {title}
+          </h1>
           {lead && <p className={styles.lead}>{lead}</p>}
           {children}
         </div>

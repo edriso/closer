@@ -46,3 +46,21 @@ describe('deck', () => {
     expect(new Set(next).size).toBe(10)
   })
 })
+
+describe('deck robustness', () => {
+  beforeEach(() => sessionStorage.clear())
+
+  it('ignores malformed saved decks', () => {
+    for (const bad of [
+      '{"order":null}',
+      '{"order":[1,2],"index":0}',
+      '"x"',
+      '{"order":[],"index":"a"}',
+    ]) {
+      sessionStorage.setItem('closer:deck:t', bad)
+      const deck = loadDeck('t', ids)
+      expect(deck.order).toHaveLength(ids.length)
+      expect(deck.index).toBe(0)
+    }
+  })
+})

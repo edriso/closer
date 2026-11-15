@@ -15,8 +15,8 @@ export interface DeckState {
 const storageKey = (deckKey: string) => `deck:${deckKey}`
 
 export function loadDeck(deckKey: string, ids: readonly string[], ordered = false): DeckState {
-  const saved = readJSON<DeckState | null>(storageKey(deckKey), null, 'session')
-  if (saved && sameMembers(saved.order, ids)) {
+  const saved = readJSON<unknown>(storageKey(deckKey), null, 'session')
+  if (isDeckState(saved) && sameMembers(saved.order, ids)) {
     return { order: saved.order, index: clamp(saved.index, 0, saved.order.length) }
   }
   return createDeck(deckKey, ids, ordered)
@@ -34,6 +34,18 @@ export function saveDeck(deckKey: string, state: DeckState): void {
 
 export function clearDeck(deckKey: string): void {
   removeKey(storageKey(deckKey), 'session')
+}
+
+/** Session data is untrusted: only accept a well-formed deck. */
+function isDeckState(value: unknown): value is DeckState {
+  if (typeof value !== 'object' || value === null) return false
+  const { order, index } = value as Partial<DeckState>
+  return (
+    Array.isArray(order) &&
+    order.every((id) => typeof id === 'string') &&
+    typeof index === 'number' &&
+    Number.isInteger(index)
+  )
 }
 
 function sameMembers(a: readonly string[], b: readonly string[]): boolean {

@@ -1,5 +1,5 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { GameEnd } from '../../components/game/GameEnd'
 import { GameStage } from '../../components/game/GameStage'
 import styles from '../../components/game/Game.module.css'
@@ -39,7 +39,7 @@ export function WouldYouRatherGame() {
       />
       <div className={styles.wrap}>
         {firstRounds ? (
-          <Game firstRounds={firstRounds} />
+          <Game firstRounds={firstRounds} onChangeNames={() => setFirstRounds(undefined)} />
         ) : (
           <PlayersSetup onStart={() => setFirstRounds(newRounds())} />
         )}
@@ -48,19 +48,34 @@ export function WouldYouRatherGame() {
   )
 }
 
-function Game({ firstRounds }: { firstRounds: WouldYouRatherItem[] }) {
+function Game({
+  firstRounds,
+  onChangeNames,
+}: {
+  firstRounds: WouldYouRatherItem[]
+  onChangeNames: () => void
+}) {
   const { t, l, dir } = useI18n()
   const players = usePlayers()
   const [rounds, setRounds] = useState(firstRounds)
   const [round, setRound] = useState(0)
   const [picks, setPicks] = useState<Choice[]>([])
   const [matches, setMatches] = useState(0)
+  const lastPickAt = useRef(0)
+  const nextButton = useRef<HTMLButtonElement>(null)
+  const revealed = picks.length === 2
+
+  // Both options lock after the second pick, so hand focus to "Next".
+  useEffect(() => {
+    if (revealed) nextButton.current?.focus()
+  }, [revealed])
 
   if (round >= rounds.length) {
     return (
       <GameEnd
         gameKey="wyr"
         summary={<p>{t('wyrMatched', { n: matches, total: rounds.length })}</p>}
+        onChangeNames={onChangeNames}
         onAgain={() => {
           setRounds(newRounds())
           setRound(0)
@@ -73,10 +88,13 @@ function Game({ firstRounds }: { firstRounds: WouldYouRatherItem[] }) {
 
   const item = rounds[round]
   const turn = picks.length // 0 → first player picks, 1 → second, 2 → reveal
-  const revealed = turn === 2
   const NextIcon = dir === 'rtl' ? ArrowLeft : ArrowRight
 
   const pick = (choice: Choice) => {
+    // A double-tap must not count as both players' pick.
+    const now = performance.now()
+    if (now - lastPickAt.current < 350) return
+    lastPickAt.current = now
     const next = [...picks, choice]
     setPicks(next)
     if (next.length === 2 && next[0] === next[1]) setMatches((m) => m + 1)
@@ -116,7 +134,11 @@ function Game({ firstRounds }: { firstRounds: WouldYouRatherItem[] }) {
       </div>
       {revealed && (
         <div className={styles.row}>
-          <Button onClick={nextRound} trailingIcon={<NextIcon aria-hidden="true" />}>
+          <Button
+            ref={nextButton}
+            onClick={nextRound}
+            trailingIcon={<NextIcon aria-hidden="true" />}
+          >
             {t('next')}
           </Button>
         </div>

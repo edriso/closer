@@ -11,9 +11,17 @@ interface ActivityCardProps {
   tone: Tone
   /** Show steps expanded (used when a single activity is featured). */
   expanded?: boolean
+  /** Heading level for the title, so the outline stays valid on each page. */
+  headingLevel?: 2 | 3
 }
 
-export function ActivityCard({ activity, tone, expanded = false }: ActivityCardProps) {
+export function ActivityCard({
+  activity,
+  tone,
+  expanded = false,
+  headingLevel = 3,
+}: ActivityCardProps) {
+  const Heading = headingLevel === 2 ? 'h2' : 'h3'
   const { t, l, lang } = useI18n()
   const [open, setOpen] = useState(expanded)
   const stepsId = useId()
@@ -22,7 +30,7 @@ export function ActivityCard({ activity, tone, expanded = false }: ActivityCardP
   return (
     <article className={styles.card} data-tone={tone}>
       <header className={styles.header}>
-        <h3 className={styles.title}>{l(activity.title)}</h3>
+        <Heading className={styles.title}>{l(activity.title)}</Heading>
         <FavoriteButton id={activity.id} size="sm" />
       </header>
       <p className={styles.description}>{l(activity.description)}</p>

@@ -38,7 +38,7 @@ export function WhoKnowsGame() {
       />
       <div className={styles.wrap}>
         {firstRounds ? (
-          <Game firstRounds={firstRounds} />
+          <Game firstRounds={firstRounds} onChangeNames={() => setFirstRounds(undefined)} />
         ) : (
           <PlayersSetup onStart={() => setFirstRounds(newRounds())} />
         )}
@@ -47,7 +47,13 @@ export function WhoKnowsGame() {
   )
 }
 
-function Game({ firstRounds }: { firstRounds: GuessItem[] }) {
+function Game({
+  firstRounds,
+  onChangeNames,
+}: {
+  firstRounds: GuessItem[]
+  onChangeNames: () => void
+}) {
   const { t, l } = useI18n()
   const players = usePlayers()
   const [rounds, setRounds] = useState(firstRounds)
@@ -69,6 +75,7 @@ function Game({ firstRounds }: { firstRounds: GuessItem[] }) {
             />
           </>
         }
+        onChangeNames={onChangeNames}
         onAgain={() => {
           setRounds(newRounds())
           setRound(0)

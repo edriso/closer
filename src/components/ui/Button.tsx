@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import type { ComponentPropsWithRef, ReactNode } from 'react'
 import { Link, type LinkProps } from 'react-router'
 import styles from './Button.module.css'
 
@@ -41,7 +41,7 @@ function Content({ icon, trailingIcon, children }: CommonProps) {
   )
 }
 
-export function Button(props: CommonProps & ButtonHTMLAttributes<HTMLButtonElement>) {
+export function Button(props: CommonProps & ComponentPropsWithRef<'button'>) {
   const { variant, size, icon, trailingIcon, iconOnly, block, className, children, ...rest } = props
   return (
     <button

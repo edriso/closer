@@ -1,5 +1,6 @@
 import { SlidersHorizontal } from 'lucide-react'
 import type { ReactNode } from 'react'
+import { plural } from '../../i18n/plural'
 import { useI18n } from '../../i18n/useI18n'
 import { ModePicker } from '../ui/ModePicker'
 import styles from './DeckOptions.module.css'
@@ -14,7 +15,7 @@ interface OptionsButtonProps {
 
 /** A single quiet toggle that hides the mode and filters until they're wanted. */
 export function OptionsButton({ open, onToggle, panelId, active = 0 }: OptionsButtonProps) {
-  const { t, n } = useI18n()
+  const { t, n, lang } = useI18n()
   return (
     <button
       type="button"
@@ -26,9 +27,12 @@ export function OptionsButton({ open, onToggle, panelId, active = 0 }: OptionsBu
       <SlidersHorizontal aria-hidden="true" />
       <span>{t('options')}</span>
       {active > 0 && (
-        <span className={styles.badge} aria-label={t('activeFilters', { n: active })}>
-          {n(active)}
-        </span>
+        <>
+          <span className={styles.badge} aria-hidden="true">
+            {n(active)}
+          </span>
+          <span className="visually-hidden">{plural('filter', active, lang)}</span>
+        </>
       )}
     </button>
   )
