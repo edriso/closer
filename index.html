@@ -10,6 +10,20 @@
     />
     <meta name="theme-color" content="#f7f6fd" />
     <meta name="color-scheme" content="light dark" />
+    <style>
+      /* Paint the right background before the stylesheet arrives (no white flash in dark mode). */
+      html {
+        background: #f7f6fd;
+      }
+      @media (prefers-color-scheme: dark) {
+        html:not([data-theme='light']) {
+          background: #0e0d24;
+        }
+      }
+      html[data-theme='dark'] {
+        background: #0e0d24;
+      }
+    </style>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
