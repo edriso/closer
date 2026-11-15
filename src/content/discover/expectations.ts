@@ -116,8 +116,8 @@ export const expectations: Topic = {
       subtopic: 'family',
       depth: 'light',
       text: {
-        ar: 'ما العادة الطريفة في عائلتك التي قد تُدهش نصفك الآخر؟',
-        en: 'What funny family habit might surprise your other half?',
+        ar: 'ما العادة الطريفة في عائلتك التي قد تُدهشني؟',
+        en: 'What funny family habit might surprise me?',
       },
       followUps: [
         {
@@ -154,8 +154,8 @@ export const expectations: Topic = {
       subtopic: 'family',
       depth: 'medium',
       text: {
-        ar: 'ما الذي يُفيد نصفك الآخر أن يعرفه ليفهم عائلتك أكثر؟',
-        en: 'What would help your other half understand your family better?',
+        ar: 'ما الذي يُفيدني أن أعرفه لأفهم عائلتك أكثر؟',
+        en: 'What would help me understand your family better?',
       },
       followUps: [
         {
@@ -284,8 +284,8 @@ export const expectations: Topic = {
       },
       followUps: [
         {
-          ar: 'ما العادة التي يحسن أن يعرفها نصفك الآخر عنك مسبقًا؟',
-          en: 'Which of your habits should your other half know about in advance?',
+          ar: 'ما العادة التي يحسن أن أعرفها عنك مسبقًا؟',
+          en: 'Which of your habits should I know about in advance?',
         },
       ],
     },

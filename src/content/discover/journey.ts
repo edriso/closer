@@ -136,8 +136,8 @@ export const journey: Topic = {
       subtopic: 'stage-1',
       depth: 'light',
       text: {
-        ar: 'ما أول شيء لفت انتباهك في نصفك الآخر؟',
-        en: 'What was the first thing you noticed about your other half?',
+        ar: 'ما أول شيء لفت انتباهك فيّ؟',
+        en: 'What was the first thing you noticed about me?',
       },
       followUps: [
         { ar: 'وهل ما زال يلفت انتباهك حتى اليوم؟', en: 'Does it still catch your eye today?' },
@@ -148,13 +148,13 @@ export const journey: Topic = {
       subtopic: 'stage-1',
       depth: 'light',
       text: {
-        ar: 'ما الموقف الطريف بينك وبين نصفك الآخر الذي يُضحكك كلما خطر ببالك؟',
-        en: 'What funny moment between you two still makes you laugh whenever it comes to mind?',
+        ar: 'ما الموقف الطريف بيننا الذي يُضحكك كلما خطر ببالك؟',
+        en: 'What funny moment between us still makes you laugh whenever it comes to mind?',
       },
       followUps: [
         {
-          ar: 'وهل يتذكّره نصفك الآخر بالطريقة نفسها؟',
-          en: 'Does your other half remember it the same way?',
+          ar: 'وهل أتذكّره أنا بالطريقة نفسها؟',
+          en: 'Do I remember it the same way?',
         },
       ],
     },
@@ -294,8 +294,8 @@ export const journey: Topic = {
       },
       followUps: [
         {
-          ar: 'وما الذي يمكن لنصفك الآخر فعله حينها؟',
-          en: 'What could your other half do in that moment?',
+          ar: 'وما الذي يمكنني فعله حينها؟',
+          en: 'What could I do in that moment?',
         },
       ],
     },
@@ -316,8 +316,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الشيء الذي يُسعدك أن يعرفه نصفك الآخر عنك، ولم يُقَل من قبل؟',
-        en: "What's something about you that you'd love your other half to know, but haven't said before?",
+        ar: 'ما الشيء الذي يُسعدك أن أعرفه عنك، ولم يُقَل من قبل؟',
+        en: "What's something about you that you'd love me to know, but haven't said before?",
       },
     },
     {
@@ -335,8 +335,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الصفة الجميلة في نصفك الآخر التي تستحق أن تُقال الآن بصوت عالٍ؟',
-        en: 'What lovely quality in your other half deserves to be said out loud right now?',
+        ar: 'ما الصفة الجميلة فيّ التي تستحق أن تُقال الآن بصوت عالٍ؟',
+        en: 'What lovely quality in me deserves to be said out loud right now?',
       },
       followUps: [{ ar: 'ومتى ظهرت هذه الصفة بوضوح؟', en: 'When did it shine the brightest?' }],
     },
@@ -366,8 +366,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الدرس الذي جاءك من نصفك الآخر دون قصد؟',
-        en: 'What has your other half taught you without meaning to?',
+        ar: 'ما الدرس الذي جاءك مني دون قصد؟',
+        en: 'What have I taught you without meaning to?',
       },
     },
     {
@@ -375,8 +375,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الأمر الذي يشغل بالك هذه الأيام ويحتاج إلى رأي نصفك الآخر؟',
-        en: "What's on your mind these days that could use your other half's perspective?",
+        ar: 'ما الأمر الذي يشغل بالك هذه الأيام ويحتاج إلى رأيي؟',
+        en: "What's on your mind these days that could use my perspective?",
       },
       followUps: [
         {
@@ -390,12 +390,10 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما اللحظة التي امتلأ فيها قلبك امتنانًا لوجود نصفك الآخر في حياتك؟',
-        en: 'When did your heart feel most grateful to have your other half in your life?',
+        ar: 'ما اللحظة التي امتلأ فيها قلبك امتنانًا لوجودي في حياتك؟',
+        en: 'When did your heart feel most grateful to have me in your life?',
       },
-      followUps: [
-        { ar: 'وهل عرف نصفك الآخر بذلك يومها؟', en: 'Did your other half know it at the time?' },
-      ],
+      followUps: [{ ar: 'وهل عرفتُ بذلك يومها؟', en: 'Did I know it at the time?' }],
     },
     {
       id: 'journey-034',
@@ -427,8 +425,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الجملة التي يستحق نصفك الآخر سماعها منك الآن، لتبقى في ذاكرته طويلًا؟',
-        en: "What's one sentence your other half deserves to hear from you now, to keep for a long time?",
+        ar: 'ما الجملة التي يسعدك أن أسمعها منك الآن، لتبقى في ذاكرتي طويلًا؟',
+        en: "What's one sentence you'd love me to hear from you now, to keep for a long time?",
       },
     },
   ],

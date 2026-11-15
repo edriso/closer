@@ -245,8 +245,8 @@ export const habits: Topic = {
       },
       followUps: [
         {
-          ar: 'هل من أصدقاء يهمّك أن يعرفهم نصفك الآخر أكثر؟',
-          en: 'Are there friends you would like your other half to know better?',
+          ar: 'هل من أصدقاء يهمّك أن أعرفهم أكثر؟',
+          en: 'Are there friends you would like me to know better?',
         },
         {
           ar: 'ما الذي يجعل وقت الأصدقاء مريحًا لكليكما؟',

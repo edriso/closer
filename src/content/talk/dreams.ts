@@ -103,8 +103,8 @@ export const dreams: Topic = {
       followUps: [
         { ar: 'ما أول حلم يتحرّر حينها؟', en: 'Which dream would be set free first?' },
         {
-          ar: 'كيف يمكن لنصفك الآخر أن يخفّف منه؟',
-          en: 'How could your other half make it lighter?',
+          ar: 'كيف يمكنني أن أخفّف منه؟',
+          en: 'How could I make it lighter?',
         },
       ],
     },

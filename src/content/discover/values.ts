@@ -67,8 +67,8 @@ export const values: Topic = {
           en: 'When did it start meaning so much to you?',
         },
         {
-          ar: 'كيف يمكن لنصفك الآخر أن يشاركك فيه؟',
-          en: 'How could your other half share in it?',
+          ar: 'كيف يمكنني أن أشاركك فيه؟',
+          en: 'How could I share in it?',
         },
       ],
     },
@@ -105,8 +105,8 @@ export const values: Topic = {
           en: 'What helps you hold on to it?',
         },
         {
-          ar: 'كيف يمكن لنصفك الآخر أن يذكّرك به؟',
-          en: 'How can your other half remind you of it?',
+          ar: 'كيف يمكنني أن أذكّرك به؟',
+          en: 'How can I remind you of it?',
         },
       ],
     },

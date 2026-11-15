@@ -251,8 +251,8 @@ export const communication: Topic = {
       subtopic: 'support',
       depth: 'medium',
       text: {
-        ar: 'حين يأتيك الضغط من العمل أو الدراسة أو الناس، كيف يمكن لنصفك الآخر أن يكون في صفّك؟',
-        en: 'When stress comes from work, studies or other people, how can your other half be on your side?',
+        ar: 'حين يأتيك الضغط من العمل أو الدراسة أو الناس، كيف يمكنني أن أكون في صفّك؟',
+        en: 'When stress comes from work, studies or other people, how can I be on your side?',
       },
       followUps: [
         {

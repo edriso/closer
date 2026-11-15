@@ -19,7 +19,7 @@ Always finish with `npm run check` and `npm run build`. Both must pass.
 ## Non-negotiables
 
 1. **Arabic is primary.** Every user-facing string exists in both `ar` and `en`. Never hardcode UI text in components: add it to `src/i18n/strings.ts` and use `t()`. Content text goes in `src/content/**` as `Localized` (`{ ar, en }`) and is read with `l()`.
-2. **Gender-neutral Arabic.** UI and content may be read to a man or a woman. Use the dual for the couple (تبادلا), the ـك suffix, third-person verbs, nouns and names. Avoid تحب/تحبين-style verbs, singular imperatives and شريكك/حبيبك. Details are in `docs/CONTENT_GUIDE.md`.
+2. **Gender-neutral Arabic.** UI and content may be read to a man or a woman. Use the dual for the couple (تبادلا), the ـك suffix, third-person verbs, nouns and names. Avoid تحب/تحبين-style verbs, singular imperatives and شريكك/حبيبك. Cards are read aloud by one partner, so the asker speaks in the first person (فيّ، مني، رأيي / "me"), never "your other half". Details are in `docs/CONTENT_GUIDE.md`.
 3. **RTL-safe CSS.** Use logical properties only (`margin-inline-*`, `padding-block-*`, `inset-inline-*`, `text-align: start`). Swap directional icons with `dir` from `useI18n()`.
 4. **Privacy.** There is no backend, no analytics, no third-party requests and no external fonts or CDNs. Persist only via `src/lib/storage.ts` (always guarded).
 5. **Content IDs are permanent.** Favorites are stored by ID. Never renumber, reuse or rename an ID; to retire an item, delete it.

@@ -139,8 +139,8 @@ export const goals: Topic = {
           en: 'What helps you with it?',
         },
         {
-          ar: 'كيف يمكن لنصفك الآخر أن يلاحظ تقدّمك ويشجّعه؟',
-          en: 'How can your other half notice your progress and cheer you on?',
+          ar: 'كيف يمكنني أن ألاحظ تقدّمك وأشجّعه؟',
+          en: 'How can I notice your progress and cheer you on?',
         },
       ],
     },

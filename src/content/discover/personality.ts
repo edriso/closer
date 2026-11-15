@@ -29,8 +29,8 @@ export const personality: Topic = {
           en: 'Is it different on workdays and days off?',
         },
         {
-          ar: 'كيف يمكن لنصفك الآخر أن يساعدك على ذلك؟',
-          en: 'How can your other half help with that?',
+          ar: 'كيف يمكنني أن أساعدك على ذلك؟',
+          en: 'How can I help with that?',
         },
       ],
     },
@@ -196,8 +196,8 @@ export const personality: Topic = {
           en: 'What would make it easier to share?',
         },
         {
-          ar: 'كيف يمكن لنصفك الآخر أن يستقبله بلطف؟',
-          en: 'How could your other half receive it gently?',
+          ar: 'كيف يمكنني أن أستقبله بلطف؟',
+          en: 'How could I receive it gently?',
         },
       ],
     },
@@ -249,8 +249,8 @@ export const personality: Topic = {
           en: 'What makes their opinion matter to you?',
         },
         {
-          ar: 'وفي أيّ الأمور يهمّك رأي نصفك الآخر أولًا؟',
-          en: "And where do you want your other half's opinion first?",
+          ar: 'وفي أيّ الأمور يهمّك رأيي أولًا؟',
+          en: 'And where do you want my opinion first?',
         },
       ],
     },

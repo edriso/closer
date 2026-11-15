@@ -18,7 +18,9 @@ import {
 
 const ARABIC = /[؀-ۿ]/
 /** Gendered words the content guide asks us to avoid. */
-const AVOID = /(شريكك|شريكتك|حبيبك|حبيبتك|تحبين|تفضلين|تفضّلين)/
+const AVOID = /(شريكك|شريكتك|حبيبك|حبيبتك|تحبين|تفضلين|تفضّلين|نصفك الآخر)/
+/** Cards are read aloud by one partner, so the asker is "me", never a third person. */
+const THIRD_PERSON_EN = /\b(your other half|your partner)\b/i
 
 function checkLocalized(value: Localized, where: string) {
   expect(value.ar.trim(), `${where} (ar) is empty`).not.toBe('')
@@ -26,6 +28,7 @@ function checkLocalized(value: Localized, where: string) {
   expect(ARABIC.test(value.ar), `${where} (ar) has no Arabic`).toBe(true)
   expect(ARABIC.test(value.en), `${where} (en) contains Arabic`).toBe(false)
   expect(AVOID.test(value.ar), `${where} (ar) uses gendered wording: ${value.ar}`).toBe(false)
+  expect(THIRD_PERSON_EN.test(value.en), `${where} (en) should say "me": ${value.en}`).toBe(false)
   expect(value.ar, `${where} (ar) has stray whitespace`).toBe(value.ar.trim())
   expect(value.en, `${where} (en) has stray whitespace`).toBe(value.en.trim())
 }

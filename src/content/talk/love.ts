@@ -27,8 +27,8 @@ export const love: Topic = {
       followUps: [
         { ar: 'هل يحضرك موقف معيّن؟', en: 'Does a particular moment come to mind?' },
         {
-          ar: 'هل يختلف وقعه حين يأتي من نصفك الآخر؟',
-          en: 'Does it feel different when it comes from your other half?',
+          ar: 'هل يختلف وقعه حين يأتي مني؟',
+          en: 'Does it feel different when it comes from me?',
         },
       ],
     },
@@ -37,8 +37,8 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'medium',
       text: {
-        ar: 'ما الذي يفعله نصفك الآخر دون أن ينتبه إلى أنه يُسعدك؟',
-        en: 'What does your other half do that makes you happy without even realizing it?',
+        ar: 'ما الذي أفعله دون أن أنتبه إلى أنه يُسعدك؟',
+        en: 'What do I do that makes you happy without even realizing it?',
       },
       followUps: [
         { ar: 'متى حدث ذلك آخر مرة؟', en: 'When did it last happen?' },
@@ -50,14 +50,14 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'medium',
       text: {
-        ar: 'ما الشيء الذي يُتقنه نصفك الآخر أكثر من أي أحد آخر؟',
-        en: 'What does your other half do better than anyone else?',
+        ar: 'ما الشيء الذي أُتقنه أكثر من أي أحد آخر؟',
+        en: 'What do I do better than anyone else?',
       },
       followUps: [
         { ar: 'متى ظهر ذلك آخر مرة؟', en: 'When did it last show?' },
         {
-          ar: 'هل يعرف نصفك الآخر رأيك هذا؟',
-          en: 'Does your other half know you think so?',
+          ar: 'هل وصلني رأيك هذا من قبل؟',
+          en: 'Have you ever told me that?',
         },
       ],
     },
@@ -66,8 +66,8 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'deep',
       text: {
-        ar: 'ما اللحظة التي كان فيها نصفك الآخر سندك الحقيقي؟',
-        en: 'When was your other half truly your rock?',
+        ar: 'ما اللحظة التي كنتُ فيها سندك الحقيقي؟',
+        en: 'When was I truly your rock?',
       },
       followUps: [
         { ar: 'هل وصله شكرك يومها؟', en: 'Did your thanks reach them back then?' },
@@ -79,12 +79,12 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'medium',
       text: {
-        ar: 'ما العادة أو الكلمة التي انتقلت إليك من نصفك الآخر دون قصد؟',
-        en: 'What habit or phrase have you picked up from your other half without meaning to?',
+        ar: 'ما العادة أو الكلمة التي انتقلت إليك مني دون قصد؟',
+        en: 'What habit or phrase have you picked up from me without meaning to?',
       },
       followUps: [
         { ar: 'متى انتبه أحدكما إلى ذلك أول مرة؟', en: 'When did one of you first notice?' },
-        { ar: 'وما الذي انتقل منك إليه؟', en: 'And what has your other half picked up from you?' },
+        { ar: 'وما الذي انتقل منك إليّ؟', en: 'And what have I picked up from you?' },
       ],
     },
     {
@@ -92,12 +92,12 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'deep',
       text: {
-        ar: 'ما الذي تغيّر في نظرتك إلى نصفك الآخر مع الوقت، ويُسعدك؟',
-        en: 'What has changed, in a way you love, in how you see your other half over time?',
+        ar: 'ما الذي تغيّر في نظرتك إليّ مع الوقت، ويُسعدك؟',
+        en: 'What has changed, in a way you love, in how you see me over time?',
       },
       followUps: [
         { ar: 'متى بدأ هذا التغيّر؟', en: 'When did that shift begin?' },
-        { ar: 'هل يعرف نصفك الآخر ذلك؟', en: 'Does your other half know?' },
+        { ar: 'هل وصلني ذلك منك من قبل؟', en: 'Have you ever told me?' },
       ],
     },
     {
@@ -105,8 +105,8 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'medium',
       text: {
-        ar: 'ما الجهد الخفيّ الذي يبذله نصفك الآخر ويستحق شكرًا أكبر؟',
-        en: 'What quiet effort does your other half make that deserves more thanks?',
+        ar: 'ما الجهد الخفيّ الذي أبذله ويستحق برأيك شكرًا أكبر؟',
+        en: 'What quiet effort of mine do you think deserves more thanks?',
       },
       followUps: [
         {
@@ -293,8 +293,8 @@ export const love: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'ما الشيء الذي يفهمه نصفك الآخر فيك كما لا يفهمه أحد؟',
-        en: 'What does your other half understand about you like no one else?',
+        ar: 'ما الشيء الذي أفهمه فيك كما لا يفهمه أحد؟',
+        en: 'What do I understand about you like no one else does?',
       },
       followUps: [
         { ar: 'متى أدهشك ذلك أول مرة؟', en: 'When did that first amaze you?' },

@@ -21,7 +21,7 @@ This guide applies to every question, game prompt and activity in `src/content/`
   - third-person verbs: `ما أكثر ما يُضحكك؟` `ما الذي يخطر ببالك…؟` `ما الذي يجعلك…؟`
   - nouns and masdars: `أيّهما أقرب إليك: رحلة إلى البحر أم إلى الجبال؟`
   - the **dual** when addressing the couple together (activities, shared questions): `تبادلا`, `اكتبا`, `ما الذي يجمعكما؟`
-  - To refer to the other person, use `نصفك الآخر` or restructure. Avoid the gendered `شريكك/شريكتك` and `حبيبك/حبيبتك`.
+  - **One voice: the reader speaks.** Cards are read aloud by one partner to the other, so refer to the asker in the first person: `فيّ`, `مني`, `إليّ`, `رأيي`, `يمكنني أن…`, and use `بيننا`/`نحن` for the couple (English: "me", "us"). First-person forms are gender-neutral by nature. Don't use a third-person "your other half" (`نصفك الآخر`), and avoid the gendered `شريكك/شريكتك` and `حبيبك/حبيبتك`.
 - Add **tashkeel** only where it prevents misreading (e.g. `يُسعدك`). Don't vocalize full sentences.
 - Use Arabic punctuation: `؟` and `،`.
 
