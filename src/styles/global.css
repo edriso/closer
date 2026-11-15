@@ -1,0 +1,263 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: 1.65;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background-color 300ms var(--ease),
+    color 300ms var(--ease);
+}
+
+:lang(en) body {
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+:lang(ar) :is(h1, h2, h3, h4) {
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+::selection {
+  background: var(--primary-soft);
+  color: var(--ink);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: var(--space-4);
+  top: -100px;
+  z-index: 100;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  background: var(--primary);
+  color: var(--primary-ink);
+}
+
+.skip-link:focus {
+  top: var(--space-3);
+}
+
+/* Tone helpers, applied with data-tone="…" */
+[data-tone='lilac'] {
+  --tone-bg: var(--tone-lilac-bg);
+  --tone-ink: var(--tone-lilac-ink);
+}
+[data-tone='sky'] {
+  --tone-bg: var(--tone-sky-bg);
+  --tone-ink: var(--tone-sky-ink);
+}
+[data-tone='rose'] {
+  --tone-bg: var(--tone-rose-bg);
+  --tone-ink: var(--tone-rose-ink);
+}
+[data-tone='mint'] {
+  --tone-bg: var(--tone-mint-bg);
+  --tone-ink: var(--tone-mint-ink);
+}
+[data-tone='peach'] {
+  --tone-bg: var(--tone-peach-bg);
+  --tone-ink: var(--tone-peach-ink);
+}
+[data-tone='indigo'] {
+  --tone-bg: var(--tone-indigo-bg);
+  --tone-ink: var(--tone-indigo-ink);
+}
+
+/* Shared illustration motion: inline SVGs opt in with these classes. */
+.art-float {
+  animation: art-float 6s var(--ease) infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.art-float-slow {
+  animation: art-float 9s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.art-drift {
+  animation: art-drift 14s ease-in-out infinite alternate;
+  transform-box: fill-box;
+}
+.art-drift-reverse {
+  animation: art-drift 16s ease-in-out infinite alternate-reverse;
+  transform-box: fill-box;
+}
+.art-twinkle {
+  animation: art-twinkle 2.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.art-pulse {
+  animation: art-pulse 2.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.art-spin {
+  animation: art-spin 18s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.art-wiggle {
+  animation: art-wiggle 4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes art-float {
+  from {
+    transform: translateY(3px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+@keyframes art-drift {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+@keyframes art-twinkle {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.7);
+  }
+}
+@keyframes art-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.14);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.08);
+  }
+}
+@keyframes art-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes art-wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

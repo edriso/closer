@@ -1,0 +1,14 @@
+.favorite[data-active='true'] {
+  color: var(--heart);
+}
+
+.favorite[data-active='true'] svg {
+  fill: currentColor;
+  animation: pop 420ms var(--ease);
+}
+
+@keyframes pop {
+  40% {
+    transform: scale(1.3);
+  }
+}

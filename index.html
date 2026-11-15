@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>أقرب · Closer</title>
+    <meta
+      name="description"
+      content="مساحة دافئة للأزواج والمخطوبين: أسئلة للحديث، وألعاب لشخصين، ولحظات صغيرة لوقت أجمل معًا."
+    />
+    <meta name="theme-color" content="#f7f6fd" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="أقرب · Closer" />
+    <meta
+      property="og:description"
+      content="أقرب قليلًا، مع كل حديث. · A little closer, every conversation."
+    />
+    <meta property="og:image" content="https://edriso.github.io/closer/og-image.png" />
+    <meta property="og:url" content="https://edriso.github.io/closer/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      // GitHub Pages has no SPA fallback: public/404.html stores the deep link and
+      // redirects here. Restore it before any module (and the router) reads the URL.
+      try {
+        var r = sessionStorage.getItem('closer:redirect')
+        if (r) {
+          sessionStorage.removeItem('closer:redirect')
+          history.replaceState(null, '', r)
+        }
+      } catch (e) {}
+      // Apply the saved language and theme before first paint to avoid a flash.
+      try {
+        var p = JSON.parse(localStorage.getItem('closer:prefs') || '{}')
+        if (p.lang === 'en') {
+          document.documentElement.lang = 'en'
+          document.documentElement.dir = 'ltr'
+        }
+        if (p.theme === 'dark' || p.theme === 'light')
+          document.documentElement.dataset.theme = p.theme
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>أقرب يحتاج إلى JavaScript. · Closer needs JavaScript to run.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

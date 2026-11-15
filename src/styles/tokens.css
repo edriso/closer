@@ -1,0 +1,181 @@
+/*
+ * Design tokens: "day sky" (light) and "night sky" (dark).
+ * Theme resolution: [data-theme] on <html> wins; otherwise follow the OS.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --bg: #f7f6fd;
+  --bg-sky-1: #e9e4ff;
+  --bg-sky-2: #dcebff;
+  --surface: #ffffff;
+  --surface-2: #f1effb;
+  --surface-glass: rgb(255 255 255 / 0.72);
+  --border: #e6e2f5;
+  --border-strong: #d4cdee;
+
+  /* Text */
+  --ink: #1f1c3d;
+  --ink-2: #4a4670;
+  --muted: #6a6690;
+
+  /* Brand */
+  --primary: #5e4ed6;
+  --primary-ink: #ffffff;
+  --primary-soft: #ece9ff;
+  --sky: #5aa2f0;
+  --sky-soft: #e4f0ff;
+  --gradient: linear-gradient(135deg, #8f7cf5 0%, #6aa8f5 100%);
+  --heart: #e0507f;
+  --focus: #5e4ed6;
+
+  /* Tones: soft tints for topic cards (bg / ink / accent) */
+  --tone-lilac-bg: #f0ecff;
+  --tone-lilac-ink: #5b4bc4;
+  --tone-sky-bg: #e6f2ff;
+  --tone-sky-ink: #2a68b3;
+  --tone-rose-bg: #fdeef4;
+  --tone-rose-ink: #a83c66;
+  --tone-mint-bg: #e7f6f1;
+  --tone-mint-ink: #22735a;
+  --tone-peach-bg: #fff1e7;
+  --tone-peach-ink: #9e5223;
+  --tone-indigo-bg: #e9ebfb;
+  --tone-indigo-ink: #3f45a8;
+
+  /* Illustration palette */
+  --art-cloud: #ffffff;
+  --art-star: #ffd36e;
+  --art-moon: #fff3c4;
+  --art-glow: 0.95;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgb(40 30 110 / 0.06), 0 1px 1px rgb(40 30 110 / 0.04);
+  --shadow-md: 0 8px 24px -12px rgb(60 40 150 / 0.22), 0 2px 6px rgb(40 30 110 / 0.05);
+  --shadow-lg: 0 24px 60px -24px rgb(70 50 170 / 0.35);
+
+  /* Shape & spacing */
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+  --content: 1080px;
+  --content-narrow: 640px;
+  --header-h: 64px;
+  --tabbar-h: 68px;
+
+  /* Type */
+  --font-body: 'Readex Pro Variable', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+  --font-display: var(--font-body);
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-md: 1rem;
+  --text-lg: 1.15rem;
+  --text-xl: clamp(1.35rem, 1.1rem + 1vw, 1.7rem);
+  --text-2xl: clamp(1.7rem, 1.3rem + 1.8vw, 2.4rem);
+  --text-3xl: clamp(2rem, 1.4rem + 2.8vw, 3.2rem);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 220ms;
+}
+
+:root:lang(en) {
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #0e0d24;
+    --bg-sky-1: #1d1946;
+    --bg-sky-2: #132447;
+    --surface: #17163a;
+    --surface-2: #201e4a;
+    --surface-glass: rgb(23 22 58 / 0.72);
+    --border: #2a2858;
+    --border-strong: #3a3772;
+    --ink: #eeecff;
+    --ink-2: #c3c0ea;
+    --muted: #9591c4;
+    --primary: #a596ff;
+    --primary-ink: #14123a;
+    --primary-soft: #2a2563;
+    --sky: #82b8ff;
+    --sky-soft: #1b2b52;
+    --gradient: linear-gradient(135deg, #a596ff 0%, #7cb3ff 100%);
+    --heart: #ff9cbf;
+    --focus: #b9adff;
+    --tone-lilac-bg: #241f55;
+    --tone-lilac-ink: #c4b9ff;
+    --tone-sky-bg: #172a50;
+    --tone-sky-ink: #9cc8ff;
+    --tone-rose-bg: #3a1d3c;
+    --tone-rose-ink: #ffb0cc;
+    --tone-mint-bg: #14313a;
+    --tone-mint-ink: #8fe0c2;
+    --tone-peach-bg: #3a2629;
+    --tone-peach-ink: #ffc39c;
+    --tone-indigo-bg: #1f2256;
+    --tone-indigo-ink: #b2b8ff;
+    --art-cloud: #2c2a63;
+    --art-star: #ffe08f;
+    --art-moon: #fff1bf;
+    --art-glow: 0.4;
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
+    --shadow-md: 0 10px 30px -14px rgb(0 0 0 / 0.6);
+    --shadow-lg: 0 28px 70px -28px rgb(0 0 0 / 0.75);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0e0d24;
+  --bg-sky-1: #1d1946;
+  --bg-sky-2: #132447;
+  --surface: #17163a;
+  --surface-2: #201e4a;
+  --surface-glass: rgb(23 22 58 / 0.72);
+  --border: #2a2858;
+  --border-strong: #3a3772;
+  --ink: #eeecff;
+  --ink-2: #c3c0ea;
+  --muted: #9591c4;
+  --primary: #a596ff;
+  --primary-ink: #14123a;
+  --primary-soft: #2a2563;
+  --sky: #82b8ff;
+  --sky-soft: #1b2b52;
+  --gradient: linear-gradient(135deg, #a596ff 0%, #7cb3ff 100%);
+  --heart: #ff9cbf;
+  --focus: #b9adff;
+  --tone-lilac-bg: #241f55;
+  --tone-lilac-ink: #c4b9ff;
+  --tone-sky-bg: #172a50;
+  --tone-sky-ink: #9cc8ff;
+  --tone-rose-bg: #3a1d3c;
+  --tone-rose-ink: #ffb0cc;
+  --tone-mint-bg: #14313a;
+  --tone-mint-ink: #8fe0c2;
+  --tone-peach-bg: #3a2629;
+  --tone-peach-ink: #ffc39c;
+  --tone-indigo-bg: #1f2256;
+  --tone-indigo-ink: #b2b8ff;
+  --art-cloud: #2c2a63;
+  --art-star: #ffe08f;
+  --art-moon: #fff1bf;
+  --art-glow: 0.4;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-md: 0 10px 30px -14px rgb(0 0 0 / 0.6);
+  --shadow-lg: 0 28px 70px -28px rgb(0 0 0 / 0.75);
+}

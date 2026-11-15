@@ -1,0 +1,37 @@
+.toolbar {
+  margin-block-start: var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-block-end: var(--space-5);
+}
+
+.section + .section {
+  margin-block-start: var(--space-7);
+}
+
+.sectionTitle {
+  margin-block-end: var(--space-4);
+  font-size: var(--text-xl);
+}
+
+.picked {
+  max-width: var(--content-narrow);
+  margin-block-end: var(--space-6);
+  animation: pop-in 450ms var(--ease) both;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: var(--space-4);
+}

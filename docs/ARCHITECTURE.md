@@ -1,0 +1,65 @@
+# Architecture
+
+Closer is a static, client-only React app. There is no backend, no account system and no analytics. Everything below is designed to keep it that way while staying easy to extend.
+
+## Data flow
+
+```
+src/content/**  ──►  src/content/index.ts  ──►  pages/*  ──►  components/*
+ (typed data)        (aggregates, lookups)      (routes)       (UI)
+                                    ▲
+src/lib/store.ts ── persistent stores (prefs, favorites) ── hooks/use*.ts
+src/lib/deck.ts  ── session decks (order + cursor in sessionStorage)
+```
+
+- **Content is data.** Every question, game prompt and activity is a typed object with `{ ar, en }` text. Pages never import individual content files: they use `src/content/index.ts`, which also builds ID lookups (`getQuestion`, `getActivity`, …).
+- **UI strings** live in `src/i18n/strings.ts`, also as `{ ar, en }` pairs. `useI18n()` returns `t(key, vars)` for UI strings, `l(localized)` for content and `n(number)` for numbers (Arabic uses Arabic-Indic digits). `plural()` uses `Intl.PluralRules`, so Arabic gets its six plural forms right.
+
+## State & persistence
+
+| What                                | Where                                  | Why                                          |
+| ----------------------------------- | -------------------------------------- | -------------------------------------------- |
+| Language, theme, mode, player names | `localStorage` → `closer:prefs`        | Survives reloads and visits                  |
+| Favorites (IDs, newest first)       | `localStorage` → `closer:favorites`    | Survives reloads                             |
+| Activity feedback                   | `localStorage` → `closer:feedback`     | Local only, never sent                       |
+| Deck order + position               | `sessionStorage` → `closer:deck:<key>` | No repeats within a session; refresh resumes |
+
+`createPersistentStore` (`src/lib/store.ts`) is a tiny external store used through `useSyncExternalStore`, so every component stays in sync, including across tabs (via the `storage` event). All storage access is wrapped in `try/catch`, so the app keeps working in private mode.
+
+## Decks (no-repeat engine)
+
+`src/lib/deck.ts`:
+
+- `loadDeck(key, ids, ordered)` resumes a saved deck if it holds exactly the same IDs. Otherwise it creates a fresh Fisher–Yates shuffle (or keeps the authored order for the Journey).
+- The deck key encodes the topic **and** its filters (`talk/love|appreciation|deep`), so each filter combination has its own position.
+- `takeFromDeck(key, ids, n)` is used by the games, Surprise and "Pick one for us". It walks one session-long shuffled order, so a prompt returns only after the whole pool has been seen.
+
+Topic filters (`?sub=` and `?depth=`) live in the URL, so a filtered deck can be shared or bookmarked.
+
+## Internationalization & RTL
+
+- Arabic is the default. `<html lang dir>` is set before first paint by an inline script in `index.html` (no flash), then kept in sync by `DocumentSync`.
+- Styles use **logical properties** (`margin-inline-start`, `inset-inline-end`, `padding-block`) throughout, so RTL needs no overrides. Directional icons (arrows) swap based on `dir`, and arrow-key navigation follows the reading direction (`useArrowKeys`).
+- `--font-display` switches to Fraunces for English via `:root:lang(en)`. Arabic uses Readex Pro for everything.
+
+## Theming
+
+`src/styles/tokens.css` defines the **day sky** (light) and **night sky** (dark) tokens. The theme comes from the OS unless the user picks one with the toggle, which sets `data-theme` on `<html>`. Topic tints use `data-tone="lilac|sky|rose|mint|peach|indigo"`, which maps to `--tone-bg` / `--tone-ink`.
+
+## Illustrations & motion
+
+- Illustrations are inline SVG React components in `src/components/art/`. They take their colors from CSS variables, so they adapt to the theme and the surrounding tone.
+- SVG animation uses shared CSS classes (`art-float`, `art-drift`, `art-twinkle`, `art-pulse`, …) from `global.css`. **Gotcha:** never put an animation class on an element that also has a `transform` attribute, because the CSS transform replaces it. Wrap the element in a `<g>` instead (see `Cloud` in `shapes.tsx`).
+- Card and page transitions use `motion` with `LazyMotion` (strict, `domAnimation`) and `m.*` components. `MotionConfig reducedMotion="user"` plus a global CSS rule honor `prefers-reduced-motion`.
+
+## Routing & hosting
+
+- `createBrowserRouter` with `basename: import.meta.env.BASE_URL` (`/closer/`, set in `vite.config.ts`).
+- GitHub Pages has no SPA fallback. `public/404.html` saves the requested path to `sessionStorage` and redirects to `/closer/`, and then an inline script in `index.html` puts the path back before any module (and the router) loads.
+- Build output is split into `react`, `motion`, `content` and app chunks for better long-term caching.
+
+## Testing
+
+- `src/content/content.test.ts` checks content integrity: translations present, the right script per language, unique IDs, valid subtopics, `؟`/`?` endings, banned gendered wording and minimum volume.
+- `src/lib/*.test.ts` covers the shuffle fairness, the stable "of the day" pick and the deck engine (no repeats, resume, reshuffle).
+- `src/i18n/plural.test.ts` covers Arabic plural agreement.

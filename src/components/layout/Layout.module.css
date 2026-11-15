@@ -1,0 +1,26 @@
+/* A soft dawn/dusk wash behind the top of every page. */
+.sky {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: -1;
+  height: 560px;
+  background:
+    radial-gradient(60% 70% at 85% 0%, var(--bg-sky-2) 0%, transparent 70%),
+    radial-gradient(55% 65% at 10% 10%, var(--bg-sky-1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.main {
+  width: 100%;
+  max-width: var(--content);
+  min-height: 60dvh;
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+  outline: none;
+}
+
+@media (min-width: 900px) {
+  .main {
+    padding-inline: var(--space-5);
+  }
+}

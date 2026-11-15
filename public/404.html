@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>أقرب · Closer</title>
+    <script>
+      // GitHub Pages SPA fallback: remember the deep link, then load the app.
+      try {
+        sessionStorage.setItem(
+          'closer:redirect',
+          location.pathname + location.search + location.hash,
+        )
+      } catch (e) {}
+      location.replace('/closer/')
+    </script>
+  </head>
+  <body></body>
+</html>

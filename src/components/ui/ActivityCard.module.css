@@ -1,0 +1,119 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.title {
+  padding-block-start: 6px;
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.description {
+  color: var(--ink-2);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block-start: auto;
+}
+
+.meta li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--tone-bg);
+  color: var(--tone-ink);
+  font-size: var(--text-xs);
+}
+
+.meta svg {
+  width: 13px;
+  height: 13px;
+}
+
+.steps {
+  display: grid;
+  gap: var(--space-2);
+  padding-block-start: var(--space-3);
+  border-block-start: 1px solid var(--border);
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  justify-self: start;
+  padding: var(--space-1) 0;
+  border: 0;
+  background: none;
+  color: var(--primary);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--dur) var(--ease);
+}
+
+.toggle[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+
+.list {
+  display: grid;
+  gap: var(--space-2);
+  counter-reset: step;
+}
+
+.list li {
+  position: relative;
+  padding-inline-start: 34px;
+  color: var(--ink-2);
+  font-size: var(--text-sm);
+  counter-increment: step;
+}
+
+.list li::before {
+  content: counter(step);
+  position: absolute;
+  inset-inline-start: 0;
+  top: 1px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--tone-bg);
+  color: var(--tone-ink);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+:lang(ar) .list li::before {
+  content: counter(step, arabic-indic);
+}
+
+.list[hidden] {
+  display: none;
+}

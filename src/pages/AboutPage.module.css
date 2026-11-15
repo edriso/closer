@@ -1,0 +1,21 @@
+.section {
+  margin-block-start: var(--space-6);
+}
+
+.title {
+  margin-block-end: var(--space-4);
+  font-size: var(--text-xl);
+}
+
+.prose {
+  max-width: 42rem;
+  color: var(--ink-2);
+}
+
+.prose + .prose {
+  margin-block-start: var(--space-3);
+}
+
+.repo {
+  margin-block-start: var(--space-4);
+}
