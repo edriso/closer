@@ -57,6 +57,10 @@
         }
         if (p.theme === 'dark' || p.theme === 'light')
           document.documentElement.dataset.theme = p.theme
+        var dark =
+          p.theme === 'dark' ||
+          (p.theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) document.querySelector('meta[name="theme-color"]').content = '#0e0d24'
       } catch (e) {}
     </script>
   </head>
