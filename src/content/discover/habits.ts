@@ -240,8 +240,8 @@ export const habits: Topic = {
       subtopic: 'free-time',
       depth: 'medium',
       text: {
-        ar: 'كيف تتخيّلان التوازن بين وقتكما معًا ووقت كلٍّ منكما مع أصدقائه؟',
-        en: 'How do you two picture balancing time together with time with your own friends?',
+        ar: 'كيف نوازن برأيك بين وقتنا معًا ووقت كلٍّ منا مع أصدقائه؟',
+        en: 'How do you think we should balance our time together with time with our own friends?',
       },
       followUps: [
         {
@@ -249,8 +249,8 @@ export const habits: Topic = {
           en: 'Are there friends you would like me to know better?',
         },
         {
-          ar: 'ما الذي يجعل وقت الأصدقاء مريحًا لكليكما؟',
-          en: 'What makes friend time comfortable for both of you?',
+          ar: 'ما الذي يجعل وقت الأصدقاء مريحًا لكلينا؟',
+          en: 'What makes friend time comfortable for both of us?',
         },
       ],
     },

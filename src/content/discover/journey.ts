@@ -153,8 +153,8 @@ export const journey: Topic = {
       },
       followUps: [
         {
-          ar: 'وهل أتذكّره أنا بالطريقة نفسها؟',
-          en: 'Do I remember it the same way?',
+          ar: 'وهل نتذكّره كلانا بالطريقة نفسها؟',
+          en: 'Do we both remember it the same way?',
         },
       ],
     },
@@ -208,8 +208,8 @@ export const journey: Topic = {
       subtopic: 'stage-2',
       depth: 'medium',
       text: {
-        ar: 'ما العادة العائلية من طفولتك التي تستحق مكانًا في حياتكما؟',
-        en: 'Which family tradition from your childhood deserves a place in your life together?',
+        ar: 'ما العادة العائلية من طفولتك التي تستحق مكانًا في حياتنا؟',
+        en: 'Which family tradition from your childhood deserves a place in our life together?',
       },
       followUps: [
         {
@@ -223,8 +223,8 @@ export const journey: Topic = {
       subtopic: 'stage-2',
       depth: 'medium',
       text: {
-        ar: 'ما الذي تغيّر فيك منذ بداية علاقتكما؟',
-        en: 'What has changed in you since your relationship began?',
+        ar: 'ما الذي تغيّر فيك منذ بداية علاقتنا؟',
+        en: 'What has changed in you since our relationship began?',
       },
       followUps: [{ ar: 'وهل هو تغيير يُسعدك؟', en: 'Is it a change you like?' }],
     },
@@ -279,8 +279,8 @@ export const journey: Topic = {
       subtopic: 'stage-2',
       depth: 'medium',
       text: {
-        ar: 'ما المغامرة التي يحلم بها قلبك لكما معًا يومًا ما؟',
-        en: 'What adventure does your heart dream of for you two someday?',
+        ar: 'ما المغامرة التي يحلم بها قلبك لنا معًا يومًا ما؟',
+        en: 'What adventure does your heart dream of for us someday?',
       },
       followUps: [{ ar: 'وما الذي يلزم كي تبدأ؟', en: 'What would it take to begin?' }],
     },
@@ -306,8 +306,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الشيء الذي يجمعكما ولا يراه الآخرون من الخارج؟',
-        en: "What connects you two that others can't see from the outside?",
+        ar: 'ما الشيء الذي يجمعنا ولا يراه الآخرون من الخارج؟',
+        en: "What brings us together that others can't see from the outside?",
       },
       followUps: [{ ar: 'ومتى يظهر ذلك أكثر؟', en: 'When does it show the most?' }],
     },
@@ -316,8 +316,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الشيء الذي يُسعدك أن أعرفه عنك، ولم يُقَل من قبل؟',
-        en: "What's something about you that you'd love me to know, but haven't said before?",
+        ar: 'ما الشيء الذي يُسعدك أن أعرفه عنك، ولم أسمعه منك من قبل؟',
+        en: "What's something about you that you'd love me to know, that I haven't heard from you before?",
       },
     },
     {
@@ -335,8 +335,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الصفة الجميلة فيّ التي تستحق أن تُقال الآن بصوت عالٍ؟',
-        en: 'What lovely quality in me deserves to be said out loud right now?',
+        ar: 'ما الصفة التي تُعجبك فيّ وتستحق أن تُقال الآن بصوت عالٍ؟',
+        en: 'What quality of mine do you love that deserves to be said out loud right now?',
       },
       followUps: [{ ar: 'ومتى ظهرت هذه الصفة بوضوح؟', en: 'When did it shine the brightest?' }],
     },
@@ -366,9 +366,10 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الدرس الذي جاءك مني دون قصد؟',
-        en: 'What have I taught you without meaning to?',
+        ar: 'ما الذي صار أسهل عليك منذ بدأت قصتنا؟',
+        en: 'What has become easier for you since our story began?',
       },
+      followUps: [{ ar: 'وهل من موقف يشهد على ذلك؟', en: 'Is there a moment that shows it?' }],
     },
     {
       id: 'journey-032',
@@ -400,8 +401,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الذي يمنحك أكبر شعور بالأمان في علاقتكما؟',
-        en: 'What gives you the deepest sense of safety in your relationship?',
+        ar: 'ما الذي يمنحك أكبر شعور بالأمان في علاقتنا؟',
+        en: 'What gives you the deepest sense of safety in our relationship?',
       },
       followUps: [{ ar: 'وما الذي يزيد هذا الشعور؟', en: 'What would make it even stronger?' }],
     },
@@ -410,8 +411,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'كيف تبدو حياتكما بعد عشر سنوات في أجمل أحلامك؟',
-        en: 'In your sweetest dreams, what does life look like for you two ten years from now?',
+        ar: 'كيف تبدو حياتنا بعد عشر سنوات في أجمل أحلامك؟',
+        en: 'In your sweetest dreams, what does our life look like ten years from now?',
       },
       followUps: [
         {
@@ -426,7 +427,7 @@ export const journey: Topic = {
       depth: 'deep',
       text: {
         ar: 'ما الجملة التي يسعدك أن أسمعها منك الآن، لتبقى في ذاكرتي طويلًا؟',
-        en: "What's one sentence you'd love me to hear from you now, to keep for a long time?",
+        en: "What's one sentence you'd love me to hear from you now, one I'll keep for a long time?",
       },
     },
   ],

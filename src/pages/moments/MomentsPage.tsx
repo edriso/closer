@@ -3,19 +3,17 @@ import { useState } from 'react'
 import { SectionArt } from '../../components/art/SectionArt'
 import { ActivityCard } from '../../components/ui/ActivityCard'
 import { Button } from '../../components/ui/Button'
-import card from '../../components/ui/Card.module.css'
+import { List, ListRow } from '../../components/ui/List'
 import { PageHeader } from '../../components/ui/PageHeader'
 import { TopicIcon } from '../../components/ui/icons'
-import { TopicCard } from '../../components/ui/TopicCard'
 import { activities, activitiesIn, activityCategories, getActivityCategory } from '../../content'
-import { plural } from '../../i18n/plural'
 import { useI18n } from '../../i18n/useI18n'
 import { takeFromDeck } from '../../lib/deck'
 import type { Activity } from '../../types/content'
 import styles from '../SectionPage.module.css'
 
 export function MomentsPage() {
-  const { t, l, lang } = useI18n()
+  const { t, l, n } = useI18n()
   const [picked, setPicked] = useState<Activity>()
 
   const pick = () => {
@@ -36,8 +34,8 @@ export function MomentsPage() {
         tone="rose"
         art={<SectionArt section="moments" />}
       >
-        <div className={styles.toolbar}>
-          <Button onClick={pick} icon={<Sparkles aria-hidden="true" />}>
+        <div className={styles.headerAction}>
+          <Button size="sm" variant="soft" onClick={pick} icon={<Sparkles aria-hidden="true" />}>
             {t('pickForUs')}
           </Button>
         </div>
@@ -56,19 +54,18 @@ export function MomentsPage() {
         )}
       </div>
 
-      <div className={card.grid}>
+      <List label={t('momentsTitle')}>
         {activityCategories.map((c) => (
-          <TopicCard
+          <ListRow
             key={c.id}
             to={`/moments/${c.id}`}
             tone={c.tone}
             icon={<TopicIcon id={c.id} />}
             title={l(c.title)}
-            description={l(c.description)}
-            meta={plural('idea', activitiesIn(c.id).length, lang)}
+            meta={n(activitiesIn(c.id).length)}
           />
         ))}
-      </div>
+      </List>
     </>
   )
 }

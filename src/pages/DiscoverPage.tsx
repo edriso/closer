@@ -1,17 +1,14 @@
 import { SectionArt } from '../components/art/SectionArt'
-import card from '../components/ui/Card.module.css'
 import { FeatureCard } from '../components/ui/FeatureCard'
-import { ModePicker } from '../components/ui/ModePicker'
+import { List, ListRow } from '../components/ui/List'
 import { PageHeader } from '../components/ui/PageHeader'
 import { TopicIcon } from '../components/ui/icons'
-import { TopicCard } from '../components/ui/TopicCard'
 import { discoverTopics, journeyTopic } from '../content'
 import { plural } from '../i18n/plural'
 import { useI18n } from '../i18n/useI18n'
-import styles from './SectionPage.module.css'
 
 export function DiscoverPage() {
-  const { t, l, lang } = useI18n()
+  const { t, l, lang, n } = useI18n()
   return (
     <>
       <title>{`${t('discoverTitle')} · ${t('brand')}`}</title>
@@ -21,10 +18,6 @@ export function DiscoverPage() {
         tone="indigo"
         art={<SectionArt section="discover" />}
       />
-      <div className={styles.toolbar}>
-        <ModePicker />
-      </div>
-
       <FeatureCard
         to="/discover/journey"
         tone={journeyTopic.tone}
@@ -32,22 +25,19 @@ export function DiscoverPage() {
         eyebrow={`${t('featured')} · ${plural('question', journeyTopic.questions.length, lang)}`}
         title={l(journeyTopic.title)}
         description={l(journeyTopic.description)}
-        cta={t('startJourney')}
       />
-
-      <div className={card.grid}>
+      <List label={t('discoverTitle')}>
         {discoverTopics.map((topic) => (
-          <TopicCard
+          <ListRow
             key={topic.id}
             to={`/discover/${topic.id}`}
             tone={topic.tone}
             icon={<TopicIcon id={topic.id} />}
             title={l(topic.title)}
-            description={l(topic.description)}
-            meta={plural('question', topic.questions.length, lang)}
+            meta={n(topic.questions.length)}
           />
         ))}
-      </div>
+      </List>
     </>
   )
 }

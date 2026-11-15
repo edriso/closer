@@ -1,8 +1,7 @@
 import { Dices, HeartHandshake, VenetianMask } from 'lucide-react'
 import { SectionArt } from '../../components/art/SectionArt'
-import card from '../../components/ui/Card.module.css'
+import { List, ListRow } from '../../components/ui/List'
 import { PageHeader } from '../../components/ui/PageHeader'
-import { TopicCard } from '../../components/ui/TopicCard'
 import { useI18n } from '../../i18n/useI18n'
 
 export function PlayPage() {
@@ -16,29 +15,29 @@ export function PlayPage() {
         tone="sky"
         art={<SectionArt section="play" />}
       />
-      <div className={card.grid}>
-        <TopicCard
+      <List label={t('playTitle')}>
+        <ListRow
           to="/play/would-you-rather"
           tone="sky"
           icon={<Dices />}
           title={t('wyrTitle')}
-          description={t('wyrDescription')}
+          subtitle={t('wyrDescription')}
         />
-        <TopicCard
+        <ListRow
           to="/play/who-knows"
           tone="rose"
           icon={<HeartHandshake />}
           title={t('whoTitle')}
-          description={t('whoDescription')}
+          subtitle={t('whoDescription')}
         />
-        <TopicCard
+        <ListRow
           to="/play/two-truths"
           tone="mint"
           icon={<VenetianMask />}
           title={t('truthsTitle')}
-          description={t('truthsDescription')}
+          subtitle={t('truthsDescription')}
         />
-      </div>
+      </List>
     </>
   )
 }

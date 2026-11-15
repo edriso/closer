@@ -9,7 +9,14 @@ type Forms = Partial<Record<Intl.LDMLPluralRule, string>> & { other: string }
 
 const nouns = {
   question: {
-    ar: { one: 'سؤال واحد', two: 'سؤالان', few: '{n} أسئلة', many: '{n} سؤالًا', other: '{n} سؤال' },
+    ar: {
+      zero: 'لا أسئلة',
+      one: 'سؤال واحد',
+      two: 'سؤالان',
+      few: '{n} أسئلة',
+      many: '{n} سؤالًا',
+      other: '{n} سؤال',
+    },
     en: { one: '1 question', other: '{n} questions' },
   },
   idea: {
@@ -25,16 +32,6 @@ const nouns = {
       other: '{n} دقيقة',
     },
     en: { one: '1 min', other: '{n} min' },
-  },
-  saved: {
-    ar: {
-      one: 'عنصر محفوظ',
-      two: 'عنصران محفوظان',
-      few: '{n} عناصر محفوظة',
-      many: '{n} عنصرًا محفوظًا',
-      other: '{n} عنصر محفوظ',
-    },
-    en: { one: '1 saved', other: '{n} saved' },
   },
 } satisfies Record<string, Record<Lang, Forms>>
 

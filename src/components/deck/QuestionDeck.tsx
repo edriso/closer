@@ -1,12 +1,12 @@
-import { AnimatePresence, m } from 'motion/react'
-import { ArrowLeft, ArrowRight, Check, Share2, Shuffle, Sparkles } from 'lucide-react'
+import { AnimatePresence, m, type PanInfo } from 'motion/react'
+import { ArrowLeft, ArrowRight, Check, Share2, Sparkles } from 'lucide-react'
 import { useState } from 'react'
 import type { QuestionRef } from '../../content'
 import { useArrowKeys } from '../../hooks/useArrowKeys'
 import { useI18n } from '../../i18n/useI18n'
 import { createDeck, loadDeck, saveDeck, type DeckState } from '../../lib/deck'
 import { shareText, siteUrl } from '../../lib/share'
-import { Button, ButtonLink } from '../ui/Button'
+import { Button } from '../ui/Button'
 import { FavoriteButton } from '../ui/FavoriteButton'
 import { DeckDone } from './DeckDone'
 import styles from './QuestionDeck.module.css'
@@ -85,11 +85,20 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
     }
   }
 
+  // Swipe like a deck of cards: toward the reading direction's start = next.
+  const onDragEnd = (_: unknown, info: PanInfo) => {
+    const forward = dir === 'rtl' ? 1 : -1
+    const travel = info.offset.x * forward
+    const speed = info.velocity.x * forward
+    if (travel > 80 || speed > 500) go(1)
+    else if (travel < -80 || speed < -500) go(-1)
+  }
+
   const BackIcon = dir === 'rtl' ? ArrowRight : ArrowLeft
   const NextIcon = dir === 'rtl' ? ArrowLeft : ArrowRight
 
   return (
-    <section className={styles.deck} aria-roledescription="carousel" aria-label={l(topic.title)}>
+    <section className={styles.deck} aria-label={l(topic.title)}>
       <div className={styles.progress}>
         <span>{t('progress', { current: deck.index + 1, total })}</span>
         <div className={styles.bar} aria-hidden="true">
@@ -112,8 +121,11 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
           initial="enter"
           animate="center"
           exit="exit"
+          drag="x"
+          dragSnapToOrigin
+          dragElastic={0.35}
+          onDragEnd={onDragEnd}
           transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-          aria-roledescription="slide"
         >
           <header className={styles.cardHeader}>
             <span className={styles.label}>
@@ -174,23 +186,14 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
           title={t('previous')}
           icon={<BackIcon aria-hidden="true" />}
         />
-        <Button variant="secondary" onClick={() => go(1)}>
-          {t('skip')}
-        </Button>
         <Button
           variant="primary"
+          size="lg"
           onClick={() => go(1)}
           trailingIcon={<NextIcon aria-hidden="true" />}
         >
           {t('next')}
         </Button>
-      </div>
-
-      <div className={styles.footer}>
-        <p className={styles.hint}>{t('keyboardHint')}</p>
-        <ButtonLink to={moreHref} variant="ghost" size="sm" icon={<Shuffle aria-hidden="true" />}>
-          {t('otherTopics')}
-        </ButtonLink>
       </div>
     </section>
   )

@@ -3,7 +3,6 @@ import type { ReactNode } from 'react'
 import { Link } from 'react-router'
 import { useI18n } from '../../i18n/useI18n'
 import type { Tone } from '../../types/content'
-import card from './Card.module.css'
 import styles from './FeatureCard.module.css'
 
 interface FeatureCardProps {
@@ -13,24 +12,15 @@ interface FeatureCardProps {
   eyebrow: string
   title: string
   description: string
-  cta: string
 }
 
-/** A wide, highlighted card that leads a section (e.g. the Journey, the Mix). */
-export function FeatureCard({
-  to,
-  tone,
-  icon,
-  eyebrow,
-  title,
-  description,
-  cta,
-}: FeatureCardProps) {
+/** The one highlighted entry that leads a section (the Mix, the Journey). */
+export function FeatureCard({ to, tone, icon, eyebrow, title, description }: FeatureCardProps) {
   const { dir } = useI18n()
   const Arrow = dir === 'rtl' ? ArrowLeft : ArrowRight
   return (
     <Link to={to} className={styles.feature} data-tone={tone}>
-      <span className={card.badge} aria-hidden="true">
+      <span className={styles.icon} aria-hidden="true">
         {icon}
       </span>
       <span className={styles.text}>
@@ -38,9 +28,8 @@ export function FeatureCard({
         <span className={styles.title}>{title}</span>
         <span className={styles.body}>{description}</span>
       </span>
-      <span className={styles.cta}>
-        {cta}
-        <Arrow aria-hidden="true" />
+      <span className={styles.go} aria-hidden="true">
+        <Arrow />
       </span>
     </Link>
   )

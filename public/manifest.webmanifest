@@ -1,7 +1,8 @@
 {
+  "id": "/closer/",
   "name": "أقرب · Closer",
   "short_name": "أقرب",
-  "description": "A cozy bilingual conversation and play space for couples.",
+  "description": "مساحة دافئة للأزواج: أسئلة وألعاب ولحظات صغيرة.",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "/closer/",
@@ -11,7 +12,13 @@
   "theme_color": "#f7f6fd",
   "icons": [
     { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

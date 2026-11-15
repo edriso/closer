@@ -1,7 +1,8 @@
+import { useId, useState } from 'react'
 import { useParams, useSearchParams } from 'react-router'
+import { OptionsButton, OptionsPanel } from '../components/deck/DeckOptions'
 import { QuestionDeck } from '../components/deck/QuestionDeck'
 import { Chips, type ChipOption } from '../components/ui/Chips'
-import { ModePicker } from '../components/ui/ModePicker'
 import { PageHeader } from '../components/ui/PageHeader'
 import { getTopic, type QuestionRef } from '../content'
 import { useI18n } from '../i18n/useI18n'
@@ -11,7 +12,7 @@ import styles from './TopicPage.module.css'
 
 type DepthFilter = Depth | 'all'
 
-/** One topic's question deck, with subtopic and depth filters kept in the URL. */
+/** One topic's question deck. Filters live in the URL, tucked behind "Options". */
 export function TopicPage({ section }: { section: Topic['section'] }) {
   const { topicId } = useParams()
   const topic = getTopic(section, topicId)
@@ -22,8 +23,11 @@ export function TopicPage({ section }: { section: Topic['section'] }) {
 function TopicDeck({ topic }: { topic: Topic }) {
   const { t, l } = useI18n()
   const [params, setParams] = useSearchParams()
+  const panelId = useId()
   const sub = params.get('sub') ?? 'all'
   const depth = (params.get('depth') ?? 'all') as DepthFilter
+  const activeFilters = Number(sub !== 'all') + Number(depth !== 'all')
+  const [open, setOpen] = useState(false)
 
   const setFilter = (key: 'sub' | 'depth', value: string) => {
     setParams(
@@ -59,23 +63,31 @@ function TopicDeck({ topic }: { topic: Topic }) {
 
   const sectionTitle = topic.section === 'talk' ? t('talkTitle') : t('discoverTitle')
   const deckKey = `${topic.section}/${topic.id}|${sub}|${depth}`
+  // With no matching questions, keep the filters visible so they can be changed.
+  const panelOpen = open || items.length === 0
 
   return (
     <>
       <title>{`${l(topic.title)} · ${t('brand')}`}</title>
       <PageHeader
-        narrow
         title={l(topic.title)}
         lead={l(topic.description)}
         backTo={`/${topic.section}`}
         backLabel={sectionTitle}
         tone={topic.tone}
+        action={
+          <OptionsButton
+            open={panelOpen}
+            onToggle={() => setOpen((o) => !o)}
+            panelId={panelId}
+            active={activeFilters}
+          />
+        }
       />
 
-      <div className={styles.filters}>
-        <ModePicker />
+      <OptionsPanel id={panelId} open={panelOpen}>
         {!topic.ordered && (
-          <div className={styles.chips}>
+          <>
             <Chips
               label={t('subtopicLabel')}
               options={subOptions}
@@ -90,9 +102,9 @@ function TopicDeck({ topic }: { topic: Topic }) {
                 onChange={(v) => setFilter('depth', v)}
               />
             )}
-          </div>
+          </>
         )}
-      </div>
+      </OptionsPanel>
 
       {items.length === 0 ? (
         <p className={styles.empty}>{t('noMatches')}</p>

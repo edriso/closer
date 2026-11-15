@@ -220,10 +220,13 @@ export const deep: Topic = {
       subtopic: 'life',
       depth: 'deep',
       text: {
-        ar: 'ما الشيء الذي صار أقل أهمية في نظرك مع الأيام؟',
-        en: 'What matters less to you now than it used to?',
+        ar: 'ما الذي لا يُشترى بالمال، ويملأ حياتك غنًى حقيقيًا؟',
+        en: "What can't be bought, yet makes your life truly rich?",
       },
-      followUps: [{ ar: 'وما الذي صار أهم؟', en: 'And what matters more?' }],
+      followUps: [
+        { ar: 'متى حضر هذا الشعور آخر مرة؟', en: 'When did you last feel that?' },
+        { ar: 'وهل يمكن أن نصنع منه المزيد معًا؟', en: 'Could we make more of it together?' },
+      ],
     },
     {
       id: 'deep-016',
@@ -253,12 +256,12 @@ export const deep: Topic = {
       subtopic: 'feelings',
       depth: 'medium',
       text: {
-        ar: 'أي تعبير عن الحب يصل إلى قلبك أسرع: كلمة، أم عناق، أم فعل لطيف، أم وقت معًا، أم هدية؟',
-        en: 'Which expression of love reaches your heart fastest: words, a hug, a kind act, time together or a gift?',
+        ar: 'ما الذي يُشعرك بالفخر بنفسك في يوم عادي؟',
+        en: 'What makes you feel proud of yourself on an ordinary day?',
       },
       followUps: [
-        { ar: 'هل من مثال لا يُنسى؟', en: 'Any unforgettable example?' },
-        { ar: 'وهل كان الأمر كذلك دائمًا؟', en: 'Has it always been that way?' },
+        { ar: 'هل يحدث ذلك كثيرًا؟', en: 'Does it happen often?' },
+        { ar: 'وهل يسعدك أن أنتبه إليه أكثر؟', en: 'Would you like me to notice it more?' },
       ],
     },
     {

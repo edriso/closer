@@ -20,26 +20,27 @@ This guide applies to every question, game prompt and activity in `src/content/`
   - the attached pronoun ـك, which is written the same for both: `ما الذي يُسعدك؟` `ما أول ذكرى في طفولتك؟`
   - third-person verbs: `ما أكثر ما يُضحكك؟` `ما الذي يخطر ببالك…؟` `ما الذي يجعلك…؟`
   - nouns and masdars: `أيّهما أقرب إليك: رحلة إلى البحر أم إلى الجبال؟`
-  - the **dual** when addressing the couple together (activities, shared questions): `تبادلا`, `اكتبا`, `ما الذي يجمعكما؟`
-  - **One voice: the reader speaks.** Cards are read aloud by one partner to the other, so refer to the asker in the first person: `فيّ`, `مني`, `إليّ`, `رأيي`, `يمكنني أن…`, and use `بيننا`/`نحن` for the couple (English: "me", "us"). First-person forms are gender-neutral by nature. Don't use a third-person "your other half" (`نصفك الآخر`), and avoid the gendered `شريكك/شريكتك` and `حبيبك/حبيبتك`.
+  - the **dual** only where the app addresses both partners at once, in Moments activities and UI copy: `تبادلا`, `اكتبا`, `استمتعا بوقتكما`. Never in Talk or Discover cards (see below).
+  - **One voice: the reader speaks.** Cards are read aloud by one partner to the other, so refer to the asker in the first person: `فيّ`, `مني`, `إليّ`, `رأيي`, `يمكنني أن…`, and use the first-person plural for the couple: `بيننا`, `علاقتنا`, `لنا`, `معنا`, `حياتنا`, `يجمعنا`, `نحن`, `أحدنا`, `كلانا` (English: "me", "us", "our", "we"). Never address the couple in the dual on a card (`بينكما`, `علاقتكما`, `لكما`, `تتخيّلان`, `أحدكما`), and never mix voices on one card, follow-ups included. Instead of a second-person verb, pair the first-person plural with `برأيك`: `كيف نُدير المال بيننا برأيك؟`. First-person forms are gender-neutral by nature. Don't use a third-person "your other half" (`نصفك الآخر`), and avoid the gendered `شريكك/شريكتك` and `حبيبك/حبيبتك`.
 - Add **tashkeel** only where it prevents misreading (e.g. `يُسعدك`). Don't vocalize full sentences.
 - Use Arabic punctuation: `؟` and `،`.
 
 ## English
 
-- Natural, contemporary and friendly. Use "you" for questions and "you two" or "together" for shared activities.
+- Natural, contemporary and friendly. In Talk and Discover cards, "you" is the listener, "I/me" is the reader, and "we/us/our" is the couple. Never write "you two", "both of you" or "either of you" on a card.
+- "You two", "each of you" and "together" belong to Moments activities and UI copy, which address both partners at once.
 - Sentence case. Keep it short.
 
 ## Shapes by content type
 
-| Type                       | Shape                                                                   | Example                                           |
-| -------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------- |
-| Talk / Discover question   | One question, ideally under 20 words, plus 1–3 follow-ups               | `ما الشيء الصغير الذي يجعل يومك أجمل فورًا؟`       |
-| Follow-up ("Tell me more") | A short nudge that deepens the same thread                              | `هل حدث ذلك هذا الأسبوع؟`                         |
-| Would you rather           | Two short noun phrases, balanced and fun                                | `بيت صغير قرب البحر` / `شقة واسعة في قلب المدينة` |
-| Who knows who better       | A noun-phrase prompt about the other person, with no pronouns           | `الأكلة المفضّلة بعد يوم طويل`                     |
-| Two truths and a lie       | A theme title plus a one-line hint                                      | `أيام المدرسة`                                    |
-| Moment / activity          | A title, a 1–2 sentence description in the dual, and optional 2–4 steps | `اكتبا ثلاث كلمات تصف يومكما ثم تبادلا الورق`     |
+| Type                       | Shape                                                                                                | Example                                           |
+| -------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Talk / Discover question   | One question in the reader's voice, ideally under 20 words, plus 1–3 follow-ups (0–2 in the Journey) | `ما الشيء الصغير الذي يجعل يومك أجمل فورًا؟`       |
+| Follow-up ("Tell me more") | A short nudge that deepens the same thread                                                           | `هل حدث ذلك هذا الأسبوع؟`                         |
+| Would you rather           | Two short noun phrases, balanced and fun                                                             | `بيت صغير قرب البحر` / `شقة واسعة في قلب المدينة` |
+| Who knows who better       | A noun-phrase prompt about the other person, with no pronouns                                        | `الأكلة المفضّلة بعد يوم طويل`                     |
+| Two truths and a lie       | A theme title plus a one-line hint                                                                   | `أيام المدرسة`                                    |
+| Moment / activity          | A title, a 1–2 sentence description in the dual, and optional 2–4 steps                              | `اكتبا ثلاث كلمات تصف يومكما ثم تبادلا الورق`     |
 
 ## Depth
 

@@ -7,38 +7,40 @@ import styles from './PageHeader.module.css'
 interface PageHeaderProps {
   title: string
   lead?: string
-  eyebrow?: string
   backTo?: string
   backLabel?: string
+  /** One quiet action shown opposite the back link, e.g. an "Options" toggle. */
+  action?: ReactNode
   art?: ReactNode
   tone?: string
   children?: ReactNode
-  /** Align with narrow, centered content such as a question deck or game. */
-  narrow?: boolean
 }
 
 export function PageHeader(props: PageHeaderProps) {
-  const { title, lead, eyebrow, backTo, backLabel, art, tone, children, narrow } = props
+  const { title, lead, backTo, backLabel, action, art, tone, children } = props
   const { t, dir } = useI18n()
   const BackIcon = dir === 'rtl' ? ArrowRight : ArrowLeft
   return (
-    <header
-      className={narrow ? `${styles.header} ${styles.narrow}` : styles.header}
-      data-tone={tone}
-    >
-      <div className={styles.text}>
-        {backTo && (
-          <Link to={backTo} className={styles.back}>
-            <BackIcon aria-hidden="true" />
-            <span>{backLabel ?? t('back')}</span>
-          </Link>
-        )}
-        {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
-        <h1 className={styles.title}>{title}</h1>
-        {lead && <p className={styles.lead}>{lead}</p>}
-        {children}
+    <header className={styles.header} data-tone={tone}>
+      {(backTo || action) && (
+        <div className={styles.topRow}>
+          {backTo && (
+            <Link to={backTo} className={styles.back}>
+              <BackIcon aria-hidden="true" />
+              <span>{backLabel ?? t('back')}</span>
+            </Link>
+          )}
+          {action && <div className={styles.action}>{action}</div>}
+        </div>
+      )}
+      <div className={styles.main}>
+        <div className={styles.text}>
+          <h1 className={styles.title}>{title}</h1>
+          {lead && <p className={styles.lead}>{lead}</p>}
+          {children}
+        </div>
+        {art && <div className={styles.art}>{art}</div>}
       </div>
-      {art && <div className={styles.art}>{art}</div>}
     </header>
   )
 }

@@ -12,6 +12,7 @@ export function Layout() {
   const { pathname } = useLocation()
   const main = useRef<HTMLElement>(null)
   const firstRender = useRef(true)
+  const isHome = pathname === '/'
 
   // On client-side navigation, move focus to the new page so keyboard and
   // screen-reader users start at the content, not wherever the old link was.
@@ -31,10 +32,15 @@ export function Layout() {
       </a>
       <div className={styles.sky} aria-hidden="true" />
       <Header />
-      <main id="main" ref={main} className={styles.main} tabIndex={-1}>
+      <main
+        id="main"
+        ref={main}
+        className={isHome ? styles.main : `${styles.main} ${styles.narrow}`}
+        tabIndex={-1}
+      >
         <Outlet />
       </main>
-      <Footer />
+      {isHome && <Footer />}
       <TabBar />
       <ScrollRestoration />
     </>

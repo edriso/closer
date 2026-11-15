@@ -26,11 +26,6 @@ export const strings = {
   themeToDark: { ar: 'تفعيل الوضع الليلي', en: 'Switch to night sky' },
   themeToLight: { ar: 'تفعيل الوضع النهاري', en: 'Switch to day sky' },
   back: { ar: 'رجوع', en: 'Back' },
-  footerNote: {
-    ar: 'بلا حسابات، بلا تتبّع، بلا إعلانات. فقط وقت جميل معًا.',
-    en: 'No accounts, no tracking, no ads. Just good time together.',
-  },
-  footerMade: { ar: 'صُنع بحبّ للأزواج', en: 'Made with love, for couples' },
 
   // Sections
   talkTitle: { ar: 'لنتحدّث', en: 'Talk' },
@@ -42,11 +37,11 @@ export const strings = {
   playTitle: { ar: 'لنلعب', en: 'Play' },
   playBlurb: { ar: 'ألعاب خفيفة لشخصين', en: 'Light games for two' },
   playLead: {
-    ar: 'ألعاب لطيفة لشخصين، الغاية منها الضحك والتعارف لا الفوز.',
+    ar: 'ألعاب لطيفة لشخصين، الغاية منها الضحك والتقارب، لا الفوز.',
     en: 'Gentle games for two. The point is laughing and learning, not winning.',
   },
   discoverTitle: { ar: 'لنتعرّف', en: 'Discover' },
-  discoverBlurb: { ar: 'تعرّفا على بعضكما أعمق', en: 'Get to know each other deeper' },
+  discoverBlurb: { ar: 'لمعرفة أعمق ببعضكما', en: 'Get to know each other more deeply' },
   discoverLead: {
     ar: 'أسئلة أعمق لتفهما بعضكما: القيم، والتوقعات، وطريقة التفكير.',
     en: 'Deeper questions to understand each other: values, expectations and the way you think.',
@@ -68,12 +63,8 @@ export const strings = {
     en: 'Questions, games and little moments that make your time together sweeter. No sign-up, no prep.',
   },
   surpriseUs: { ar: 'فاجئنا', en: 'Surprise us' },
-  orChoose: { ar: 'أو اختارا بنفسيكما', en: 'or choose for yourselves' },
   questionOfTheDay: { ar: 'سؤال اليوم', en: 'Question of the day' },
-  qotdHint: { ar: 'سؤال جديد كل يوم', en: 'A new one every day' },
   openTopic: { ar: 'المزيد من هذا الموضوع', en: 'More from this topic' },
-  yourFavorites: { ar: 'مفضّلتكما', en: 'Your favorites' },
-  savedCount: { ar: 'محفوظات: {n}', en: '{n} saved' },
 
   // Mode
   modeQuestion: { ar: 'كيف تقضيان الوقت الآن؟', en: 'How are you spending time together?' },
@@ -89,8 +80,9 @@ export const strings = {
   },
 
   // Deck
+  options: { ar: 'خيارات', en: 'Options' },
+  activeFilters: { ar: 'تصفيات مفعّلة: {n}', en: '{n} active filters' },
   next: { ar: 'التالي', en: 'Next' },
-  skip: { ar: 'تخطٍّ', en: 'Skip' },
   previous: { ar: 'السابق', en: 'Previous' },
   goDeeper: { ar: 'لنتعمّق أكثر', en: 'Tell me more' },
   anotherFollowUp: { ar: 'سؤال متابعة آخر', en: 'Another follow-up' },
@@ -107,7 +99,7 @@ export const strings = {
   subtopicAll: { ar: 'الكل', en: 'All' },
   subtopicLabel: { ar: 'الموضوع الفرعي', en: 'Subtopic' },
   noMatches: {
-    ar: 'لا توجد أسئلة بهذا الاختيار. جرّبا تصفية أخرى.',
+    ar: 'لا أسئلة تطابق هذا الاختيار. جرّبا اختيارًا آخر.',
     en: 'No questions match these filters. Try another combination.',
   },
   deckDoneTitle: { ar: 'أتممتما هذه المجموعة', en: "You've finished this set" },
@@ -117,24 +109,18 @@ export const strings = {
   },
   reshuffle: { ar: 'خلط من جديد', en: 'Shuffle again' },
   otherTopics: { ar: 'مواضيع أخرى', en: 'Other topics' },
-  keyboardHint: {
-    ar: 'تلميح: استخدما مفاتيح الأسهم للتنقّل.',
-    en: 'Tip: use the arrow keys to move between questions.',
-  },
   mixTitle: { ar: 'خليط من كل شيء', en: 'A bit of everything' },
-  mixCta: { ar: 'ابدآ الخلط', en: 'Start shuffling' },
   mixDescription: {
     ar: 'أسئلة عشوائية من كل مواضيع الحديث.',
     en: 'Random questions from every conversation topic.',
   },
-  startJourney: { ar: 'ابدآ الرحلة', en: 'Start the journey' },
   featured: { ar: 'مميّز', en: 'Featured' },
 
   // Feedback
   feedbackQuestion: { ar: 'هل استمتعتما؟', en: 'Did you enjoy this?' },
   feedbackLoved: { ar: 'أحببناه', en: 'Loved it' },
   feedbackNice: { ar: 'كان لطيفًا', en: 'It was nice' },
-  feedbackMeh: { ar: 'ليس لنا', en: 'Not for us' },
+  feedbackMeh: { ar: 'لا يناسبنا', en: 'Not for us' },
   feedbackThanks: {
     ar: 'شكرًا لكما! رأيكما محفوظ على هذا الجهاز فقط.',
     en: 'Thank you! Your answer stays on this device only.',
@@ -143,17 +129,16 @@ export const strings = {
   // Games: shared
   gamesBack: { ar: 'كل الألعاب', en: 'All games' },
   playersTitle: { ar: 'من يلعب؟', en: "Who's playing?" },
-  playerOne: { ar: 'الاسم الأول', en: 'First name' },
-  playerTwo: { ar: 'الاسم الثاني', en: 'Second name' },
-  playerOneDefault: { ar: 'الطرف الأول', en: 'Player one' },
-  playerTwoDefault: { ar: 'الطرف الثاني', en: 'Player two' },
+  playerOne: { ar: 'اسم الشخص الأول', en: "Player 1's name" },
+  playerTwo: { ar: 'اسم الشخص الثاني', en: "Player 2's name" },
+  playerOneDefault: { ar: 'الشخص الأول', en: 'Player 1' },
+  playerTwoDefault: { ar: 'الشخص الثاني', en: 'Player 2' },
   playersHint: {
     ar: 'الأسماء اختيارية، وتبقى على هذا الجهاز فقط.',
     en: 'Names are optional and stay on this device only.',
   },
   letsStart: { ar: 'لنبدأ', en: "Let's start" },
   playAgain: { ar: 'جولة جديدة', en: 'Play again' },
-  changeNames: { ar: 'تغيير الأسماء', en: 'Change names' },
   roundOf: { ar: 'الجولة {current} من {total}', en: 'Round {current} of {total}' },
   turnOf: { ar: 'دور {name}', en: "{name}'s turn" },
   results: { ar: 'النتيجة', en: 'Results' },
@@ -161,7 +146,6 @@ export const strings = {
     ar: 'الأهمّ من النتيجة: التفاصيل الجديدة التي عرفتماها عن بعضكما.',
     en: 'What matters more than the score: the little things you learned about each other.',
   },
-  rounds: { ar: 'عدد الجولات', en: 'Rounds' },
 
   // Would you rather
   wyrTitle: { ar: 'أيّهما أقرب إليك؟', en: 'Would you rather?' },
@@ -171,13 +155,16 @@ export const strings = {
   },
   wyrOr: { ar: 'أم', en: 'or' },
   wyrPickFor: { ar: 'اختيار {name}', en: "{name}'s pick" },
-  wyrSame: { ar: 'اخترتما الشيء نفسه!', en: 'You both picked the same!' },
+  wyrSame: { ar: 'اخترتما الشيء نفسه!', en: 'You both picked the same one!' },
   wyrDifferent: {
     ar: 'اختياران مختلفان، وهذا أجمل ما في الحديث.',
     en: 'Different picks. Even better for a chat.',
   },
-  wyrWhy: { ar: 'والآن: لماذا؟ ليشرح كلٌّ منكما سببه.', en: 'Now, why? Each of you explain.' },
-  wyrMatched: { ar: 'تطابقتما في {n} من {total}', en: 'You matched on {n} of {total}' },
+  wyrWhy: {
+    ar: 'والآن: لماذا؟ ليشرح كلٌّ منكما سببه.',
+    en: 'Now, why? Each of you, share your reason.',
+  },
+  wyrMatched: { ar: 'اتفقتما في {n} من {total}', en: 'You matched on {n} of {total}' },
 
   // Who knows who better
   whoTitle: { ar: 'من يعرف الآخر أكثر؟', en: 'Who knows who better?' },
@@ -216,13 +203,10 @@ export const strings = {
   truthsScore: { ar: 'كذبات مكشوفة', en: 'Lies spotted' },
 
   // Moments
-  minutesShort: { ar: '{n} د', en: '{n} min' },
   worksOnCall: { ar: 'يصلح للمكالمة', en: 'Works on a call' },
   samePlace: { ar: 'في مكان واحد', en: 'Same place' },
-  filterAll: { ar: 'الكل', en: 'All' },
   pickForUs: { ar: 'اختر لنا', en: 'Pick one for us' },
   steps: { ar: 'الخطوات', en: 'How to' },
-  activitiesCount: { ar: 'أفكار: {n}', en: '{n} ideas' },
   showSteps: { ar: 'عرض الخطوات', en: 'Show steps' },
   hideSteps: { ar: 'إخفاء الخطوات', en: 'Hide steps' },
 
@@ -251,7 +235,6 @@ export const strings = {
   },
   favoritesQuestions: { ar: 'أسئلة', en: 'Questions' },
   favoritesMoments: { ar: 'لحظات', en: 'Moments' },
-  favoritesPlay: { ar: 'العبا بالمفضّلة', en: 'Play your favorites' },
   explore: { ar: 'ابدآ الاستكشاف', en: 'Start exploring' },
 
   // About

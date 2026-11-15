@@ -32,6 +32,9 @@
 
 .card {
   position: relative;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
   display: grid;
   gap: var(--space-5);
   min-height: 340px;
@@ -42,6 +45,10 @@
   background: var(--surface);
   box-shadow: var(--shadow-lg);
   align-content: start;
+}
+
+.card:active {
+  cursor: grabbing;
 }
 
 .card::before {
@@ -109,27 +116,9 @@
 
 .controls {
   display: grid;
-  grid-template-columns: auto 1fr 1.4fr;
-  gap: var(--space-2);
-}
-
-.footer {
-  display: flex;
-  flex-wrap: wrap;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: var(--space-2);
-}
-
-.hint {
-  color: var(--muted);
-  font-size: var(--text-xs);
-}
-
-@media (hover: none) {
-  .hint {
-    visibility: hidden;
-  }
 }
 
 @media (max-width: 480px) {

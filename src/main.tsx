@@ -2,7 +2,7 @@ import '@fontsource-variable/fraunces'
 import '@fontsource-variable/readex-pro'
 import './styles/global.css'
 
-import { LazyMotion, MotionConfig, domAnimation } from 'motion/react'
+import { LazyMotion, MotionConfig, domMax } from 'motion/react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router/dom'
@@ -15,7 +15,7 @@ void fontsReady(document.documentElement.lang).then(() => {
   root.render(
     <StrictMode>
       <MotionConfig reducedMotion="user">
-        <LazyMotion features={domAnimation} strict>
+        <LazyMotion features={domMax} strict>
           <RouterProvider router={router} />
         </LazyMotion>
       </MotionConfig>

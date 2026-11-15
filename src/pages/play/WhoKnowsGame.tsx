@@ -30,7 +30,6 @@ export function WhoKnowsGame() {
     <>
       <title>{`${t('whoTitle')} · ${t('brand')}`}</title>
       <PageHeader
-        narrow
         title={t('whoTitle')}
         lead={t('whoDescription')}
         backTo="/play"

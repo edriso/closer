@@ -71,7 +71,6 @@ export function SurprisePage() {
     <>
       <title>{`${t('surpriseTitle')} · ${t('brand')}`}</title>
       <PageHeader
-        narrow
         title={t('surpriseTitle')}
         lead={t('surpriseLead')}
         backTo="/"

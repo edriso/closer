@@ -31,7 +31,6 @@ export function WouldYouRatherGame() {
     <>
       <title>{`${t('wyrTitle')} · ${t('brand')}`}</title>
       <PageHeader
-        narrow
         title={t('wyrTitle')}
         lead={t('wyrDescription')}
         backTo="/play"

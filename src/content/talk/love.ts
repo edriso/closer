@@ -38,7 +38,7 @@ export const love: Topic = {
       depth: 'medium',
       text: {
         ar: 'ما الذي أفعله دون أن أنتبه إلى أنه يُسعدك؟',
-        en: 'What do I do that makes you happy without even realizing it?',
+        en: 'What do I do, without even realizing it, that makes you happy?',
       },
       followUps: [
         { ar: 'متى حدث ذلك آخر مرة؟', en: 'When did it last happen?' },
@@ -50,8 +50,8 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'medium',
       text: {
-        ar: 'ما الشيء الذي أُتقنه أكثر من أي أحد آخر؟',
-        en: 'What do I do better than anyone else?',
+        ar: 'ما الشيء الذي أُتقنه برأيك أكثر من أي أحد آخر؟',
+        en: 'What do you think I do better than anyone else?',
       },
       followUps: [
         { ar: 'متى ظهر ذلك آخر مرة؟', en: 'When did it last show?' },
@@ -70,7 +70,10 @@ export const love: Topic = {
         en: 'When was I truly your rock?',
       },
       followUps: [
-        { ar: 'هل وصله شكرك يومها؟', en: 'Did your thanks reach them back then?' },
+        {
+          ar: 'هل عرفتُ يومها كم كان ذلك مهمًّا لك؟',
+          en: 'Did I know back then how much it mattered to you?',
+        },
         { ar: 'ما الذي تعنيه لك تلك اللحظة اليوم؟', en: 'What does that moment mean to you now?' },
       ],
     },
@@ -83,7 +86,7 @@ export const love: Topic = {
         en: 'What habit or phrase have you picked up from me without meaning to?',
       },
       followUps: [
-        { ar: 'متى انتبه أحدكما إلى ذلك أول مرة؟', en: 'When did one of you first notice?' },
+        { ar: 'متى انتبه أحدنا إلى ذلك أول مرة؟', en: 'When did one of us first notice?' },
         { ar: 'وما الذي انتقل منك إليّ؟', en: 'And what have I picked up from you?' },
       ],
     },
@@ -105,14 +108,15 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'medium',
       text: {
-        ar: 'ما الجهد الخفيّ الذي أبذله ويستحق برأيك شكرًا أكبر؟',
-        en: 'What quiet effort of mine do you think deserves more thanks?',
+        ar: 'ما الجهد الخفيّ منك الذي يستحق مني شكرًا أكبر؟',
+        en: 'What quiet effort of yours deserves more thanks from me?',
       },
       followUps: [
         {
-          ar: 'كيف يمكن أن يصل هذا الشكر بطريقة تشبهكما؟',
-          en: 'How could that thanks be shown in a way that feels like you two?',
+          ar: 'كيف يمكنني أن أشكرك عليه بطريقة تشبهك؟',
+          en: 'How could I thank you for it in a way that feels like you?',
         },
+        { ar: 'هل لاحظه أحد من قبل؟', en: 'Has anyone noticed it before?' },
       ],
     },
 
@@ -170,8 +174,8 @@ export const love: Topic = {
       subtopic: 'love-language',
       depth: 'medium',
       text: {
-        ar: 'ما الذي يُشعرك بالقرب حين تفصل بينكما المسافة؟',
-        en: 'What makes you feel close when distance keeps you apart?',
+        ar: 'ما الذي يُشعرك بالقرب حين تفصل بيننا المسافة؟',
+        en: 'What makes you feel close when distance keeps us apart?',
       },
       followUps: [
         {
@@ -239,8 +243,8 @@ export const love: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'ما الذي يجعلكما فريقًا جميلًا؟',
-        en: 'What makes you two a great team?',
+        ar: 'ما الذي يجعلنا فريقًا جميلًا؟',
+        en: 'What makes us a great team?',
       },
       followUps: [
         { ar: 'في أي موقف ظهر ذلك بوضوح؟', en: 'When did that show most clearly?' },
@@ -252,8 +256,8 @@ export const love: Topic = {
       subtopic: 'us',
       depth: 'deep',
       text: {
-        ar: 'ما الذي علّمك إياه الحبّ منذ بدأت قصتكما؟',
-        en: 'What has love taught you since your story began?',
+        ar: 'ما الذي علّمك إياه الحبّ منذ بدأت قصتنا؟',
+        en: 'What has love taught you since our story began?',
       },
       followUps: [
         { ar: 'هل فاجأك ذلك؟', en: 'Did it surprise you?' },
@@ -265,8 +269,8 @@ export const love: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'ما الكلمة الواحدة التي تصف علاقتكما الآن، ولماذا؟',
-        en: 'What one word describes your relationship right now, and why?',
+        ar: 'ما الكلمة الواحدة التي تصف علاقتنا الآن، ولماذا؟',
+        en: 'What one word describes our relationship right now, and why?',
       },
       followUps: [
         {
@@ -280,11 +284,11 @@ export const love: Topic = {
       subtopic: 'us',
       depth: 'deep',
       text: {
-        ar: 'متى يكون الحبّ بينكما في أجمل حالاته؟',
-        en: 'When is the love between you at its most beautiful?',
+        ar: 'متى يكون الحبّ بيننا في أجمل حالاته؟',
+        en: 'When is the love between us at its most beautiful?',
       },
       followUps: [
-        { ar: 'ما الذي يُعيدكما إلى تلك الحالة؟', en: 'What brings you back there?' },
+        { ar: 'ما الذي يُعيدنا إلى تلك الحالة؟', en: 'What brings us back there?' },
         { ar: 'هل حدث ذلك مؤخرًا؟', en: 'Has it happened lately?' },
       ],
     },
@@ -293,8 +297,8 @@ export const love: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'ما الشيء الذي أفهمه فيك كما لا يفهمه أحد؟',
-        en: 'What do I understand about you like no one else does?',
+        ar: 'ما الذي يُشعرك بأنني أفهمك كما لا يفهمك أحد؟',
+        en: 'What makes you feel I understand you like no one else does?',
       },
       followUps: [
         { ar: 'متى أدهشك ذلك أول مرة؟', en: 'When did that first amaze you?' },
@@ -309,15 +313,15 @@ export const love: Topic = {
       subtopic: 'us',
       depth: 'deep',
       text: {
-        ar: 'ما الوعد الصغير الذي يسعدك أن تتبادلاه اليوم؟',
-        en: 'What small promise would you love for you two to exchange today?',
+        ar: 'ما الوعد الصغير الذي يسعدك أن نتبادله اليوم؟',
+        en: 'What small promise would you love for us to exchange today?',
       },
       followUps: [
         {
           ar: 'كيف يمكن أن يبقى حاضرًا في الأيام العادية؟',
           en: 'How could it stay alive on ordinary days?',
         },
-        { ar: 'متى يحين موعد تجديده؟', en: 'When should you renew it?' },
+        { ar: 'متى يحين موعد تجديده؟', en: 'When should we renew it?' },
       ],
     },
   ],

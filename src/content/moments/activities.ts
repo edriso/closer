@@ -950,8 +950,8 @@ export const activities: Activity[] = [
     category: 'random',
     title: { ar: 'على ذوق الآخر', en: 'Order for each other' },
     description: {
-      ar: 'في مطعم بسيط أو مقهى، ليطلب كل منكما الطبق أو المشروب للآخر دون أن يخبره بما اختار.',
-      en: "At a simple restaurant or café, each of you orders the other's food or drink without telling them what it is.",
+      ar: 'في مطعم بسيط أو مقهى، ليطلب كل منكما الطبق أو المشروب للآخر دون أن يخبره بما اختار، مع مراعاة أي حساسية غذائية أو نظام غذائي.',
+      en: "At a simple restaurant or café, each of you orders the other's food or drink without telling them what it is, keeping allergies and diets in mind.",
     },
     minutes: 45,
     modes: ['together'],

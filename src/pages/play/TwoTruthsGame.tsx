@@ -27,7 +27,6 @@ export function TwoTruthsGame() {
     <>
       <title>{`${t('truthsTitle')} · ${t('brand')}`}</title>
       <PageHeader
-        narrow
         title={t('truthsTitle')}
         lead={t('truthsDescription')}
         backTo="/play"

@@ -1,10 +1,10 @@
 import { Sparkles, X } from 'lucide-react'
 import { Link } from 'react-router'
 import { MoonArt } from '../components/art/MoonArt'
-import { ActivityCard } from '../components/ui/ActivityCard'
+import { ActivityRow } from '../components/ui/ActivityRow'
 import { Button, ButtonLink } from '../components/ui/Button'
 import { PageHeader } from '../components/ui/PageHeader'
-import { getActivity, getActivityCategory, getQuestion } from '../content'
+import { getActivity, getQuestion } from '../content'
 import { useFavorites } from '../hooks/useFavorites'
 import { useI18n } from '../i18n/useI18n'
 import styles from './FavoritesPage.module.css'
@@ -63,15 +63,11 @@ export function FavoritesPage() {
       {moments.length > 0 && (
         <section className={styles.group}>
           <h2 className={styles.groupTitle}>{t('favoritesMoments')}</h2>
-          <div className={styles.moments}>
+          <ul className={styles.moments}>
             {moments.map((a) => (
-              <ActivityCard
-                key={a.id}
-                activity={a}
-                tone={getActivityCategory(a.category)?.tone ?? 'rose'}
-              />
+              <ActivityRow key={a.id} activity={a} />
             ))}
-          </div>
+          </ul>
         </section>
       )}
     </>

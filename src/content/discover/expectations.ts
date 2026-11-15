@@ -11,7 +11,7 @@ export const expectations: Topic = {
   },
   subtopics: [
     { id: 'money', title: { ar: 'المال', en: 'Money' } },
-    { id: 'family', title: { ar: 'العائلتان', en: 'Our families' } },
+    { id: 'family', title: { ar: 'الأهل', en: 'Family' } },
     { id: 'home', title: { ar: 'البيت والأدوار', en: 'Home & roles' } },
     { id: 'children', title: { ar: 'الأبناء', en: 'Children' } },
   ],
@@ -59,17 +59,17 @@ export const expectations: Topic = {
       subtopic: 'money',
       depth: 'medium',
       text: {
-        ar: 'كيف تتخيّلان إدارة المال بينكما: مشتركًا، أم منفصلًا، أم مزيجًا من الاثنين؟',
-        en: 'How do you two picture handling money: shared, separate or a mix of both?',
+        ar: 'كيف نُدير المال بيننا برأيك: مشتركًا، أم منفصلًا، أم مزيجًا من الاثنين؟',
+        en: 'How do you picture us handling money: shared, separate or a mix of both?',
       },
       followUps: [
         {
-          ar: 'ما الذي يجعل هذا الترتيب مريحًا لكلٍّ منكما؟',
-          en: 'What would make that comfortable for each of you?',
+          ar: 'ما الذي يجعل هذا الترتيب مريحًا لكلٍّ منا؟',
+          en: 'What would make that comfortable for each of us?',
         },
         {
-          ar: 'كيف تُتّخذ القرارات المالية الكبيرة بينكما؟',
-          en: 'How would you make big money decisions together?',
+          ar: 'كيف نتّخذ القرارات المالية الكبيرة معًا؟',
+          en: 'How would we make big money decisions together?',
         },
       ],
     },
@@ -87,8 +87,8 @@ export const expectations: Topic = {
           en: 'Is it different for needs and nice-to-haves?',
         },
         {
-          ar: 'وما المساحة المالية التي يحتاجها كلٌّ منكما لنفسه؟',
-          en: 'And how much money of their own does each of you need?',
+          ar: 'وما المساحة المالية التي يحتاجها كلٌّ منا لنفسه؟',
+          en: 'And how much money of our own does each of us need?',
         },
       ],
     },
@@ -135,8 +135,8 @@ export const expectations: Topic = {
       subtopic: 'family',
       depth: 'medium',
       text: {
-        ar: 'ما الإيقاع المريح لك في زيارة العائلتين: كل أسبوع، أم كل شهر، أم حسب الظروف؟',
-        en: 'What feels like a comfortable rhythm for visiting both families: weekly, monthly or as life allows?',
+        ar: 'ما الإيقاع المريح لك في زيارة الأهل: كل أسبوع، أم كل شهر، أم حسب الظروف؟',
+        en: 'What feels like a comfortable rhythm for visiting family: weekly, monthly or as life allows?',
       },
       followUps: [
         {
@@ -144,8 +144,8 @@ export const expectations: Topic = {
           en: 'And what about holidays and special occasions?',
         },
         {
-          ar: 'كيف نوزّع وقتنا بين العائلتين بعدل؟',
-          en: 'How can we share our time fairly between both families?',
+          ar: 'كيف نوزّع وقتنا بعدل بين كل من يهمّنا؟',
+          en: 'How can we share our time fairly with everyone who matters to us?',
         },
       ],
     },
@@ -154,7 +154,7 @@ export const expectations: Topic = {
       subtopic: 'family',
       depth: 'medium',
       text: {
-        ar: 'ما الذي يُفيدني أن أعرفه لأفهم عائلتك أكثر؟',
+        ar: 'ما الذي يساعدني على فهم عائلتك أكثر؟',
         en: 'What would help me understand your family better?',
       },
       followUps: [
@@ -173,17 +173,17 @@ export const expectations: Topic = {
       subtopic: 'family',
       depth: 'medium',
       text: {
-        ar: 'كيف يمكن الجمع بين القرب من العائلتين والحفاظ على خصوصيتكما؟',
-        en: 'How can you stay close to both families while keeping your privacy as a couple?',
+        ar: 'كيف نجمع بين القرب من الأهل والحفاظ على خصوصيتنا؟',
+        en: 'How can we stay close to family while keeping our privacy as a couple?',
       },
       followUps: [
         {
-          ar: 'ما الأمور التي يحسن أن تبقى بينكما فقط؟',
-          en: 'What should stay just between you two?',
+          ar: 'ما الأمور التي يحسن أن تبقى بيننا فقط؟',
+          en: 'What should stay just between us?',
         },
         {
-          ar: 'وكيف يُقال ذلك بلطف إن لزم الأمر؟',
-          en: 'And how could you say so kindly, if needed?',
+          ar: 'وكيف نقول ذلك بلطف إن لزم الأمر؟',
+          en: 'And how could we say so kindly, if needed?',
         },
       ],
     },
@@ -192,8 +192,8 @@ export const expectations: Topic = {
       subtopic: 'family',
       depth: 'deep',
       text: {
-        ar: 'إن احتاج أحد أفراد العائلة إلى رعاية أو مساندة يومًا، كيف يمكن أن تتعاملا مع ذلك معًا؟',
-        en: 'If someone in the family ever needs care or support, how might you handle it together?',
+        ar: 'إن احتاج أحد أفراد العائلة إلى رعاية أو مساندة يومًا، فكيف نتعامل مع ذلك معًا؟',
+        en: 'If someone in the family ever needs care or support, how might we handle it together?',
       },
       followUps: [
         {
@@ -201,8 +201,8 @@ export const expectations: Topic = {
           en: 'Would that include financial help, too?',
         },
         {
-          ar: 'ما الذي يُطمئن كلًّا منكما في هذا الأمر؟',
-          en: 'What would reassure each of you about it?',
+          ar: 'ما الذي يُطمئن كلًّا منا في هذا الأمر؟',
+          en: 'What would reassure each of us about it?',
         },
       ],
     },
@@ -241,17 +241,17 @@ export const expectations: Topic = {
       subtopic: 'home',
       depth: 'medium',
       text: {
-        ar: 'كيف يمكن أن تتقاسما المسؤوليات حين يزدحم وقت أحدكما؟',
-        en: 'How might you share responsibilities when one of you gets especially busy?',
+        ar: 'كيف نتقاسم المسؤوليات حين يزدحم وقت أحدنا؟',
+        en: 'How might we share responsibilities when one of us gets especially busy?',
       },
       followUps: [
         {
-          ar: 'كيف يطلب أحدكما المساعدة دون حرج؟',
-          en: 'How can either of you ask for help without feeling awkward?',
+          ar: 'كيف يطلب أحدنا المساعدة دون حرج؟',
+          en: 'How can either of us ask for help without feeling awkward?',
         },
         {
-          ar: 'ما الذي يجعل التقسيم عادلًا في نظر كلٍّ منكما؟',
-          en: 'What makes a split feel fair to each of you?',
+          ar: 'ما الذي يجعل التقسيم عادلًا في نظر كلٍّ منا؟',
+          en: 'What makes a split feel fair to each of us?',
         },
       ],
     },
@@ -260,8 +260,8 @@ export const expectations: Topic = {
       subtopic: 'home',
       depth: 'medium',
       text: {
-        ar: 'كيف تُتّخذ القرارات اليومية في البيت: بالتشاور دائمًا، أم يتولّى كلٌّ منكما مجالًا؟',
-        en: 'How should everyday home decisions be made: always together, or with each of you owning certain areas?',
+        ar: 'كيف نتّخذ القرارات اليومية في البيت: بالتشاور دائمًا، أم يتولّى كلٌّ منا مجالًا؟',
+        en: 'How should we make everyday home decisions: always together, or with each of us owning certain areas?',
       },
       followUps: [
         {
@@ -328,13 +328,13 @@ export const expectations: Topic = {
       subtopic: 'children',
       depth: 'medium',
       text: {
-        ar: 'إن كان لكما أبناء يومًا، فما القيمة الأولى التي تتمنّيان غرسها فيهم؟',
-        en: "If you have children someday, what's the first value you'd hope to pass on?",
+        ar: 'إن كان لنا أبناء، الآن أو يومًا ما، فما القيمة الأولى التي يسعدك أن نغرسها فيهم؟',
+        en: "If we have children, now or someday, what's the first value you'd love us to pass on to them?",
       },
       followUps: [
         {
-          ar: 'كيف تُغرس هذه القيمة بالقدوة لا بالكلام؟',
-          en: 'How could you teach it by example rather than words?',
+          ar: 'كيف نغرسها بالقدوة لا بالكلام؟',
+          en: 'How could we teach it by example rather than words?',
         },
       ],
     },
@@ -343,17 +343,15 @@ export const expectations: Topic = {
       subtopic: 'children',
       depth: 'medium',
       text: {
-        ar: 'إن كان لكما أبناء يومًا، كيف تتخيّلان تقاسم رعايتهم وتربيتهم؟',
-        en: 'If you have children someday, how do you picture sharing their care and upbringing?',
+        ar: 'إن كان لنا أبناء، الآن أو يومًا ما، فكيف نتقاسم رعايتهم وتربيتهم برأيك؟',
+        en: 'If we have children, now or someday, how do you picture us sharing their care and upbringing?',
       },
       followUps: [
+        { ar: 'كيف نوازن بين العمل والأسرة؟', en: 'How would we balance work and family?' },
+        { ar: 'وما دور العائلة الكبيرة في ذلك؟', en: 'And what role would extended family play?' },
         {
-          ar: 'كيف يكون التوازن بين العمل والأسرة حينها؟',
-          en: 'How would you balance work and family then?',
-        },
-        {
-          ar: 'وما دور العائلة الكبيرة في ذلك؟',
-          en: 'And what role would extended family play?',
+          ar: 'وكيف نتعامل مع اختلاف رأينا في تربيتهم؟',
+          en: 'And how would we handle disagreeing about how to raise them?',
         },
       ],
     },
@@ -362,17 +360,17 @@ export const expectations: Topic = {
       subtopic: 'children',
       depth: 'medium',
       text: {
-        ar: 'إن كان لكما أبناء يومًا، كيف يمكن أن تتعاملا مع اختلاف رأيكما في تربيتهم؟',
-        en: 'If you have children someday, how might you handle disagreeing about how to raise them?',
+        ar: 'ما الأجواء العائلية التي يسعدك أن تملأ بيتنا، مهما كان عدد من فيه؟',
+        en: 'What kind of family atmosphere would you love in our home, however many of us there are?',
       },
       followUps: [
         {
-          ar: 'ما الذي يستحق أن يُتّفق عليه مسبقًا؟',
-          en: "What's worth agreeing on in advance?",
+          ar: 'ما الذي يستحق أن ينتقل إليه من بيت طفولتك؟',
+          en: 'What from your childhood home deserves to carry over into it?',
         },
         {
-          ar: 'كيف يبقى الخلاف بعيدًا عن مسامعهم؟',
-          en: 'How could you keep disagreements out of their earshot?',
+          ar: 'وما العادة الصغيرة التي تصنع هذه الأجواء كل يوم؟',
+          en: 'And what small daily habit would create that feeling?',
         },
       ],
     },

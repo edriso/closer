@@ -150,9 +150,9 @@ export const memories: Topic = {
         en: 'Which friend from your school days still crosses your mind?',
       },
       followUps: [
-        { ar: 'ما الذي كان يجمعكما؟', en: 'What did you two have in common?' },
+        { ar: 'ما سرّ تلك الصداقة؟', en: 'What made that friendship work?' },
         {
-          ar: 'لو جمعكما لقاء اليوم، ما الذي يهمّك أن يعرفه عنك؟',
+          ar: 'لو تجدّد اللقاء اليوم، فما الذي يهمّك أن يعرفه عنك؟',
           en: 'If you met today, what would you want them to know about you?',
         },
       ],
@@ -259,8 +259,8 @@ export const memories: Topic = {
       subtopic: 'us',
       depth: 'light',
       text: {
-        ar: 'ما أول حديث طويل بينكما ما زال حاضرًا في ذاكرتك؟',
-        en: 'What is the first long conversation between you two that you still remember?',
+        ar: 'ما أول حديث طويل بيننا ما زال حاضرًا في ذاكرتك؟',
+        en: 'What is the first long conversation between us that you still remember?',
       },
       followUps: [
         { ar: 'عمّ كان الحديث؟', en: 'What was it about?' },
@@ -272,8 +272,8 @@ export const memories: Topic = {
       subtopic: 'us',
       depth: 'light',
       text: {
-        ar: 'ما الكلمة أو المزحة التي لا يفهمها أحد غيركما؟',
-        en: 'What word or joke does nobody get except you two?',
+        ar: 'ما الكلمة أو المزحة التي لا يفهمها أحد غيرنا؟',
+        en: 'What word or joke does nobody get except us?',
       },
       followUps: [
         { ar: 'من أين جاءت؟', en: 'Where did it come from?' },
@@ -289,7 +289,7 @@ export const memories: Topic = {
         en: 'What moment made it clear to you that this relationship was different?',
       },
       followUps: [
-        { ar: 'أين كنتما حينها؟', en: 'Where were you two at the time?' },
+        { ar: 'أين كنا حينها؟', en: 'Where were we at the time?' },
         { ar: 'من كان أول من عرف بشعورك؟', en: 'Who was the first to know how you felt?' },
       ],
     },
@@ -298,15 +298,15 @@ export const memories: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'لو اخترتما صورة واحدة تختصر قصتكما حتى الآن، فأيّ صورة تكون؟',
-        en: 'If you two picked one photo that sums up your story so far, which would it be?',
+        ar: 'لو اختُصرت قصتنا حتى الآن في صورة واحدة، فأيّ صورة تكون؟',
+        en: 'If one photo summed up our story so far, which would it be?',
       },
       followUps: [
         {
           ar: 'ما الذي لا يظهر في الصورة لكنه حاضر فيها؟',
           en: "What's in that moment that the photo doesn't show?",
         },
-        { ar: 'هل يختار كلٌّ منكما الصورة نفسها؟', en: 'Would you both pick the same one?' },
+        { ar: 'هل نختار كلانا الصورة نفسها؟', en: 'Would we both pick the same one?' },
       ],
     },
     {
@@ -314,8 +314,8 @@ export const memories: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'ما الرسالة أو الكلمة من أيامكما الأولى التي ما زالت تُسعدك؟',
-        en: 'What message or word from your early days together still makes you happy?',
+        ar: 'ما الرسالة أو الكلمة من أيامنا الأولى التي ما زالت تُسعدك؟',
+        en: 'What message or word from our early days together still makes you happy?',
       },
       followUps: [
         { ar: 'هل ما زالت محفوظة في مكان ما؟', en: 'Is it still saved somewhere?' },

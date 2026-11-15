@@ -280,12 +280,12 @@ export const light: Topic = {
       subtopic: 'little-things',
       depth: 'light',
       text: {
-        ar: 'ما الشيء الصغير الذي أفعله فيُضحكك دون قصد مني؟',
-        en: 'What little thing do I do that makes you laugh without me meaning to?',
+        ar: 'ما أبسط شيء يُضحكك مهما كان مزاجك؟',
+        en: "What's the simplest thing that makes you laugh, whatever your mood?",
       },
       followUps: [
-        { ar: 'متى لفت انتباهك أول مرة؟', en: 'When did you first notice it?' },
-        { ar: 'هل أتوقف عنه أم أستمر؟', en: 'Should I stop or keep going?' },
+        { ar: 'متى حدث ذلك آخر مرة؟', en: 'When did that last happen?' },
+        { ar: 'هل يمكنني أن أجرّبه الآن؟', en: 'Can I try it right now?' },
       ],
     },
     {

@@ -73,17 +73,17 @@ export const goals: Topic = {
       subtopic: 'work',
       depth: 'medium',
       text: {
-        ar: 'ما الفرصة التي قد تستحق أن تُغيّرا من أجلها مدينتكما أو نمط حياتكما؟',
-        en: 'What kind of opportunity might be worth changing your city or lifestyle for?',
+        ar: 'ما الفرصة التي قد تستحق أن نُغيّر من أجلها مدينتنا أو نمط حياتنا؟',
+        en: 'What kind of opportunity might be worth changing our city or lifestyle for?',
       },
       followUps: [
         {
-          ar: 'ما الذي يصعب تركه خلفكما؟',
-          en: 'What would be hardest to leave behind?',
+          ar: 'ما الذي يصعب تركه خلفنا؟',
+          en: 'What would be hardest for us to leave behind?',
         },
         {
-          ar: 'كيف يمكن أن تتّخذا قرارًا كهذا معًا؟',
-          en: 'How would you make a decision like that together?',
+          ar: 'كيف نتّخذ قرارًا كهذا معًا؟',
+          en: 'How would we make a decision like that together?',
         },
       ],
     },
@@ -255,8 +255,8 @@ export const goals: Topic = {
       subtopic: 'legacy',
       depth: 'medium',
       text: {
-        ar: 'بعد سنوات طويلة، ماذا تتمنّيان أن يُقال عن علاقتكما؟',
-        en: 'Years from now, what do you two hope people will say about your relationship?',
+        ar: 'ماذا يسعدك أن يُقال عن علاقتنا بعد سنوات طويلة؟',
+        en: 'Years from now, what would you love people to say about our relationship?',
       },
       followUps: [
         {

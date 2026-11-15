@@ -19,8 +19,25 @@
   outline: none;
 }
 
+/* Inner pages: one calm reading column, like the question deck itself. */
+.narrow {
+  max-width: calc(var(--content-narrow) + 2 * var(--space-4));
+  padding-block-end: var(--space-8);
+}
+
 @media (min-width: 900px) {
   .main {
     padding-inline: var(--space-5);
+  }
+
+  .narrow {
+    max-width: calc(var(--content-narrow) + 2 * var(--space-5));
+  }
+}
+
+@media (max-width: 760px) {
+  /* Keep the last item clear of the bottom tab bar. */
+  .narrow {
+    padding-block-end: calc(var(--tabbar-h) + var(--space-6) + env(safe-area-inset-bottom));
   }
 }

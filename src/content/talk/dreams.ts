@@ -128,8 +128,8 @@ export const dreams: Topic = {
       subtopic: 'together',
       depth: 'light',
       text: {
-        ar: 'كيف يبدو صباح مثالي لكما بعد سنوات من الآن؟',
-        en: 'What does a perfect morning look like for you two, years from now?',
+        ar: 'كيف يبدو صباحنا المثالي بعد سنوات من الآن؟',
+        en: 'What does a perfect morning look like for us, years from now?',
       },
       followUps: [
         { ar: 'ما الرائحة التي تملأ المكان؟', en: 'What scent fills the air?' },
@@ -144,8 +144,8 @@ export const dreams: Topic = {
       subtopic: 'together',
       depth: 'medium',
       text: {
-        ar: 'ما التقليد الذي يسعدك أن يصبح علامة خاصة بكما؟',
-        en: 'What tradition would you love to make your own as a couple?',
+        ar: 'ما التقليد الذي يسعدك أن يصبح علامة خاصة بنا؟',
+        en: 'What tradition would you love to make our own?',
       },
       followUps: [
         { ar: 'كل أسبوع أم كل سنة؟', en: 'Weekly or yearly?' },
@@ -157,12 +157,12 @@ export const dreams: Topic = {
       subtopic: 'together',
       depth: 'medium',
       text: {
-        ar: 'ما الركن الذي لا يكتمل بيت أحلامكما بدونه؟',
-        en: 'What corner would your dream home be incomplete without?',
+        ar: 'ما الركن الذي لا يكتمل بيت أحلامنا بدونه؟',
+        en: 'What corner would our dream home be incomplete without?',
       },
       followUps: [
         { ar: 'ولماذا هذا الركن تحديدًا؟', en: 'Why that one in particular?' },
-        { ar: 'هل يتّفق كلاكما عليه؟', en: 'Do you both agree on it?' },
+        { ar: 'هل نتّفق عليه كلانا؟', en: 'Do we both agree on it?' },
       ],
     },
     {
@@ -170,8 +170,8 @@ export const dreams: Topic = {
       subtopic: 'together',
       depth: 'deep',
       text: {
-        ar: 'ما الذي يهمّك أن يبقى ثابتًا بينكما مهما تغيّرت الظروف؟',
-        en: 'What do you most want to stay constant between you, whatever changes?',
+        ar: 'ما الذي يهمّك أن يبقى ثابتًا بيننا مهما تغيّرت الظروف؟',
+        en: 'What do you most want to stay constant between us, whatever changes?',
       },
       followUps: [
         { ar: 'ما الذي يحميه في رأيك؟', en: 'What do you think protects it?' },
@@ -186,12 +186,12 @@ export const dreams: Topic = {
       subtopic: 'together',
       depth: 'medium',
       text: {
-        ar: 'ما الهدف الذي يمكن أن تعملا عليه معًا هذا العام؟',
-        en: "What's one goal you two could work toward together this year?",
+        ar: 'ما الهدف الذي يمكن أن نعمل عليه معًا هذا العام؟',
+        en: "What's one goal we could work toward together this year?",
       },
       followUps: [
-        { ar: 'كيف تتابعان تقدّمكما؟', en: 'How would you keep track of your progress?' },
-        { ar: 'وكيف تحتفلان حين تصلان؟', en: 'And how will you celebrate when you get there?' },
+        { ar: 'كيف نتابع تقدّمنا؟', en: 'How would we keep track of our progress?' },
+        { ar: 'وكيف نحتفل حين نصل؟', en: 'And how will we celebrate when we get there?' },
       ],
     },
     {
@@ -199,15 +199,12 @@ export const dreams: Topic = {
       subtopic: 'together',
       depth: 'deep',
       text: {
-        ar: 'كيف تبدو صورتكما بعد ثلاثين عامًا في خيالك؟',
-        en: 'How do you picture the two of you thirty years from now?',
+        ar: 'إن مرّت بنا أيام صعبة يومًا، فما الذي يُطمئنك أن تجده عندي؟',
+        en: 'If hard days ever come our way, what would it reassure you to find in me?',
       },
       followUps: [
-        {
-          ar: 'ما العادة التي ما زلتما تحافظان عليها في تلك الصورة؟',
-          en: 'What habit are you still keeping in that picture?',
-        },
-        { ar: 'وما الذي يُضحككما حينها؟', en: "And what's making you laugh then?" },
+        { ar: 'وما الذي يمكنني أن أبدأ به من الآن؟', en: 'What could I start doing now?' },
+        { ar: 'وما الذي أجده عندك حينها؟', en: 'And what would I find in you?' },
       ],
     },
     {
@@ -215,12 +212,12 @@ export const dreams: Topic = {
       subtopic: 'together',
       depth: 'medium',
       text: {
-        ar: 'لو صنعتما معًا شيئًا يبقى بعدكما، فماذا يكون؟',
-        en: 'If you two made something together that would outlast you, what would it be?',
+        ar: 'لو صنعنا معًا شيئًا يبقى بعدنا، فماذا يكون؟',
+        en: 'If we made something together that would outlast us, what would it be?',
       },
       followUps: [
         { ar: 'ما أول خطوة صغيرة نحوه؟', en: "What's a small first step toward it?" },
-        { ar: 'ما الذي يضيفه كلٌّ منكما إليه؟', en: 'What would each of you bring to it?' },
+        { ar: 'ما الذي يضيفه كلٌّ منا إليه؟', en: 'What would each of us bring to it?' },
       ],
     },
 
@@ -230,12 +227,12 @@ export const dreams: Topic = {
       subtopic: 'adventures',
       depth: 'light',
       text: {
-        ar: 'ما المشهد الذي يستحق أن تستيقظا قبل الفجر من أجله في رحلة معًا؟',
-        en: 'What view would be worth waking up before dawn for, on a trip together?',
+        ar: 'ما المشهد الذي يستحق أن نستيقظ قبل الفجر من أجله في رحلة معًا؟',
+        en: 'What view would be worth us waking up before dawn for, on a trip together?',
       },
       followUps: [
-        { ar: 'هل رآه أحدكما من قبل؟', en: 'Has either of you seen it before?' },
-        { ar: 'ومن منكما سيوقظ الآخر؟', en: 'And who would wake the other up?' },
+        { ar: 'هل رآه أحدنا من قبل؟', en: 'Has either of us seen it before?' },
+        { ar: 'ومن منا سيوقظ الآخر؟', en: 'And who would wake the other up?' },
       ],
     },
     {
@@ -252,8 +249,8 @@ export const dreams: Topic = {
           en: "What's the funniest thing that happened to you on a trip?",
         },
         {
-          ar: 'كيف يمكن الجمع بين الطريقتين في رحلة لكما؟',
-          en: 'How could you blend both styles on a trip together?',
+          ar: 'كيف يمكن أن نجمع بين الطريقتين في رحلة لنا؟',
+          en: 'How could we blend both styles on a trip together?',
         },
       ],
     },
@@ -262,15 +259,15 @@ export const dreams: Topic = {
       subtopic: 'adventures',
       depth: 'light',
       text: {
-        ar: 'ما التجربة الجريئة التي يسعدك أن تخوضاها معًا يومًا؟',
-        en: 'What bold experience would you love for you two to try one day?',
+        ar: 'ما التجربة الجريئة التي يسعدك أن نخوضها معًا يومًا؟',
+        en: 'What bold experience would you love for us to try one day?',
       },
       followUps: [
         {
           ar: 'ما الذي يجعلها مخيفة وممتعة في آنٍ واحد؟',
           en: 'What makes it scary and fun at the same time?',
         },
-        { ar: 'من منكما سيتردّد أولًا؟', en: 'Which of you would hesitate first?' },
+        { ar: 'من منا سيتردّد أولًا؟', en: 'Which of us would hesitate first?' },
       ],
     },
     {
@@ -278,16 +275,16 @@ export const dreams: Topic = {
       subtopic: 'adventures',
       depth: 'medium',
       text: {
-        ar: 'لو قضيتما شهرًا في مكان لا يعرفكما فيه أحد، فأين يكون؟',
-        en: 'If you two spent a month somewhere nobody knew you, where would it be?',
+        ar: 'لو قضينا شهرًا في مكان لا يعرفنا فيه أحد، فأين يكون؟',
+        en: 'If we spent a month somewhere nobody knew us, where would it be?',
       },
       followUps: [
-        { ar: 'كيف تقضيان أيامكما هناك؟', en: 'How would you spend your days there?' },
+        { ar: 'كيف نقضي أيامنا هناك؟', en: 'How would we spend our days there?' },
         {
-          ar: 'ما الذي تتركانه خلفكما طوال ذلك الشهر؟',
-          en: 'What would you leave behind for that month?',
+          ar: 'ما الذي نتركه خلفنا طوال ذلك الشهر؟',
+          en: 'What would we leave behind for that month?',
         },
-        { ar: 'وما العادة التي تعودان بها؟', en: 'And what habit would you bring back?' },
+        { ar: 'وما العادة التي نعود بها؟', en: 'And what habit would we bring back?' },
       ],
     },
     {
@@ -295,12 +292,15 @@ export const dreams: Topic = {
       subtopic: 'adventures',
       depth: 'light',
       text: {
-        ar: 'ما الطبق الذي يستحق أن تسافرا من أجله؟',
-        en: 'What dish is worth traveling for?',
+        ar: 'ما الطبق الذي يستحق أن نسافر من أجله؟',
+        en: 'What dish would be worth us traveling for?',
       },
       followUps: [
-        { ar: 'هل تذوّقه أحدكما من قبل؟', en: 'Has either of you tasted it before?' },
-        { ar: 'ومن منكما سيحاول طبخه بعد العودة؟', en: 'And who would try to cook it back home?' },
+        { ar: 'هل تذوّقه أحدنا من قبل؟', en: 'Has either of us tasted it before?' },
+        {
+          ar: 'ومن منا سيحاول طبخه بعد العودة؟',
+          en: 'And which of us would try to cook it back home?',
+        },
       ],
     },
     {
@@ -313,10 +313,10 @@ export const dreams: Topic = {
       },
       followUps: [
         {
-          ar: 'ما الذي يمنع أن تعيشاها هذا الشهر؟',
-          en: "What's stopping it from happening this month?",
+          ar: 'ما الذي يمنع أن نعيشها هذا الشهر؟',
+          en: "What's stopping us from doing it this month?",
         },
-        { ar: 'من منكما يتولّى التخطيط؟', en: 'Which of you takes charge of the planning?' },
+        { ar: 'من منا يتولّى التخطيط؟', en: 'Which of us takes charge of the planning?' },
       ],
     },
   ],

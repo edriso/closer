@@ -1,0 +1,88 @@
+.list {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.list > li + li {
+  border-block-start: 1px solid var(--border);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-height: 68px;
+  padding: var(--space-3) var(--space-5);
+  transition: background-color var(--dur) var(--ease);
+}
+
+.row:hover {
+  background: var(--surface-2);
+}
+
+.row:focus-visible {
+  outline-offset: -3px;
+  border-radius: 0;
+}
+
+.icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--tone-bg);
+  color: var(--tone-ink);
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.text {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.meta {
+  flex: none;
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.chevron {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+  transition: transform var(--dur) var(--ease);
+}
+
+.row:hover .chevron {
+  transform: translateX(3px);
+}
+
+:dir(rtl) .row:hover .chevron {
+  transform: translateX(-3px);
+}
+
+@media (max-width: 480px) {
+  .row {
+    padding-inline: var(--space-4);
+  }
+}
