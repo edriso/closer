@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "A cozy bilingual (Arabic/English) conversation and play space for couples.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

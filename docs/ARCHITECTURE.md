@@ -64,6 +64,13 @@ Topic filters (`?sub=` and `?depth=`) live in the URL, so a filtered deck can be
 - GitHub Pages has no SPA fallback, so the `staticPages` build plugin (`vite.config.ts`) writes the app shell to every known route (`talk/love/index.html`, …) and generates `sitemap.xml`. Deep links return HTTP 200 and are indexable. For unknown paths, `public/404.html` saves the requested path to `sessionStorage` and redirects to `/closer/`, and then an inline script in `index.html` puts the path back before any module (and the router) loads.
 - Build output is split into `react`, `motion`, `content` and app chunks for better long-term caching.
 
+## Offline (service worker)
+
+- `src/service-worker.js` is a template. The `serviceWorker` build plugin (`vite.config.ts`) fills in the list of files to cache (the shell, everything in `assets/`, icons and manifest) and a version hashed from their contents, then writes `dist/sw.js`. `src/app/serviceWorker.ts` registers it in production builds only.
+- Pages are network-first so a new release appears right away; offline, or if the site returns an error, the cached shell is served (every route uses the same shell). Assets are cache-first because their names are content-hashed.
+- Each release gets a new cache, and old `closer-*` caches are deleted on activation. The worker only handles same-origin requests within `/closer/`, so it doesn't change the no-third-party-requests rule.
+- The per-route `index.html` copies, `404.html`, `sitemap.xml` and `og-image.png` are not cached. If you add a file under `public/` that the app needs offline, it's picked up automatically.
+
 ## Testing
 
 - `src/content/content.test.ts` checks content integrity: translations present, the right script per language, unique IDs, valid subtopics, `؟`/`?` endings, banned gendered wording and minimum volume.

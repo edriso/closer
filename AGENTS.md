@@ -71,4 +71,4 @@ Run `npm run build && npm run preview` and check:
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`: check → build → deploy to GitHub Pages. The Vite `base` is `/closer/`. The build writes an `index.html` copy for every known route plus `sitemap.xml` (the `staticPages` plugin in `vite.config.ts`, with routes derived from the content files). If the repo is renamed, update `base` and `SITE` in `vite.config.ts`, the paths in `public/404.html` and `public/manifest.webmanifest`, and the absolute URLs in `index.html`.
+Pushing to `main` triggers `.github/workflows/deploy.yml`: check → build → deploy to GitHub Pages. The Vite `base` is `/closer/`. The build writes an `index.html` copy for every known route plus `sitemap.xml` (the `staticPages` plugin in `vite.config.ts`, with routes derived from the content files). The `serviceWorker` plugin then writes `sw.js` from `src/service-worker.js` so the app works offline (see `docs/ARCHITECTURE.md`). If the repo is renamed, update `base` and `SITE` in `vite.config.ts`, the paths in `public/404.html` and `public/manifest.webmanifest`, and the absolute URLs in `index.html`.

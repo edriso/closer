@@ -109,13 +109,19 @@ Before writing, read the [content guide](docs/CONTENT_GUIDE.md). Arabic is easy 
 
 Every push to `main` runs `npm run check` and `npm run build`, then deploys `dist/` to GitHub Pages (`.github/workflows/deploy.yml`). The site is served from `/closer/`. The build writes a page for every route, so deep links such as `/closer/talk/love/` load directly, and it also generates `sitemap.xml`. Unknown paths fall back to `public/404.html`, which redirects into the app.
 
+The build also writes a service worker (`sw.js`). After the first visit the whole app is cached, so it works offline and can be installed to the home screen on Android and iOS. Each release replaces the offline copy automatically.
+
 ## Roadmap
 
 - [x] **Phase 1 (core):** four sections, bilingual RTL/LTR, modes, decks with follow-ups, three games, responsive design
 - [x] **Phase 2 (personal):** favorites, no repeats within a session, question of the day, Surprise us, depth filter, light/dark themes
 - [ ] **Phase 3 (shared):** shared sessions with a code, syncing two devices, custom question lists, weekly challenges
-- [ ] An installable PWA with offline support
+- [x] An installable PWA that works fully offline
 - [ ] More content, guided by what couples favorite most
+
+## License
+
+Closer is free and open source under the [MIT License](LICENSE), covering both the code and the written content. You're welcome to use it, translate it, adapt it for your own community or host your own copy. If you do, please keep the copyright notice.
 
 ## Credits
 

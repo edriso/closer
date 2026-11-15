@@ -8,6 +8,7 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router/dom'
 import { fontsReady, warmUpFonts } from './app/fonts'
 import { router } from './app/router'
+import { registerServiceWorker } from './app/serviceWorker'
 
 const root = createRoot(document.getElementById('root')!)
 
@@ -23,3 +24,5 @@ void fontsReady(document.documentElement.lang).then(() => {
   )
   warmUpFonts()
 })
+
+registerServiceWorker()
