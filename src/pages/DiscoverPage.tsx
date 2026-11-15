@@ -22,7 +22,7 @@ export function DiscoverPage() {
         to="/discover/journey"
         tone={journeyTopic.tone}
         icon={<TopicIcon id="journey" />}
-        eyebrow={`${t('featured')} · ${plural('question', journeyTopic.questions.length, lang)}`}
+        eyebrow={plural('question', journeyTopic.questions.length, lang)}
         title={l(journeyTopic.title)}
         description={l(journeyTopic.description)}
       />

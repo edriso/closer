@@ -28,8 +28,29 @@
   color: var(--ink);
 }
 
+.chip {
+  flex: none;
+  white-space: nowrap;
+}
+
 .chip[aria-pressed='true'] {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--bg);
+  background: var(--primary-soft);
+  border-color: color-mix(in srgb, var(--primary) 35%, transparent);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+@media (max-width: 560px) {
+  /* One tidy, swipeable row instead of ragged wrapping. */
+  .chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-inline: calc(-1 * var(--space-5));
+    padding-inline: var(--space-5);
+    scrollbar-width: none;
+  }
+
+  .chips::-webkit-scrollbar {
+    display: none;
+  }
 }

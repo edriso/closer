@@ -114,7 +114,6 @@ export const strings = {
     ar: 'أسئلة عشوائية من كل مواضيع الحديث.',
     en: 'Random questions from every conversation topic.',
   },
-  featured: { ar: 'مميّز', en: 'Featured' },
 
   // Feedback
   feedbackQuestion: { ar: 'هل استمتعتما؟', en: 'Did you enjoy this?' },
@@ -217,7 +216,6 @@ export const strings = {
     en: "A question, a game or a moment, picked at random. Not feeling it? There's always another.",
   },
   surpriseAgain: { ar: 'مفاجأة أخرى', en: 'Another one' },
-  kindQuestion: { ar: 'سؤال', en: 'Question' },
   kindWyr: { ar: 'أيّهما أقرب إليك؟', en: 'Would you rather' },
   kindMoment: { ar: 'لحظة', en: 'Moment' },
   playThisGame: { ar: 'العبا اللعبة كاملة', en: 'Play the full game' },
@@ -276,7 +274,7 @@ export const strings = {
   notFoundTitle: { ar: 'ضاعت الصفحة بين الغيوم', en: 'Lost in the clouds' },
   notFoundBody: {
     ar: 'لم نجد هذه الصفحة، لكن الكثير من الأحاديث الجميلة بانتظاركما.',
-    en: "We couldn't find this page, but plenty of lovely conversations are waiting.",
+    en: 'We couldn’t find this page, but plenty of lovely conversations are waiting.',
   },
   backHome: { ar: 'العودة إلى الرئيسية', en: 'Back home' },
 } satisfies Record<string, Localized>

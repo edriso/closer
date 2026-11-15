@@ -11,9 +11,9 @@ export function SkyHero({ className }: { className?: string }) {
         <radialGradient id={glow}>
           <stop
             offset="0"
-            style={{ stopColor: 'var(--art-moon)', stopOpacity: 'var(--art-glow)' }}
+            style={{ stopColor: 'var(--art-glow-color)', stopOpacity: 'var(--art-glow)' }}
           />
-          <stop offset="1" style={{ stopColor: 'var(--art-moon)', stopOpacity: 0 }} />
+          <stop offset="1" style={{ stopColor: 'var(--art-glow-color)', stopOpacity: 0 }} />
         </radialGradient>
         <linearGradient id={heart} x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" style={{ stopColor: 'var(--heart)' }} />

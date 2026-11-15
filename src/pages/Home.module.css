@@ -90,6 +90,7 @@
 
 .sectionBlurb {
   color: var(--ink-2);
+  text-wrap: balance;
   font-size: var(--text-sm);
 }
 
@@ -124,7 +125,7 @@
 
 .dailyHeader {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
 }
@@ -137,7 +138,7 @@
 }
 
 .dailyQuestion {
-  max-width: 40rem;
+  max-width: 46rem;
   font-family: var(--font-display);
   font-size: var(--text-2xl);
   font-weight: 500;

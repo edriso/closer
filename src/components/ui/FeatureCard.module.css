@@ -59,6 +59,7 @@
 
 .body {
   color: var(--ink-2);
+  text-wrap: balance;
   font-size: var(--text-sm);
 }
 

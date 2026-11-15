@@ -50,6 +50,8 @@
   --art-star: #ffd36e;
   --art-moon: #fff3c4;
   --art-glow: 0.95;
+  --art-glow-color: #fff3c4;
+  --art-cloud-shadow: #d4cdee;
 
   /* Elevation */
   --shadow-sm: 0 1px 2px rgb(40 30 110 / 0.06), 0 1px 1px rgb(40 30 110 / 0.04);
@@ -128,10 +130,12 @@
     --tone-peach-ink: #ffc39c;
     --tone-indigo-bg: #1f2256;
     --tone-indigo-ink: #b2b8ff;
-    --art-cloud: #2c2a63;
+    --art-cloud: #3d3a86;
+    --art-cloud-shadow: #232052;
+    --art-glow-color: #a596ff;
     --art-star: #ffe08f;
     --art-moon: #fff1bf;
-    --art-glow: 0.4;
+    --art-glow: 0.45;
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
     --shadow-md: 0 10px 30px -14px rgb(0 0 0 / 0.6);
     --shadow-lg: 0 28px 70px -28px rgb(0 0 0 / 0.75);
@@ -171,10 +175,12 @@
   --tone-peach-ink: #ffc39c;
   --tone-indigo-bg: #1f2256;
   --tone-indigo-ink: #b2b8ff;
-  --art-cloud: #2c2a63;
+  --art-cloud: #3d3a86;
+  --art-cloud-shadow: #232052;
+  --art-glow-color: #a596ff;
   --art-star: #ffe08f;
   --art-moon: #fff1bf;
-  --art-glow: 0.4;
+  --art-glow: 0.45;
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
   --shadow-md: 0 10px 30px -14px rgb(0 0 0 / 0.6);
   --shadow-lg: 0 28px 70px -28px rgb(0 0 0 / 0.75);

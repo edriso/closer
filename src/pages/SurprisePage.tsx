@@ -131,9 +131,7 @@ function SurpriseCard({ surprise }: { surprise: Surprise }) {
   return (
     <article className={styles.card} data-tone={topic.tone}>
       <header className={styles.header}>
-        <span className={styles.kind}>
-          {t('kindQuestion')} · {l(topic.title)}
-        </span>
+        <span className={styles.kind}>{l(topic.title)}</span>
         <FavoriteButton id={question.id} size="sm" />
       </header>
       <h2 className={styles.question}>{l(question.text)}</h2>

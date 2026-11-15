@@ -44,7 +44,7 @@ export function Cloud({ x, y, scale = 1, className }: PlacedProps) {
   return (
     <g className={className}>
       <g transform={`translate(${x} ${y}) scale(${scale})`}>
-        <g transform="translate(0 5)" style={{ fill: 'var(--border-strong)', opacity: 0.45 }}>
+        <g transform="translate(0 5)" style={{ fill: 'var(--art-cloud-shadow)', opacity: 0.6 }}>
           {puffs}
         </g>
         <g style={{ fill: 'var(--art-cloud)' }}>{puffs}</g>

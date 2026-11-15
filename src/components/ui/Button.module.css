@@ -93,6 +93,14 @@
   color: var(--ink-2);
 }
 
+.ghost[aria-current='page'] {
+  color: var(--heart);
+}
+
+.ghost[aria-current='page'] svg {
+  fill: currentColor;
+}
+
 .ghost:hover {
   background: var(--surface-2);
   color: var(--ink);

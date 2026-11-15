@@ -1,5 +1,4 @@
 import { HeartHandshake, MessageCircleHeart, ShieldCheck, Sparkles } from 'lucide-react'
-import { SkyHero } from '../components/art/SkyHero'
 import { ButtonLink } from '../components/ui/Button'
 import card from '../components/ui/Card.module.css'
 import { PageHeader } from '../components/ui/PageHeader'
@@ -20,7 +19,7 @@ export function AboutPage() {
   return (
     <>
       <title>{`${t('aboutTitle')} · ${t('brand')}`}</title>
-      <PageHeader title={t('aboutTitle')} lead={t('aboutLead')} art={<SkyHero />} />
+      <PageHeader title={t('aboutTitle')} lead={t('aboutLead')} />
 
       <section className={styles.section}>
         <h2 className={styles.title}>{t('aboutPrinciplesTitle')}</h2>

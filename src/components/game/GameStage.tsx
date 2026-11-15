@@ -1,4 +1,4 @@
-import { AnimatePresence, m, useIsPresent } from 'motion/react'
+import { AnimatePresence, m, useIsPresent, useReducedMotion } from 'motion/react'
 import { useEffect, useRef, type ReactNode } from 'react'
 import { useI18n } from '../../i18n/useI18n'
 import styles from './Game.module.css'
@@ -33,7 +33,8 @@ function StagePanel({ children }: { children: ReactNode }) {
   const { dir } = useI18n()
   const isPresent = useIsPresent()
   const ref = useRef<HTMLDivElement>(null)
-  const slide = dir === 'rtl' ? -24 : 24
+  const reduceMotion = useReducedMotion()
+  const slide = reduceMotion ? 0 : dir === 'rtl' ? -24 : 24
 
   // The clicked button unmounts with the old panel, so move focus to the new one.
   useEffect(() => {

@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.empty h1 {
+  color: var(--ink);
+}
+
 .emptyArt {
   width: 180px;
 }

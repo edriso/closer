@@ -1,5 +1,5 @@
 import { Heart, Moon, Sun } from 'lucide-react'
-import { Link, NavLink } from 'react-router'
+import { Link, NavLink, useLocation } from 'react-router'
 import { usePreferences } from '../../hooks/usePreferences'
 import { useI18n } from '../../i18n/useI18n'
 import { LogoMark } from '../art/LogoMark'
@@ -12,6 +12,7 @@ export function Header() {
   const { t, lang } = useI18n()
   const { update } = usePreferences()
   const theme = useResolvedTheme()
+  const { pathname } = useLocation()
   const nextTheme = theme === 'dark' ? 'light' : 'dark'
 
   return (
@@ -33,6 +34,7 @@ export function Header() {
         <div className={styles.actions}>
           <ButtonLink
             to="/favorites"
+            aria-current={pathname === '/favorites' ? 'page' : undefined}
             variant="ghost"
             size="sm"
             iconOnly

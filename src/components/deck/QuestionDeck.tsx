@@ -1,4 +1,4 @@
-import { AnimatePresence, m, type PanInfo } from 'motion/react'
+import { AnimatePresence, m, useReducedMotion, type PanInfo, type Variants } from 'motion/react'
 import { ArrowLeft, ArrowRight, Check, Share2, Sparkles } from 'lucide-react'
 import { useState } from 'react'
 import type { QuestionRef } from '../../content'
@@ -34,6 +34,7 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
   const [direction, setDirection] = useState<1 | -1>(1)
   const [revealed, setRevealed] = useState(0)
   const [copied, setCopied] = useState(false)
+  const reduceMotion = useReducedMotion()
 
   const byId = new Map(items.map((i) => [i.question.id, i]))
   const total = deck.order.length
@@ -75,7 +76,8 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
   const { question, topic } = current
   const followUps = question.followUps ?? []
   const subtopic = topic.subtopics.find((s) => s.id === question.subtopic)
-  const slide = (dir === 'rtl' ? -1 : 1) * 36
+  // With reduced motion, cards simply cross-fade in place.
+  const slide = reduceMotion ? 0 : (dir === 'rtl' ? -1 : 1) * 36
 
   const onShare = async () => {
     const result = await shareText(l(question.text), siteUrl(`/${topic.section}/${topic.id}`))
@@ -117,7 +119,7 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
           className={styles.card}
           data-tone={topic.tone}
           custom={direction}
-          variants={cardVariants(slide)}
+          variants={cardVariants(slide, !reduceMotion)}
           initial="enter"
           animate="center"
           exit="exit"
@@ -145,34 +147,36 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
             </div>
           </header>
 
-          <h2 className={styles.question}>{l(question.text)}</h2>
+          <div className={styles.body}>
+            <h2 className={styles.question}>{l(question.text)}</h2>
 
-          {revealed > 0 && (
-            <ul className={styles.followUps}>
-              {followUps.slice(0, revealed).map((f, i) => (
-                <m.li
-                  key={i}
-                  initial={{ opacity: 0, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.25 }}
-                >
-                  {l(f)}
-                </m.li>
-              ))}
-            </ul>
-          )}
+            {revealed > 0 && (
+              <ul className={styles.followUps}>
+                {followUps.slice(0, revealed).map((f, i) => (
+                  <m.li
+                    key={i}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    {l(f)}
+                  </m.li>
+                ))}
+              </ul>
+            )}
 
-          {revealed < followUps.length && (
-            <Button
-              variant="soft"
-              size="sm"
-              className={styles.deeper}
-              icon={<Sparkles aria-hidden="true" />}
-              onClick={() => setRevealed((n) => n + 1)}
-            >
-              {revealed === 0 ? t('goDeeper') : t('anotherFollowUp')}
-            </Button>
-          )}
+            {revealed < followUps.length && (
+              <Button
+                variant="soft"
+                size="sm"
+                className={styles.deeper}
+                icon={<Sparkles aria-hidden="true" />}
+                onClick={() => setRevealed((n) => n + 1)}
+              >
+                {revealed === 0 ? t('goDeeper') : t('anotherFollowUp')}
+              </Button>
+            )}
+          </div>
         </m.article>
       </AnimatePresence>
 
@@ -203,10 +207,16 @@ export function QuestionDeck({ deckKey, items, ordered, showTopic, moreHref }: Q
  * Card slide variants. `custom` is the travel direction (1 forward, -1 back), so
  * the exiting card also uses the *latest* direction when the user reverses.
  */
-function cardVariants(slide: number) {
+function cardVariants(slide: number, scaleEffect: boolean): Variants {
+  const scale = scaleEffect ? 0.98 : 1
   return {
-    enter: (d: number) => ({ opacity: 0, x: slide * d, scale: 0.98 }),
+    enter: (d: number) => ({ opacity: 0, x: slide * d, scale }),
     center: { opacity: 1, x: 0, scale: 1 },
-    exit: (d: number) => ({ opacity: 0, x: -slide * d, scale: 0.98 }),
+    exit: (d: number) => ({
+      opacity: 0,
+      x: -slide * d,
+      scale,
+      transition: { duration: 0.16, ease: 'easeIn' },
+    }),
   }
 }

@@ -30,6 +30,7 @@ export function PlayersSetup({ onStart }: { onStart: () => void }) {
               value={names[i]}
               maxLength={24}
               autoComplete="off"
+              dir="auto"
               placeholder={i === 0 ? t('playerOneDefault') : t('playerTwoDefault')}
               onChange={(e) =>
                 setNames((prev) =>
