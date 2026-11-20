@@ -70,21 +70,17 @@ export const marriage: Topic = {
       ],
     },
     {
-      id: 'marriage-004',
+      id: 'marriage-019',
       subtopic: 'meaning',
       depth: 'medium',
       text: {
-        ar: 'ما الخُلق الذي يأتي أولًا عندك فيمن يشاركك الحياة؟',
-        en: 'Which trait of character comes first for you in a life partner?',
+        ar: 'ما الذي تعنيه لك فكرة أن الزواج يُكمل نصف الدين؟',
+        en: 'What does the idea that marriage completes half of the deen mean to you?',
       },
       followUps: [
         {
-          ar: 'ولماذا هذا الخُلق تحديدًا؟',
-          en: 'Why that one in particular?',
-        },
-        {
-          ar: 'وما الذي يمكنني أن أقدّمه من جهتي؟',
-          en: 'And what can I bring from my side?',
+          ar: 'وكيف يُعين كلٌّ منا الآخر على النصف الباقي؟',
+          en: 'And how can each of us help the other with the other half?',
         },
       ],
     },

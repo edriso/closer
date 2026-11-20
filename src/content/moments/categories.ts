@@ -13,10 +13,10 @@ export const activityCategories: ActivityCategory[] = [
   {
     id: 'date',
     tone: 'rose',
-    title: { ar: 'أفكار لموعد', en: 'Date ideas' },
+    title: { ar: 'سهرات ونزهات', en: 'Evenings & outings' },
     description: {
-      ar: 'مواعيد جاهزة في المكان نفسه أو عبر مكالمة، بلا تحضير ولا تكلفة كبيرة.',
-      en: 'Ready-made dates side by side or over a call, with no planning and little cost.',
+      ar: 'سهرات ونزهات جاهزة في المكان نفسه أو عبر مكالمة، بلا تحضير ولا تكلفة كبيرة.',
+      en: 'Ready-made evenings and outings side by side or over a call, with no planning and little cost.',
     },
   },
   {

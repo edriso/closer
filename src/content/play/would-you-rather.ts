@@ -8,9 +8,9 @@ import type { WouldYouRatherItem } from '../../types/content'
 export const wouldYouRather: WouldYouRatherItem[] = [
   /* ---------- Playful and a little absurd ---------- */
   {
-    id: 'wyr-001',
-    a: { ar: 'القدرة على الطيران', en: 'The power to fly' },
-    b: { ar: 'القدرة على الاختفاء', en: 'The power to turn invisible' },
+    id: 'wyr-081',
+    a: { ar: 'رحلة على ظهر جمل في الصحراء', en: 'A camel ride in the desert' },
+    b: { ar: 'رحلة بالقارب في نهر هادئ', en: 'A boat ride on a calm river' },
   },
   {
     id: 'wyr-004',
@@ -265,8 +265,8 @@ export const wouldYouRather: WouldYouRatherItem[] = [
   },
   {
     id: 'wyr-048',
-    a: { ar: 'موعد هادئ بلا هواتف', en: 'A quiet, phone-free date' },
-    b: { ar: 'موعد مليء بالمغامرة', en: 'A date full of adventure' },
+    a: { ar: 'سهرة هادئة بلا هواتف', en: 'A quiet, phone-free evening' },
+    b: { ar: 'نزهة مليئة بالمغامرة', en: 'An outing full of adventure' },
   },
   {
     id: 'wyr-049',

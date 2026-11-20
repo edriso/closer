@@ -87,16 +87,16 @@ export const funny: Topic = {
       ],
     },
     {
-      id: 'funny-009',
+      id: 'funny-027',
       subtopic: 'what-if',
       depth: 'light',
       text: {
-        ar: 'ماذا لو كانت لديك قوة خارقة عديمة الفائدة تمامًا، فما هي؟',
-        en: 'What if you had a completely useless superpower: what would it be?',
+        ar: 'لو أمكن إتقان مهارة طريفة في يوم واحد، فأيّ مهارة يقع عليها اختيارك؟',
+        en: 'If you could master one quirky skill in a single day, which would you pick?',
       },
       followUps: [
-        { ar: 'كيف يمكن الاستفادة منها رغم ذلك؟', en: 'How could it come in handy anyway?' },
-        { ar: 'وما اسمك البطولي؟', en: 'And what is your superhero name?' },
+        { ar: 'وكيف تفيدنا في بيتنا؟', en: 'And how would it help at home?' },
+        { ar: 'ومن أول من سيُفاجأ بها؟', en: 'And who would be the first to be surprised?' },
       ],
     },
     {

@@ -270,17 +270,18 @@ export const goals: Topic = {
       ],
     },
     {
-      id: 'goals-014',
+      id: 'goals-018',
       subtopic: 'legacy',
       depth: 'medium',
       text: {
-        ar: 'ماذا يسعدك أن يُقال عن بيتنا بعد سنوات طويلة؟',
-        en: 'Years from now, what would you love people to say about our home?',
+        ar: 'ما الخير الذي يسعدك أن يبقى أثره بعدنا؟',
+        en: 'What good would you love us to leave behind, still at work after we are gone?',
       },
       followUps: [
+        { ar: 'ما الذي يمكن أن نبدأ به من الآن؟', en: 'What could we start now?' },
         {
-          ar: 'ما الذي يمكن أن نبدأ به من الآن؟',
-          en: 'What could we start doing now?',
+          ar: 'هل من صدقة جارية يحلم بها قلبك؟',
+          en: 'Is there a lasting charity your heart dreams of?',
         },
       ],
     },

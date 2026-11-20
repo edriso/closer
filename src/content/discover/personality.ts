@@ -185,10 +185,10 @@ export const personality: Topic = {
     {
       id: 'personality-010',
       subtopic: 'emotions',
-      depth: 'deep',
+      depth: 'medium',
       text: {
-        ar: 'ما الشعور الذي يصعب عليك الاعتراف به، حتى بينك وبين نفسك؟',
-        en: 'Which feeling is hardest for you to admit, even to yourself?',
+        ar: 'ما الشعور الذي يصعب عليك التعبير عنه بالكلام؟',
+        en: 'Which feeling is hardest for you to put into words?',
       },
       followUps: [
         {

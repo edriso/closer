@@ -201,8 +201,8 @@ export const deen: Topic = {
           en: 'Is there a home in your life that has it?',
         },
         {
-          ar: 'ما العادة الصغيرة التي يمكن أن نبدأ بها؟',
-          en: 'What small habit could we start with?',
+          ar: 'وما الذي يُذهب البركة من البيوت برأيك؟',
+          en: 'And what do you think takes barakah away from a home?',
         },
       ],
     },

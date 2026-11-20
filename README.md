@@ -22,7 +22,7 @@ No accounts. No tracking. No AI. Just good time together.
 | **Talk** · لنتحدّث     | 162 conversation questions across 7 topics (Light, Funny, Deep, Memories, Dreams, Love, Our faith), each with subtopics, a depth filter and "Tell me more" follow-ups. There's also a shuffled mix of everything.                                                              |
 | **Discover** · لنتعرّف | 148 premarital-style questions across 9 topics: personality, values, faith in our life, communication, marriage and beginnings, family and in-laws, expectations, habits and goals. Plus **The closeness journey** for spouses: 36 questions in three gently deepening stages. |
 | **Play** · لنلعب      | Three games for two: _Would you rather?_ (63 pairs), _Who knows who better?_ (50 prompts) and _Two truths and a wish_ (29 themes), where nobody has to lie, even as a joke.                                                                                                    |
-| **Moments** · لحظات   | 59 small ready-made activities in 6 categories: 5-minute moments, date ideas for spouses, mini challenges, memory lane, plan your dream day and something random. Praying together, a du'a list, a friendly race and a sadaqah plan are in there too.                          |
+| **Moments** · لحظات   | 59 small ready-made activities in 6 categories: 5-minute moments, evenings and outings, mini challenges, memory lane, plan your dream day and something random. Praying together, a du'a list, a friendly race and a sadaqah plan are in there too.                            |
 
 Plus: **Surprise us** (a random question, game or moment), **Question of the day**, **Favorites**, an _On a call / Together_ mode, a day-sky and night-sky theme, and full RTL/LTR support.
 
