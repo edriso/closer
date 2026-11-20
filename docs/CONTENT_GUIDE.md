@@ -1,15 +1,15 @@
 # Content guide
 
 Closer lives or dies by its content. Quality beats quantity, and 150 great questions beat 1,000 repetitive ones.
-This guide applies to every question, game prompt and activity in `src/content/`.
+This guide applies to every question, game prompt and activity in `src/content/`. It covers voice and language. What may appear at all is set by the [Islamic guidelines](ISLAMIC_GUIDELINES.md): read those first.
 
 ## Voice
 
 - **Warm, curious, light-hearted.** It should feel like time together, not a questionnaire, an interview or a therapy session.
-- **Romantic but family-friendly.** Affection, appreciation, love languages and romance are welcome. Nothing sexual or intimate. Nothing that would embarrass a couple if a family member glanced at the screen.
-- **No guilt, no pressure.** Avoid questions that blame, test loyalty, compare the couple to exes, or dig at insecurities.
-- **No assumptions.** Don't assume the couple is married or engaged, lives together, has or wants children, has living parents, is wealthy, or practices a specific faith. Deep questions are optional by nature, and the UI always allows skipping.
-- **Culturally at home.** Written for Arabic-speaking couples first: everyday family life, food, travel, Ramadan and Eid memories, and so on are welcome when they're inclusive.
+- **Halal and family-friendly.** Every item follows the [Islamic guidelines](ISLAMIC_GUIDELINES.md). Affection and appreciation between spouses are welcome in Talk, Play and Moments. Nothing sexual or intimate, and nothing that would embarrass a couple if a family member glanced at the screen. Discover stays practical and respectful, because two people considering marriage use it too.
+- **No guilt, no pressure.** Avoid questions that blame, test loyalty or faith, ask for confessions, or dig at insecurities.
+- **Few assumptions.** Assume a Muslim couple. Don't assume they have or can have children, have living parents, are wealthy or are in good health. Talk and Moments may assume a married couple; Discover may not. Deep questions are optional by nature, and the UI always allows skipping.
+- **Culturally at home.** Written for Arabic-speaking Muslim couples first: everyday family life, food, travel, prayer, Ramadan and Eid, Umrah dreams and family gatherings are all welcome. Faith content is gentle and inviting, never preachy.
 - **Concrete over abstract.** "What small thing made you smile this week?" beats "What is happiness to you?"
 - **No near-duplicates.** Two questions that would get the same answer are one question.
 
@@ -39,7 +39,7 @@ This guide applies to every question, game prompt and activity in `src/content/`
 | Follow-up ("Tell me more") | A short nudge that deepens the same thread                                                           | `هل حدث ذلك هذا الأسبوع؟`                         |
 | Would you rather           | Two short noun phrases, balanced and fun                                                             | `بيت صغير قرب البحر` / `شقة واسعة في قلب المدينة` |
 | Who knows who better       | A noun-phrase prompt about the other person, with no pronouns                                        | `الأكلة المفضّلة بعد يوم طويل`                     |
-| Two truths and a lie       | A theme title plus a one-line hint                                                                   | `أيام المدرسة`                                    |
+| Two truths and a wish      | A theme title plus a one-line hint (no lying: the wish is named as a phrase, not claimed as fact)    | `أيام المدرسة`                                    |
 | Moment / activity          | A title, a 1–2 sentence description in the dual, and optional 2–4 steps                              | `اكتبا ثلاث كلمات تصف يومكما ثم تبادلا الورق`     |
 
 ## Depth
@@ -56,8 +56,8 @@ This guide applies to every question, game prompt and activity in `src/content/`
 
 ## Inspiration (not sources to copy)
 
-- Greater Good in Action, _36 Questions for Increasing Closeness_ (Aron et al., 1997), for the escalating-depth idea behind the Journey.
-- The FYI premarital questionnaire, for the topics engaged couples should discuss: money, family, roles, children and conflict.
+- _36 Questions for Increasing Closeness_ (Aron et al., 1997), for the escalating-depth idea behind the Journey (adapted for spouses only).
+- [The FYI premarital questionnaire](https://thefyi.org/the-fyis-premarital-questionnaire/), for the topics two people should discuss before marriage: faith, family and in-laws, money, roles, children, health and conflict.
 - Couples apps such as Paired, for daily-question habits and light quizzes.
 
 Everything in Closer is written originally for Closer.

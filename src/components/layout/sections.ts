@@ -1,4 +1,4 @@
-import { Compass, Dices, MessageCircleHeart, Sparkles, type LucideIcon } from 'lucide-react'
+import { Compass, MessageCircleHeart, Puzzle, Sparkles, type LucideIcon } from 'lucide-react'
 import type { StringKey } from '../../i18n/strings'
 import type { SectionId, Tone } from '../../types/content'
 
@@ -18,7 +18,7 @@ export const sections: SectionInfo[] = [
     tone: 'lilac',
     icon: MessageCircleHeart,
   },
-  { id: 'play', titleKey: 'playTitle', blurbKey: 'playBlurb', tone: 'sky', icon: Dices },
+  { id: 'play', titleKey: 'playTitle', blurbKey: 'playBlurb', tone: 'sky', icon: Puzzle },
   {
     id: 'discover',
     titleKey: 'discoverTitle',

@@ -45,22 +45,6 @@ export const light: Topic = {
       ],
     },
     {
-      id: 'light-003',
-      subtopic: 'everyday',
-      depth: 'light',
-      text: {
-        ar: 'ما الأغنية أو الصوت الذي يرافقك كثيرًا هذه الأيام؟',
-        en: 'What song or sound has been keeping you company lately?',
-      },
-      followUps: [
-        {
-          ar: 'في أي وقت من اليوم يكون ذلك غالبًا؟',
-          en: 'What time of day does it usually play?',
-        },
-        { ar: 'هل ترتبط هذه الأغنية بذكرى معيّنة؟', en: 'Is it tied to a particular memory?' },
-      ],
-    },
-    {
       id: 'light-004',
       subtopic: 'everyday',
       depth: 'light',
@@ -116,7 +100,7 @@ export const light: Topic = {
       subtopic: 'everyday',
       depth: 'medium',
       text: {
-        ar: 'ما العادة الصغيرة الجديدة في حياتك التي أحدثت فرقًا ملحوظًا؟',
+        ar: 'ما العادة الجديدة الصغيرة التي أحدثت فرقًا واضحًا في حياتك؟',
         en: 'What small new habit has made a real difference for you?',
       },
       followUps: [
@@ -148,19 +132,6 @@ export const light: Topic = {
       followUps: [
         { ar: 'ما الذي يشدّك إليه؟', en: 'What draws you there?' },
         { ar: 'كيف تكون الزيارة المثالية له؟', en: 'What would a perfect visit there look like?' },
-      ],
-    },
-    {
-      id: 'light-011',
-      subtopic: 'favorites',
-      depth: 'light',
-      text: {
-        ar: 'ما الفيلم أو المسلسل الذي يمكن مشاهدته مرة بعد مرة دون ملل؟',
-        en: 'What film or show could you rewatch again and again?',
-      },
-      followUps: [
-        { ar: 'أي مشهد فيه هو الأقرب إلى قلبك؟', en: 'Which scene is closest to your heart?' },
-        { ar: 'متى كانت المشاهدة الأولى؟', en: 'When did you first watch it?' },
       ],
     },
     {
@@ -203,25 +174,12 @@ export const light: Topic = {
       subtopic: 'favorites',
       depth: 'light',
       text: {
-        ar: 'ما الحلوى التي يستحيل رفضها بالنسبة إليك؟',
+        ar: 'ما الحلوى التي لا يمكنك رفضها أبدًا؟',
         en: 'Which dessert can you never turn down?',
       },
       followUps: [
         { ar: 'هل من مكان يصنعها أفضل من غيره؟', en: 'Is there one place that makes it best?' },
         { ar: 'ومتى تكون ألذّ؟', en: 'And when does it taste best?' },
-      ],
-    },
-    {
-      id: 'light-016',
-      subtopic: 'favorites',
-      depth: 'light',
-      text: {
-        ar: 'ما مسلسل الرسوم المتحركة الأحبّ إليك في طفولتك؟',
-        en: 'What was your favorite cartoon as a kid?',
-      },
-      followUps: [
-        { ar: 'هل ما زالت أغنية الشارة في ذاكرتك؟', en: 'Do you still remember the theme song?' },
-        { ar: 'أي شخصية فيه كانت الأقرب إليك؟', en: 'Which character did you relate to most?' },
       ],
     },
     {
@@ -248,9 +206,7 @@ export const light: Topic = {
         ar: 'ما الإطراء البسيط الذي يبقى أثره معك طوال اليوم؟',
         en: 'What simple compliment stays with you all day?',
       },
-      followUps: [
-        { ar: 'من صاحب آخر إطراء من هذا النوع؟', en: 'Who gave you the last one like that?' },
-      ],
+      followUps: [{ ar: 'متى وصلك مثله آخر مرة؟', en: 'When did you last hear one like that?' }],
     },
     {
       id: 'light-019',
@@ -298,8 +254,8 @@ export const light: Topic = {
       },
       followUps: [
         {
-          ar: 'هل من رسالة محفوظة عندك منذ زمن؟',
-          en: 'Is there a message you have kept for a long time?',
+          ar: 'هل من رسالة مني ما زالت محفوظة عندك؟',
+          en: 'Is there a message from me you still keep?',
         },
       ],
     },
@@ -343,6 +299,45 @@ export const light: Topic = {
       followUps: [
         { ar: 'هل من مثال قريب؟', en: 'Any recent example?' },
         { ar: 'وما أحب لفتة مني إلى قلبك؟', en: 'And which of my gestures do you love most?' },
+      ],
+    },
+    {
+      id: 'light-026',
+      subtopic: 'everyday',
+      depth: 'light',
+      text: {
+        ar: 'ما الصوت الهادئ الذي يريح قلبك: المطر، أم تلاوة هادئة، أم موج البحر؟',
+        en: 'What calm sound soothes you most: rain, a gentle recitation or the sea?',
+      },
+      followUps: [
+        { ar: 'في أي وقت من اليوم يكون أحبّ إليك؟', en: 'What time of day do you love it most?' },
+        { ar: 'هل نستمع إليه معًا الآن؟', en: 'Shall we listen to it together now?' },
+      ],
+    },
+    {
+      id: 'light-027',
+      subtopic: 'favorites',
+      depth: 'light',
+      text: {
+        ar: 'ما الكتاب الذي يمكن أن يُقرأ مرة بعد مرة دون ملل؟',
+        en: 'What book could you read again and again?',
+      },
+      followUps: [
+        { ar: 'أي فصل فيه هو الأقرب إلى قلبك؟', en: 'Which part is closest to your heart?' },
+        { ar: 'متى كانت القراءة الأولى؟', en: 'When did you first read it?' },
+      ],
+    },
+    {
+      id: 'light-028',
+      subtopic: 'favorites',
+      depth: 'light',
+      text: {
+        ar: 'ما الحلوى أو الوجبة الخفيفة التي كانت تُسعد طفولتك؟',
+        en: 'What treat or snack made your childhood happier?',
+      },
+      followUps: [
+        { ar: 'هل ما زالت تُباع اليوم؟', en: 'Can you still find it today?' },
+        { ar: 'ومن كان يشتريها لك؟', en: 'And who used to buy it for you?' },
       ],
     },
   ],

@@ -12,7 +12,7 @@ export const values: Topic = {
   subtopics: [
     { id: 'priorities', title: { ar: 'الأولويات', en: 'Priorities' } },
     { id: 'principles', title: { ar: 'المبادئ', en: 'Principles' } },
-    { id: 'spirit', title: { ar: 'الروح والمعنى', en: 'Faith & meaning' } },
+    { id: 'spirit', title: { ar: 'الإيمان والمعنى', en: 'Faith & meaning' } },
   ],
   questions: [
     {
@@ -139,8 +139,8 @@ export const values: Topic = {
       },
       followUps: [
         {
-          ar: 'هل من كذبة بيضاء مقبولة في نظرك؟',
-          en: 'Is any white lie acceptable, in your view?',
+          ar: 'ما الذي يجعل الصراحة لطيفة لا جارحة؟',
+          en: 'What keeps honesty kind rather than hurtful?',
         },
         {
           ar: 'وما الفرق عندك بين الخصوصية والكتمان؟',
@@ -225,29 +225,6 @@ export const values: Topic = {
       ],
     },
     {
-      id: 'values-012',
-      subtopic: 'spirit',
-      depth: 'medium',
-      text: {
-        ar: 'ما مكان الإيمان أو الروحانية في حياتك اليومية؟',
-        en: 'What place does faith or spirituality have in your everyday life?',
-      },
-      followUps: [
-        {
-          ar: 'هل تغيّر هذا المكان مع الوقت؟',
-          en: 'Has that changed over time?',
-        },
-        {
-          ar: 'ما أمنيتك لهذا الجانب في حياتنا معًا؟',
-          en: 'What do you hope for this side of our life together?',
-        },
-        {
-          ar: 'كيف نحترم اختلافنا فيه إن وُجد؟',
-          en: 'How can we respect any differences we have here?',
-        },
-      ],
-    },
-    {
       id: 'values-013',
       subtopic: 'spirit',
       depth: 'medium',
@@ -286,21 +263,21 @@ export const values: Topic = {
       ],
     },
     {
-      id: 'values-015',
+      id: 'values-017',
       subtopic: 'spirit',
       depth: 'deep',
       text: {
-        ar: 'ما السؤال الكبير عن الحياة الذي يشغل بالك أكثر من غيره؟',
-        en: 'What big question about life occupies your mind the most?',
+        ar: 'ما الذي يُذكّرك بأن الدنيا دار ممرّ، وكيف يغيّر ذلك نظرتك إلى الأمور؟',
+        en: 'What reminds you that this world is a passing stop, and how does that change how you see things?',
       },
       followUps: [
         {
-          ar: 'ما أقرب جواب إلى قلبك حتى الآن؟',
-          en: 'What answer feels closest to your heart so far?',
+          ar: 'ما الذي يستحق تعبنا فيها برأيك؟',
+          en: 'What do you think is truly worth our effort here?',
         },
         {
-          ar: 'متى يعود هذا السؤال إليك عادةً؟',
-          en: 'When does it usually come back to you?',
+          ar: 'كيف نُعين بعضنا على ما يبقى أثره عند الله؟',
+          en: 'How could we help each other toward what lasts with Allah?',
         },
       ],
     },

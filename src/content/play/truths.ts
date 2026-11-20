@@ -1,248 +1,241 @@
 import type { TruthsTheme } from '../../types/content'
 
 /**
- * "Two truths and a lie": a theme plus a one-line hint. Hints use the
- * gender-neutral ـك suffix and never use imperatives.
+ * "Two truths and a wish": a theme plus a one-line hint. Two of the three things
+ * really happened and one is only a wish, so nobody has to say anything untrue.
+ * Hints use the gender-neutral ـك suffix and never use imperatives.
  */
 export const truthsThemes: TruthsTheme[] = [
   {
     id: 'truths-001',
     title: { ar: 'أيام المدرسة', en: 'School days' },
     hint: {
-      ar: 'ثلاث معلومات عن أيامك في المدرسة، واحدة منها غير صحيحة',
-      en: 'Three facts about your school days, one of them made up',
+      ar: 'معلّم لا يُنسى، أو رحلة مدرسية، أو جائزة صغيرة في أيام دراستك',
+      en: 'A teacher you never forgot, a school trip or a small prize from your school days',
     },
   },
   {
     id: 'truths-002',
     title: { ar: 'ألعاب الصغر', en: 'Childhood games' },
     hint: {
-      ar: 'ثلاث معلومات عن ألعابك المفضّلة في الصغر، واحدة منها من الخيال',
-      en: 'Three facts about your favorite games as a kid, one of them imaginary',
+      ar: 'ألعاب الحارة، أو لعبة مفضّلة، أو مسابقة صغيرة من طفولتك',
+      en: 'Street games, a favorite toy or a little contest from your childhood',
     },
   },
   {
     id: 'truths-003',
     title: { ar: 'السفر والرحلات', en: 'Travels' },
     hint: {
-      ar: 'ثلاث قصص من رحلاتك، واحدة منها من نسج الخيال',
-      en: 'Three stories from your travels, one of them invented',
+      ar: 'مدن ورحلات عرفتها، ووجهة ما زالت حلمًا',
+      en: "Cities and trips you've known, and a place that's still a dream",
     },
   },
   {
     id: 'truths-004',
     title: { ar: 'الذوق في الطعام', en: 'Taste in food' },
     hint: {
-      ar: 'ثلاث حقائق عن ذوقك في الطعام، واحدة منها لا أساس لها',
-      en: 'Three facts about your taste in food, one with no truth to it',
+      ar: 'أطباق جرّبتها وأحببتها، وطبق ما زال على قائمة التجربة',
+      en: "Dishes you've tried and loved, and one still on the to-try list",
     },
   },
   {
     id: 'truths-005',
     title: { ar: 'مواهب خفية', en: 'Hidden talents' },
     hint: {
-      ar: 'ثلاث مواهب لديك، واحدة منها لا وجود لها',
-      en: "Three talents of yours, one of which doesn't exist",
-    },
-  },
-  {
-    id: 'truths-006',
-    title: { ar: 'مخاوف طريفة', en: 'Funny fears' },
-    hint: {
-      ar: 'ثلاثة أشياء تُربكك أو تُخيفك، واحد منها مختلَق',
-      en: 'Three things that rattle or scare you, one of them made up',
+      ar: 'مواهب لديك فعلًا، كالطبخ أو الخط أو سرعة الحفظ، وموهبة ما زالت أمنية',
+      en: "Talents you really have, like cooking, calligraphy or a sharp memory, and one you'd love to have",
     },
   },
   {
     id: 'truths-007',
     title: { ar: 'المرة الأولى', en: 'First times' },
     hint: {
-      ar: 'ثلاث تجارب أولى في حياتك، واحدة منها لم تحدث',
-      en: 'Three firsts from your life, one of which never happened',
-    },
-  },
-  {
-    id: 'truths-008',
-    title: { ar: 'أفلام ومسلسلات', en: 'Movies and shows' },
-    hint: {
-      ar: 'ثلاث معلومات عن علاقتك بالأفلام والمسلسلات، إحداها مجرد تمويه',
-      en: 'Three facts about you and movies or shows, one of them a decoy',
+      ar: 'أول رحلة، أو أول راتب، أو أول طبق من صنعك، وتجربة أولى ما زالت تنتظرك',
+      en: 'Your first trip, first paycheck or first dish you cooked, and a first still waiting for you',
     },
   },
   {
     id: 'truths-009',
     title: { ar: 'حكايات العائلة', en: 'Family tales' },
     hint: {
-      ar: 'ثلاث حكايات من عائلتك، واحدة منها غير حقيقية',
-      en: 'Three tales from your family, one of them not true',
+      ar: 'لحظات جميلة مع عائلتك: زيارة، أو سفرة، أو عادة متوارثة',
+      en: 'Warm moments with your family: a visit, a trip or a tradition passed down',
     },
   },
   {
     id: 'truths-010',
     title: { ar: 'الأصدقاء', en: 'Friends' },
     hint: {
-      ar: 'ثلاث قصص عن أصدقائك ومغامراتك معهم، واحدة منها مختلَقة',
-      en: 'Three stories about your friends and your adventures together, one of them made up',
-    },
-  },
-  {
-    id: 'truths-011',
-    title: { ar: 'شقاوة الطفولة', en: 'Childhood mischief' },
-    hint: {
-      ar: 'ثلاثة مواقف من شقاوتك في الصغر، واحد منها لم يحدث',
-      en: 'Three bits of childhood mischief, one of which never happened',
+      ar: 'مواقف طريفة أو لطيفة مع أصدقائك في الصغر أو اليوم',
+      en: 'Funny or kind moments with your friends, back then or today',
     },
   },
   {
     id: 'truths-012',
     title: { ar: 'الهوايات', en: 'Hobbies' },
     hint: {
-      ar: 'ثلاث هوايات عرفتها حياتك، واحدة منها من الخيال',
-      en: "Three hobbies you've had, one of them made up",
-    },
-  },
-  {
-    id: 'truths-013',
-    title: { ar: 'مواقف محرجة', en: 'Awkward moments' },
-    hint: {
-      ar: 'ثلاثة مواقف محرجة مرّت بك، واحد منها لم يحدث',
-      en: "Three awkward moments you've lived through, one of which never happened",
-    },
-  },
-  {
-    id: 'truths-014',
-    title: { ar: 'أحلام غريبة', en: 'Strange dreams' },
-    hint: {
-      ar: 'ثلاثة أحلام غريبة زارت نومك، واحد منها مختلَق',
-      en: 'Three strange dreams from your sleep, one of them invented',
-    },
-  },
-  {
-    id: 'truths-015',
-    title: { ar: 'الموسيقى', en: 'Music' },
-    hint: {
-      ar: 'ثلاث معلومات عن ذوقك الموسيقي، واحدة منها من تأليفك',
-      en: 'Three facts about your taste in music, one of them your own invention',
+      ar: 'هوايات جرّبتها، كالقراءة أو الخياطة أو ركوب الدراجة، وهواية ما زالت على قائمة الأمنيات',
+      en: "Hobbies you've tried, like reading, sewing or cycling, and one you hope to start someday",
     },
   },
   {
     id: 'truths-016',
     title: { ar: 'الملابس والأناقة', en: 'Clothes and style' },
     hint: {
-      ar: 'ثلاث معلومات عن ملابسك وأسلوبك، واحدة منها بعيدة عن الحقيقة',
-      en: 'Three facts about your clothes and style, one of them far from the truth',
+      ar: 'قطع ملابس أحببتها أو ارتديتها في مناسبة، وقطعة ما زالت أمنية',
+      en: "Clothes you've loved or worn on an occasion, and a piece that's still a wish",
     },
   },
   {
     id: 'truths-017',
     title: { ar: 'الحيوانات', en: 'Animals' },
     hint: {
-      ar: 'ثلاث قصص عن مواقفك مع الحيوانات، واحدة منها من الخيال',
-      en: 'Three stories about you and animals, one of them imaginary',
+      ar: 'مواقفك مع القطط أو الطيور أو الخيل أو الإبل',
+      en: 'Your moments with cats, birds, horses or camels',
     },
   },
   {
     id: 'truths-018',
     title: { ar: 'الرياضة', en: 'Sports' },
     hint: {
-      ar: 'ثلاث معلومات عن علاقتك بالرياضة، واحدة منها من اختراعك',
-      en: 'Three facts about you and sports, one of them made up on the spot',
+      ar: 'رياضات مارستها، أو مباراة لا تُنسى، أو هدف رياضي ما زال حلمًا',
+      en: "Sports you've played, a game you won't forget or a sporting goal you dream of",
     },
   },
   {
     id: 'truths-019',
     title: { ar: 'الدراسة والعمل', en: 'Study and work' },
     hint: {
-      ar: 'ثلاث معلومات عن دراستك أو عملك، واحدة منها غير صحيحة',
-      en: 'Three facts about your studies or work, one of them false',
+      ar: 'إنجازات من دراستك أو عملك، وإنجاز ما زال طموحًا',
+      en: "Wins from your studies or work, and one you're aiming for",
     },
   },
   {
     id: 'truths-020',
     title: { ar: 'أرقام قياسية شخصية', en: 'Personal records' },
     hint: {
-      ar: 'ثلاثة أرقام قياسية في حياتك: الأطول والأبعد والأكثر، واحد منها مبالَغ فيه',
-      en: 'Three personal records, the longest, farthest or most, one of them exaggerated',
+      ar: 'أرقامك القياسية: أطول مشي، أو أبعد رحلة، أو أكثر ما أنجزته في يوم',
+      en: 'Your personal records: the longest walk, the farthest trip or the most done in a day',
     },
   },
   {
     id: 'truths-021',
     title: { ar: 'الأسماء والألقاب', en: 'Names and nicknames' },
     hint: {
-      ar: 'ثلاث معلومات عن اسمك أو ألقابك، واحدة منها من وحي الخيال',
-      en: 'Three facts about your name or nicknames, one of them pure fiction',
+      ar: 'ألقاب نوديت بها، وحكايات عن اسمك، ولقب ما زال أمنية',
+      en: "Nicknames you've had, stories about your name, and one you'd like to be called",
     },
   },
   {
     id: 'truths-022',
     title: { ar: 'الهاتف والتقنية', en: 'Phones and tech' },
     hint: {
-      ar: 'ثلاث معلومات عن هاتفك وعاداتك معه، إحداها كذبة صغيرة بريئة',
-      en: 'Three facts about your phone and your habits with it, one of them a harmless little fib',
+      ar: 'أجهزة امتلكتها، أو تطبيق لا غنى عنه، أو جهاز ما زال حلمًا',
+      en: "Devices you've owned, an app you can't do without or a gadget you dream of",
     },
   },
   {
     id: 'truths-023',
     title: { ar: 'البيوت والأحياء', en: 'Homes and neighborhoods' },
     hint: {
-      ar: 'ثلاث معلومات عن بيوت أو أحياء مرّت بحياتك، واحدة منها لم تكن يومًا',
-      en: "Three facts about homes or neighborhoods you've known, one of them never existed",
+      ar: 'بيوت وأحياء عشت فيها، وبيت الأحلام',
+      en: "Homes and neighborhoods you've lived in, and a home you dream of",
     },
   },
   {
     id: 'truths-024',
-    title: { ar: 'الأعياد والمناسبات', en: 'Holidays and celebrations' },
+    title: { ar: 'أيام العيد', en: 'Eid days' },
     hint: {
-      ar: 'ثلاث ذكريات من الأعياد والمناسبات، واحدة منها لم تحدث',
-      en: 'Three memories from holidays and celebrations, one of which never happened',
-    },
-  },
-  {
-    id: 'truths-025',
-    title: { ar: 'عادات غريبة', en: 'Quirky habits' },
-    hint: {
-      ar: 'ثلاث عادات غريبة لديك، واحدة منها مختلَقة',
-      en: 'Three quirky habits of yours, one of them made up',
+      ar: 'ذكريات من صباح العيد، والعيدية، والزيارات، والملابس الجديدة',
+      en: 'Memories of Eid mornings, Eid money, family visits and new clothes',
     },
   },
   {
     id: 'truths-026',
     title: { ar: 'الكتب والقراءة', en: 'Books and reading' },
     hint: {
-      ar: 'ثلاث معلومات عن علاقتك بالكتب والقراءة، واحدة منها مجرد حكاية',
-      en: 'Three facts about you and books, one of them just a story',
+      ar: 'كتب قرأتها وأثّرت فيك، وكتاب ما زال على قائمة القراءة',
+      en: "Books you've read that stayed with you, and one you hope to read",
     },
   },
   {
     id: 'truths-027',
     title: { ar: 'مغامرات المطبخ', en: 'Kitchen adventures' },
     hint: {
-      ar: 'ثلاث قصص من تجاربك في المطبخ، واحدة منها غير حقيقية',
-      en: 'Three stories from your adventures in the kitchen, one of them not true',
-    },
-  },
-  {
-    id: 'truths-028',
-    title: { ar: 'ما لم يُجرَّب بعد', en: 'Never tried' },
-    hint: {
-      ar: 'ثلاثة أشياء لم يسبق لك تجربتها، لكن واحدًا منها مجرَّب فعلًا',
-      en: "Three things you've never tried, except one of them you actually have",
-    },
-  },
-  {
-    id: 'truths-029',
-    title: { ar: 'أشياء مفضّلة', en: 'Favorite things' },
-    hint: {
-      ar: 'ثلاثة أشياء مفضّلة لديك، واحد منها ليس كذلك',
-      en: "Three of your favorite things, except one of them isn't",
+      ar: 'أطباق طبختها بنجاح أو بفشل طريف، وطبق ما زال إتقانه أمنية',
+      en: "Dishes you've cooked, a success or a funny flop, and one you'd love to master",
     },
   },
   {
     id: 'truths-030',
     title: { ar: 'أماكن في الذاكرة', en: 'Places in your memory' },
     hint: {
-      ar: 'ثلاثة أماكن من ذكرياتك، أحدها لم تطأه قدمك قط',
-      en: "Three places from your memories, one you've never actually set foot in",
+      ar: 'أماكن من طفولتك أو مدينتك تحمل ذكرى خاصة',
+      en: 'Places from your childhood or your city that hold a special memory',
+    },
+  },
+  {
+    id: 'truths-031',
+    title: { ar: 'مواقف شجاعة', en: 'Brave moments' },
+    hint: {
+      ar: 'مواقف تغلّبت فيها على خوف، وخوف ما زال التغلّب عليه أمنية',
+      en: "Times you got past a fear, and a fear you'd love to get past",
+    },
+  },
+  {
+    id: 'truths-032',
+    title: { ar: 'عادات يومية', en: 'Daily habits' },
+    hint: {
+      ar: 'عادات ثابتة في يومك، وعادة طيبة ما زالت أمنية',
+      en: 'Habits that fill your day, and a good one you hope to build',
+    },
+  },
+  {
+    id: 'truths-033',
+    title: { ar: 'رمضان', en: 'Ramadan' },
+    hint: {
+      ar: 'ذكريات السحور والإفطار والتراويح وعادات رمضانية في بيتكم',
+      en: 'Memories of suhoor, iftar, taraweeh and Ramadan habits at home',
+    },
+  },
+  {
+    id: 'truths-034',
+    title: { ar: 'أعمال اليد', en: 'Handmade things' },
+    hint: {
+      ar: 'أشياء صنعتها أو أصلحتها بيدك، وحرفة ما زال تعلّمها حلمًا',
+      en: "Things you've made or fixed by hand, and a craft you'd love to learn",
+    },
+  },
+  {
+    id: 'truths-035',
+    title: { ar: 'الطبيعة والهواء الطلق', en: 'Nature and the outdoors' },
+    hint: {
+      ar: 'تخييم، أو تسلّق، أو ليلة تحت النجوم، أو مغامرة في البرّ',
+      en: 'Camping, a hike, a night under the stars or an adventure in the wild',
+    },
+  },
+  {
+    id: 'truths-036',
+    title: { ar: 'اللغات', en: 'Languages' },
+    hint: {
+      ar: 'لغات أو لهجات لديك منها بضع كلمات، ولغة ما زال إتقانها أمنية',
+      en: "Languages you know a few words of, and one you'd love to speak well",
+    },
+  },
+  {
+    id: 'truths-037',
+    title: { ar: 'الضيافة والولائم', en: 'Hosting and gatherings' },
+    hint: {
+      ar: 'ضيوف استقبلتهم، أو وليمة شاركت فيها، أو مائدة ما زالت حلمًا',
+      en: "Guests you've hosted, a feast you helped with or a table you dream of setting",
+    },
+  },
+  {
+    id: 'truths-038',
+    title: { ar: 'الحدائق والنباتات', en: 'Gardens and plants' },
+    hint: {
+      ar: 'نباتات زرعتها أو اعتنيت بها، وحديقة الأحلام',
+      en: "Plants you've grown or cared for, and a garden you dream of",
     },
   },
 ]

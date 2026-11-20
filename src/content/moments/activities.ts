@@ -29,17 +29,17 @@ export const activities: Activity[] = [
     category: 'quick',
     title: { ar: 'إهداء صوتي', en: 'A little dedication' },
     description: {
-      ar: 'ليختر كل منكما أغنية أو قصيدة أو مقطعًا صوتيًا يذكّره بالآخر، ثم استمعا إليهما معًا.',
-      en: 'Each of you picks a song, poem or audio clip that reminds you of the other, then listen to both together.',
+      ar: 'ليختر كل منكما بيت شعر أو حكمة جميلة تذكّره بالآخر، ثم تبادلا الإهداءين.',
+      en: 'Each of you picks a line of poetry or a beautiful saying that reminds you of the other, then share them.',
     },
     steps: [
       {
-        ar: 'ليختر كل منكما مقطعه سرًّا.',
-        en: 'Each of you picks a clip in secret.',
+        ar: 'ليختر كل منكما إهداءه سرًّا.',
+        en: 'Each of you picks yours in secret.',
       },
       {
-        ar: 'شغّلا المقطعين واحدًا تلو الآخر.',
-        en: 'Play them one after the other.',
+        ar: 'اقرآ الإهداءين بصوت مسموع، واحدًا تلو الآخر.',
+        en: 'Read them out loud, one after the other.',
       },
       {
         ar: 'ليقل كل منكما في جملة واحدة لماذا اختاره.',
@@ -85,10 +85,10 @@ export const activities: Activity[] = [
   {
     id: 'moment-007',
     category: 'quick',
-    title: { ar: 'صورة الأسبوع', en: 'Photo of the week' },
+    title: { ar: 'لقطة الأسبوع', en: 'Snapshot of the week' },
     description: {
-      ar: 'ليختر كل منكما صورة التقطها هذا الأسبوع ويعرضها على الآخر، ثم تحدّثا عن الحكاية التي خلفها.',
-      en: 'Each of you picks a photo you took this week and shows it to the other, then talk about the story behind it.',
+      ar: 'ليختر كل منكما صورة التقطها هذا الأسبوع لمكان أو طعام أو سماء، ويعرضها على الآخر، ثم تحدّثا عن الحكاية التي خلفها.',
+      en: 'Each of you picks a photo you took this week of a place, a meal or the sky and shows it to the other, then talk about the story behind it.',
     },
     minutes: 5,
     modes: ['call', 'together'],
@@ -98,8 +98,8 @@ export const activities: Activity[] = [
     category: 'quick',
     title: { ar: 'أمنية للغد', en: 'A wish for tomorrow' },
     description: {
-      ar: 'ليقل كل منكما شيئًا واحدًا يتمنى أن يحدث غدًا، ثم فكّرا كيف يمكن أن يساعد أحدكما الآخر فيه.',
-      en: 'Each of you names one thing you hope happens tomorrow, then think about how you could help each other with it.',
+      ar: 'ليقل كل منكما شيئًا واحدًا يتمنى أن يحدث غدًا، ثم فكّرا كيف يمكن أن يساعد أحدكما الآخر فيه، وليدعُ كل منكما للآخر به.',
+      en: "Each of you names one thing you hope happens tomorrow, then think about how you could help each other with it, and make du'a for each other.",
     },
     minutes: 5,
     modes: ['call', 'together'],
@@ -114,6 +114,28 @@ export const activities: Activity[] = [
     },
     minutes: 5,
     modes: ['call', 'together'],
+  },
+  {
+    id: 'moment-059',
+    category: 'quick',
+    title: { ar: 'قائمة الدعاء', en: "A du'a list" },
+    description: {
+      ar: 'ليكتب كل منكما ثلاثة أشياء يحب أن يدعو له الآخر بها، ثم تبادلا القائمتين واحفظاها لأوقات الدعاء.',
+      en: "Each of you writes three things you'd love the other to make du'a for, then swap lists and keep them for your prayers.",
+    },
+    minutes: 5,
+    modes: ['call', 'together'],
+  },
+  {
+    id: 'moment-065',
+    category: 'quick',
+    title: { ar: 'صلاة معًا', en: 'Pray together' },
+    description: {
+      ar: 'صلّيا صلاة معًا في البيت، ثم ليدعُ كل منكما للآخر بدعاء من القلب.',
+      en: "Pray one prayer together at home, then each of you makes a heartfelt du'a for the other.",
+    },
+    minutes: 10,
+    modes: ['together'],
   },
 
   /* ---------- date: date ideas ---------- */
@@ -135,8 +157,8 @@ export const activities: Activity[] = [
         en: 'Each of you makes one small dish to surprise the other.',
       },
       {
-        ar: 'أطفئا الضوء القوي وشغّلا موسيقى هادئة أو صوت طبيعة.',
-        en: 'Dim the bright lights and play soft music or nature sounds.',
+        ar: 'أطفئا الضوء القوي واستمتعا بأصوات الطبيعة أو بالهدوء.',
+        en: 'Dim the bright lights and enjoy nature sounds or simple quiet.',
       },
     ],
     minutes: 60,
@@ -172,31 +194,6 @@ export const activities: Activity[] = [
     modes: ['call', 'together'],
   },
   {
-    id: 'moment-012',
-    category: 'date',
-    title: { ar: 'سهرة فيلم', en: 'Movie night' },
-    description: {
-      ar: 'شاهدا فيلمًا معًا مع وجبة خفيفة تناسب أجواءه، وإن كنتما بعيدين فابدآ التشغيل في اللحظة نفسها.',
-      en: "Watch a movie together with a snack that fits its mood. If you're apart, press play at the same moment.",
-    },
-    steps: [
-      {
-        ar: 'ليقترح كل منكما ثلاثة أفلام، وليختر الآخر واحدًا منها.',
-        en: 'Each of you suggests three films, and the other picks one.',
-      },
-      {
-        ar: 'عُدّا تنازليًا من ثلاثة وابدآ المشاهدة معًا.',
-        en: 'Count down from three and start watching together.',
-      },
-      {
-        ar: 'في النهاية، ليذكر كل منكما مشهده المفضّل.',
-        en: 'At the end, each of you shares a favorite scene.',
-      },
-    ],
-    minutes: 120,
-    modes: ['call', 'together'],
-  },
-  {
     id: 'moment-013',
     category: 'date',
     title: { ar: 'نزهة الغروب', en: 'A sunset walk' },
@@ -212,6 +209,10 @@ export const activities: Activity[] = [
       {
         ar: 'صِفا لبعضكما ألوان السماء وهي تتغير.',
         en: 'Describe the colors of the sky to each other as they change.',
+      },
+      {
+        ar: 'وعند أذان المغرب، صلّيا معًا، أو كلٌّ في مكانه.',
+        en: 'When the adhan for Maghrib calls, pray together, or each where you are.',
       },
     ],
     minutes: 45,
@@ -235,8 +236,8 @@ export const activities: Activity[] = [
         en: 'Try a cheap local snack or drink.',
       },
       {
-        ar: 'التقطا صورة تذكارية كما يفعل السياح تمامًا.',
-        en: 'Take a souvenir photo, exactly like tourists do.',
+        ar: 'اشتريا تذكارًا صغيرًا رخيصًا، كما يفعل السياح تمامًا.',
+        en: 'Buy a small, cheap souvenir, exactly like tourists do.',
       },
     ],
     minutes: 90,
@@ -247,8 +248,8 @@ export const activities: Activity[] = [
     category: 'date',
     title: { ar: 'جولة في متحف', en: 'A museum tour from the couch' },
     description: {
-      ar: 'اختارا متحفًا عالميًا يتيح جولة افتراضية مجانية، وتجوّلا فيه معًا كأنكما هناك.',
-      en: "Choose a world museum with a free virtual tour and wander through it together as if you're there.",
+      ar: 'اختارا متحفًا للفن الإسلامي أو موقعًا تاريخيًا يتيح جولة افتراضية مجانية، وتجوّلا فيه معًا كأنكما هناك.',
+      en: "Choose a museum of Islamic art or a historic site with a free virtual tour and wander through it together as if you're there.",
     },
     steps: [
       {
@@ -293,27 +294,6 @@ export const activities: Activity[] = [
     modes: ['call', 'together'],
   },
   {
-    id: 'moment-017',
-    category: 'date',
-    title: { ar: 'ليلة ألعاب', en: 'Game night' },
-    description: {
-      ar: 'أخرجا لعبة ورق أو لعبة قديمة، أو جرّبا لعبة مجانية على الإنترنت، والعبا عدة جولات على جائزة رمزية.',
-      en: 'Dig out a deck of cards or an old board game, or try a free online one, and play a few rounds for a small prize.',
-    },
-    steps: [
-      {
-        ar: 'اتفقا على الجائزة قبل البدء، كأن يختار الفائز فيلم السهرة القادمة.',
-        en: 'Agree on the prize first, like the winner picks the next movie.',
-      },
-      {
-        ar: 'العبا ثلاث جولات على الأقل.',
-        en: 'Play at least three rounds.',
-      },
-    ],
-    minutes: 60,
-    modes: ['call', 'together'],
-  },
-  {
     id: 'moment-018',
     category: 'date',
     title: { ar: 'قراءة بصوت عالٍ', en: 'Read-aloud night' },
@@ -327,8 +307,8 @@ export const activities: Activity[] = [
         en: "Choose a short text that suits tonight's mood.",
       },
       {
-        ar: 'اقرآ بالتناوب، ولا بأس بتمثيل الأصوات.',
-        en: 'Take turns reading, and feel free to do the voices.',
+        ar: 'اقرآ بالتناوب، بتمهّل ونبرة تناسب القصة.',
+        en: 'Take turns reading, slowly, in a tone that fits the story.',
       },
       {
         ar: 'تحدّثا عن الجملة التي بقيت في ذهن كل منكما.',
@@ -338,19 +318,79 @@ export const activities: Activity[] = [
     minutes: 30,
     modes: ['call', 'together'],
   },
-
-  /* ---------- challenge: mini challenges ---------- */
   {
-    id: 'moment-019',
-    category: 'challenge',
-    title: { ar: 'رسم بلا نظر', en: 'Blind portraits' },
+    id: 'moment-056',
+    category: 'date',
+    title: { ar: 'ليلة الألغاز', en: 'Puzzle night' },
     description: {
-      ar: 'ليرسم كل منكما وجه الآخر في دقيقتين دون أن ينظر إلى الورقة، ثم اعرضا الرسمتين في اللحظة نفسها.',
-      en: "Each of you draws the other's face in two minutes without looking at the paper, then reveal both drawings at once.",
+      ar: 'تبادلا الأحاجي والألغاز، أو ركّبا معًا صورة مقطّعة لمنظر طبيعي، واستمتعا بالتفكير معًا بلا فائز ولا خاسر.',
+      en: 'Trade riddles and brain teasers, or put together a jigsaw of a landscape, and enjoy thinking together with no winner and no loser.',
     },
-    minutes: 10,
+    steps: [
+      {
+        ar: 'ليحضّر كل منكما خمسة ألغاز للآخر.',
+        en: 'Each of you prepares five riddles for the other.',
+      },
+      {
+        ar: 'إن كنتما في مكان واحد، فاختما السهرة بصورة مقطّعة تكملانها معًا.',
+        en: "If you're in the same place, end with a jigsaw you finish together.",
+      },
+    ],
+    minutes: 45,
     modes: ['call', 'together'],
   },
+  {
+    id: 'moment-057',
+    category: 'date',
+    title: { ar: 'نزهة في الطبيعة', en: 'A picnic outdoors' },
+    description: {
+      ar: 'احملا سلة طعام بسيطة إلى حديقة أو مكان مفتوح هادئ، واقضيا وقتًا بين الشجر والهواء الطلق.',
+      en: 'Pack a simple basket and head to a park or a quiet open spot to spend some time among the trees and fresh air.',
+    },
+    steps: [
+      {
+        ar: 'ليحضّر كل منكما شيئًا واحدًا للسلة دون أن يخبر الآخر.',
+        en: 'Each of you packs one thing for the basket without telling the other.',
+      },
+      {
+        ar: 'اختارا مكانًا هادئًا بعيدًا عن الزحام.',
+        en: 'Pick a calm spot away from the crowds.',
+      },
+      {
+        ar: 'ضعا الهاتفين جانبًا، واكتفيا بالحديث وأصوات الطبيعة.',
+        en: 'Put your phones away and enjoy the talk and the sounds of nature.',
+      },
+    ],
+    minutes: 90,
+    modes: ['together'],
+  },
+  {
+    id: 'moment-058',
+    category: 'date',
+    title: { ar: 'تلاوة معًا', en: 'Quran together' },
+    description: {
+      ar: 'اختارا سورة قصيرة أو صفحة من القرآن، واقرآها بالتناوب، ثم تحدّثا عمّا لمس قلب كل منكما فيها.',
+      en: 'Choose a short surah or a page of the Quran, take turns reading it, then talk about what touched each of you in it.',
+    },
+    steps: [
+      {
+        ar: 'اختارا وقتًا هادئًا، بعد الفجر أو قبل النوم.',
+        en: 'Pick a calm time, after Fajr or before bed.',
+      },
+      {
+        ar: 'ليقرأ أحدكما آية ويستمع الآخر، ثم تبادلا.',
+        en: 'One of you reads a verse while the other listens, then swap.',
+      },
+      {
+        ar: 'استعينا بتفسير ميسّر لفهم آية واحدة على الأقل.',
+        en: 'Use a simple tafsir to understand at least one verse.',
+      },
+    ],
+    minutes: 20,
+    modes: ['call', 'together'],
+  },
+
+  /* ---------- challenge: mini challenges ---------- */
   {
     id: 'moment-020',
     category: 'challenge',
@@ -417,8 +457,8 @@ export const activities: Activity[] = [
     category: 'challenge',
     title: { ar: 'تمثيل صامت', en: 'Silent acting' },
     description: {
-      ar: 'ليمثّل كل منكما اسم فيلم أو مثلًا شعبيًا دون أي كلمة، وعلى الآخر أن يخمّنه قبل انتهاء الدقيقة.',
-      en: 'Each of you acts out a movie title or a popular saying without a word, and the other has one minute to guess it.',
+      ar: 'ليمثّل كل منكما مثلًا شعبيًا أو مهنة أو موقفًا يوميًا دون أي كلمة، وعلى الآخر أن يخمّنه قبل انتهاء الدقيقة.',
+      en: 'Each of you acts out a popular saying, a job or an everyday moment without a word, and the other has one minute to guess it.',
     },
     minutes: 20,
     modes: ['call', 'together'],
@@ -439,8 +479,8 @@ export const activities: Activity[] = [
     category: 'challenge',
     title: { ar: 'ممنوع الضحك', en: 'No laughing' },
     description: {
-      ar: 'لينظر كل منكما في عيني الآخر دقيقة كاملة دون أن يضحك، ومن يضحك أولًا يقول للآخر مجاملة صادقة.',
-      en: "Look into each other's eyes for a full minute without laughing. Whoever laughs first gives the other a sincere compliment.",
+      ar: 'لينظر كل منكما في عيني الآخر دقيقة كاملة دون أن يضحك، ثم ليقل كل منكما للآخر مجاملة صادقة، ضحك أم لم يضحك.',
+      en: "Look into each other's eyes for a full minute without laughing. Then, laugh or not, each of you gives the other a sincere compliment.",
     },
     minutes: 5,
     modes: ['call', 'together'],
@@ -450,21 +490,21 @@ export const activities: Activity[] = [
     category: 'challenge',
     title: { ar: 'مهارة جديدة', en: 'A new little skill' },
     description: {
-      ar: 'اختارا مهارة صغيرة، كطيّ الورق أو عقدة جديدة أو خدعة بسيطة، وتعلّماها معًا من مقطع قصير.',
-      en: 'Pick a tiny skill, like paper folding, a new knot or a simple trick, and learn it together from a short video.',
+      ar: 'اختارا مهارة صغيرة، كطيّ الورق أو عقدة جديدة أو حرف بالخط العربي، وتعلّماها معًا من شرح قصير.',
+      en: 'Pick a tiny skill, like paper folding, a new knot or one letter in Arabic calligraphy, and learn it together from a short guide.',
     },
     steps: [
       {
-        ar: 'اختارا المهارة وشاهدا الشرح مرة واحدة.',
-        en: 'Choose the skill and watch the tutorial once.',
+        ar: 'اختارا المهارة واقرآ الشرح مرة واحدة.',
+        en: 'Choose the skill and go through the guide once.',
       },
       {
         ar: 'حاولا معًا، وساعدا بعضكما عند التعثر.',
         en: 'Try it together, and help each other when you get stuck.',
       },
       {
-        ar: 'اعرضا النتيجة النهائية، مهما كانت.',
-        en: 'Show off the final result, whatever it looks like.',
+        ar: 'اعرضا النتيجة النهائية على بعضكما، مهما كانت.',
+        en: 'Show each other the final result, whatever it looks like.',
       },
     ],
     minutes: 30,
@@ -495,6 +535,48 @@ export const activities: Activity[] = [
     minutes: 10,
     modes: ['call', 'together'],
   },
+  {
+    id: 'moment-055',
+    category: 'challenge',
+    title: { ar: 'سباق ودّي', en: 'A friendly race' },
+    description: {
+      ar: 'اختارا مكانًا هادئًا وآمنًا بعيدًا عن الأعين، وتسابقا جريًا أو مشيًا سريعًا، كما سابق النبي ﷺ زوجته عائشة رضي الله عنها.',
+      en: 'Find a quiet, safe spot away from other people and race each other, running or fast walking, just as the Prophet ﷺ raced his wife Aisha.',
+    },
+    steps: [
+      {
+        ar: 'اتفقا على خط البداية والنهاية.',
+        en: 'Agree on a start and a finish line.',
+      },
+      {
+        ar: 'أعيدا السباق بعد مدة، فربما يتغيّر الفائز.',
+        en: 'Race again a few weeks later. The winner might change.',
+      },
+    ],
+    minutes: 15,
+    modes: ['together'],
+  },
+  {
+    id: 'moment-064',
+    category: 'challenge',
+    title: { ar: 'رماية أو ركوب خيل', en: 'Archery or horse riding' },
+    description: {
+      ar: 'ابحثا عن مكان قريب يعلّم الرماية أو ركوب الخيل، وجرّبا معًا درسًا للمبتدئين.',
+      en: 'Find a place nearby that teaches archery or horse riding, and try a beginner lesson together.',
+    },
+    steps: [
+      {
+        ar: 'اختارا مكانًا يناسب العائلات ويراعي الخصوصية.',
+        en: 'Choose a place that suits families and respects privacy.',
+      },
+      {
+        ar: 'تحدّثا بعدها عمّا أعجبكما، وهل تريدان العودة.',
+        en: "Talk afterwards about what you enjoyed and whether you'd go back.",
+      },
+    ],
+    minutes: 90,
+    modes: ['together'],
+  },
 
   /* ---------- memory: memory lane ---------- */
   {
@@ -509,25 +591,25 @@ export const activities: Activity[] = [
     modes: ['call', 'together'],
   },
   {
-    id: 'moment-029',
+    id: 'moment-067',
     category: 'memory',
-    title: { ar: 'رحلة في الصور', en: 'A trip through photos' },
+    title: { ar: 'رحلة في التذكارات', en: 'A trip through keepsakes' },
     description: {
-      ar: 'افتحا صوركما القديمة معًا واختارا عشر صور، وليحكِ كل منكما ما يتذكره عن كل واحدة منها.',
-      en: 'Scroll through your old photos together, pick ten, and each of you shares what you remember about every one.',
+      ar: 'اجمعا ما احتفظتما به من أيامكما معًا: تذكرة، أو ورقة، أو رسالة، أو هدية صغيرة، وليحكِ كل منكما ما يتذكره عن كل واحدة منها.',
+      en: 'Gather the little things you have kept from your time together, a ticket, a note, a message or a small gift, and each of you shares what you remember about every one.',
     },
     steps: [
       {
-        ar: 'ابدآ من أقدم صورة تجمعكما.',
-        en: 'Start from the oldest photo you have together.',
+        ar: 'ابدآ من أقدم تذكار لديكما.',
+        en: 'Start from the oldest keepsake you have.',
       },
       {
-        ar: 'اختارا عشر صور فقط، وهذا هو التحدي.',
+        ar: 'اختارا عشرة تذكارات فقط، وهذا هو التحدي.',
         en: "Pick only ten. That's the hard part.",
       },
       {
-        ar: 'اختارا من بينها صورة واحدة تكون «صورة قصتكما».',
-        en: 'Choose one of them to be "the photo of your story".',
+        ar: 'اختارا من بينها تذكارًا واحدًا يكون «تذكار قصتكما».',
+        en: 'Choose one of them to be "the keepsake of your story".',
       },
     ],
     minutes: 30,
@@ -559,14 +641,24 @@ export const activities: Activity[] = [
     modes: ['together'],
   },
   {
-    id: 'moment-031',
+    id: 'moment-068',
     category: 'memory',
-    title: { ar: 'أعيدا الصورة', en: 'Recreate a photo' },
+    title: { ar: 'عودة إلى المكان', en: 'Back to the spot' },
     description: {
-      ar: 'اختارا صورة قديمة لكما وأعيدا التقاطها بالوقفة نفسها، وبالملابس نفسها إن أمكن، ثم ضعا الصورتين جنبًا إلى جنب.',
-      en: 'Pick an old photo of you two and recreate it with the same pose, and the same clothes if you can, then put the two side by side.',
+      ar: 'عودا إلى مكان من أيام زواجكما الأولى، مقهى أو حديقة أو طريق، واجلسا فيه من جديد، ثم تحدّثا عمّا تغيّر فيكما وما بقي كما هو.',
+      en: 'Go back to a place from your first days of marriage, a café, a park or a street, and sit there again. Then talk about what has changed in you two and what has stayed the same.',
     },
-    minutes: 30,
+    steps: [
+      {
+        ar: 'اطلبا الشيء نفسه الذي طلبتماه أول مرة، إن استطعتما تذكّره.',
+        en: 'Order the same thing you had the first time, if you can remember it.',
+      },
+      {
+        ar: 'ليذكر كل منكما تفصيلة واحدة يتذكرها عن تلك المرة.',
+        en: 'Each of you names one detail you remember from that time.',
+      },
+    ],
+    minutes: 60,
     modes: ['together'],
   },
   {
@@ -599,8 +691,8 @@ export const activities: Activity[] = [
     category: 'memory',
     title: { ar: 'من أيام الطفولة', en: 'Back in childhood' },
     description: {
-      ar: 'ليشارك كل منكما صورة من طفولته، أو يصف ذكرى منها إن لم تكن لديه صورة، ويحكِ ما يتذكره عن ذلك اليوم.',
-      en: "Each of you shares a childhood photo, or describes a memory if you don't have one, and tells what you remember about that day.",
+      ar: 'ليصف كل منكما ذكرى من طفولته، ومعها شيء منها إن وُجد، كلعبة قديمة أو دفتر مدرسي، ويحكِ ما يتذكره عن ذلك اليوم.',
+      en: 'Each of you describes a childhood memory, with something from it if you still have it, like an old toy or a school notebook, and tells what you remember about that day.',
     },
     minutes: 20,
     modes: ['call', 'together'],
@@ -608,10 +700,10 @@ export const activities: Activity[] = [
   {
     id: 'moment-034',
     category: 'memory',
-    title: { ar: 'ذكريات الأعياد', en: 'Holiday memories' },
+    title: { ar: 'ذكريات العيد', en: 'Eid memories' },
     description: {
-      ar: 'تبادلا أجمل ذكرى من أيام العيد أو أي مناسبة عائلية في صغركما: الملابس الجديدة، والزيارات، والحلوى، والضحكات.',
-      en: 'Share your favorite memory of Eid or any family celebration from when you were little: the new clothes, the visits, the sweets and the laughter.',
+      ar: 'تبادلا أجمل ذكرى من أيام العيد أو رمضان في صغركما: الملابس الجديدة، والزيارات، والحلوى، والضحكات.',
+      en: 'Share your favorite memory of Eid or Ramadan from when you were little: the new clothes, the visits, the sweets and the laughter.',
     },
     minutes: 20,
     modes: ['call', 'together'],
@@ -643,7 +735,7 @@ export const activities: Activity[] = [
     title: { ar: 'رسالة إلى البداية', en: 'A letter to the beginning' },
     description: {
       ar: 'ليكتب كل منكما رسالة قصيرة إلى نفسه يوم لقائكما الأول، يخبره فيها بما ينتظره، ثم اقرآ الرسالتين معًا.',
-      en: 'Each of you writes a short letter to your past self on the day you first met, telling them what lies ahead, then read both together.',
+      en: 'Each of you writes a short letter to your past self on the day you first met, telling them what is coming, then read both together.',
     },
     minutes: 20,
     modes: ['call', 'together'],
@@ -703,10 +795,10 @@ export const activities: Activity[] = [
   {
     id: 'moment-039',
     category: 'dream',
-    title: { ar: 'جمعة كسولة مثالية', en: 'A perfect lazy Friday' },
+    title: { ar: 'جمعة هادئة مثالية', en: 'A perfect slow Friday' },
     description: {
-      ar: 'صِفا معًا جمعة بلا مواعيد ولا التزامات: متى تستيقظان، وماذا تأكلان، وكيف تمضي ساعاتها بهدوء.',
-      en: 'Describe together a Friday with no plans and no obligations: when you wake up, what you eat and how the hours drift by.',
+      ar: 'صِفا معًا جمعة بلا مواعيد ولا التزامات سوى صلاة الجمعة: متى تستيقظان، وماذا تأكلان، وكيف تمضي ساعاتها بهدوء.',
+      en: "Describe together a Friday with no plans beyond Jumu'ah: when you wake up, what you eat and how the hours drift by.",
     },
     minutes: 20,
     modes: ['call', 'together'],
@@ -721,8 +813,8 @@ export const activities: Activity[] = [
     },
     steps: [
       {
-        ar: 'ليجمع كل منكما ثلاث صور تلهمه من الإنترنت.',
-        en: 'Each of you finds three inspiring images online.',
+        ar: 'ليجمع كل منكما من الإنترنت ثلاث صور لأركان تلهمه.',
+        en: 'Each of you finds three photos of cozy corners online that inspire you.',
       },
       {
         ar: 'قارنا الصور وابحثا عمّا يجمع بينها.',
@@ -802,8 +894,8 @@ export const activities: Activity[] = [
     category: 'dream',
     title: { ar: 'تقليد خاص بنا', en: 'A tradition of our own' },
     description: {
-      ar: 'ابتكرا تقليدًا صغيرًا يخصّكما وحدكما، كوجبة شهرية أو نزهة سنوية أو رسالة في كل مناسبة.',
-      en: 'Invent a small tradition that belongs only to you two, like a monthly meal, a yearly outing or a letter on every special occasion.',
+      ar: 'ابتكرا تقليدًا صغيرًا يخصّكما وحدكما، كوجبة شهرية أو نزهة بعد صلاة الجمعة أو رسالة في كل عيد.',
+      en: "Invent a small tradition that belongs only to you two, like a monthly meal, a walk after Jumu'ah or a letter every Eid.",
     },
     steps: [
       {
@@ -847,61 +939,58 @@ export const activities: Activity[] = [
     minutes: 30,
     modes: ['call', 'together'],
   },
-
-  /* ---------- random: something random & fun ---------- */
   {
-    id: 'moment-046',
-    category: 'random',
-    title: { ar: 'تبادل اللهجات', en: 'Dialect swap' },
+    id: 'moment-060',
+    category: 'dream',
+    title: { ar: 'عمرة أو حجّ يومًا ما', en: 'Umrah or Hajj, someday' },
     description: {
-      ar: 'تحدّثا خمس دقائق بلهجة بلد عربي غير بلدكما، ومن يخرج عن اللهجة أولًا يدعو الآخر إلى مشروب.',
-      en: "Chat for five minutes in the dialect of an Arab country that isn't yours. Whoever slips out of it first treats the other to a drink.",
-    },
-    minutes: 10,
-    modes: ['call', 'together'],
-  },
-  {
-    id: 'moment-047',
-    category: 'random',
-    title: { ar: 'العملة تقرّر', en: 'Let the coin decide' },
-    description: {
-      ar: 'اخرجا في نزهة قصيرة، وعند كل تقاطع ارميا عملة لتقرر الاتجاه، وانظرا إلى أين تأخذكما.',
-      en: 'Go for a short walk, and at every corner flip a coin to pick the direction. See where it takes you.',
+      ar: 'خطّطا معًا لعمرة أو حجّ تحلمان به: متى تذهبان، وكيف تستعدان، وما الأدعية التي تحملانها معكما.',
+      en: "Plan together the Umrah or Hajj you dream of: when you'd go, how you'll prepare and the du'as you'll carry with you.",
     },
     steps: [
       {
-        ar: 'اتفقا: الصورة يمين، والكتابة يسار.',
-        en: 'Agree: heads is right, tails is left.',
+        ar: 'اختارا موسمًا مناسبًا، وميزانية بلا ديون.',
+        en: 'Choose a good season and a budget with no debt.',
       },
       {
-        ar: 'توقّفا عند أول مكان لطيف تصادفانه.',
-        en: 'Stop at the first nice spot you stumble on.',
+        ar: 'ليكتب كل منكما ثلاثة أدعية يريد أن يدعو بها هناك.',
+        en: "Each of you writes three du'as you want to make there.",
+      },
+      {
+        ar: 'حدّدا خطوة أولى صغيرة هذا الشهر، كادّخار مبلغ بسيط.',
+        en: 'Set one small first step this month, like putting a little money aside.',
       },
     ],
     minutes: 30,
-    modes: ['together'],
+    modes: ['call', 'together'],
   },
   {
-    id: 'moment-048',
-    category: 'random',
-    title: { ar: 'مقابلة مع نجم', en: 'Celebrity interview' },
+    id: 'moment-063',
+    category: 'dream',
+    title: { ar: 'خطة صدقة', en: 'A sadaqah plan' },
     description: {
-      ar: 'ليُجرِ أحدكما مع الآخر مقابلة تلفزيونية كأنها مع أحد المشاهير، بأسئلة طريفة وأخرى جادة، ثم تبادلا الدورين.',
-      en: 'One of you interviews the other like a TV host talking to a celebrity, with silly questions and serious ones, then swap roles.',
+      ar: 'اتفقا على صدقة صغيرة منتظمة تقدّمانها معًا، مهما كانت بسيطة، واختارا لها جهة وموعدًا.',
+      en: 'Agree on a small, regular sadaqah you give together, however modest, and choose where it goes and when.',
     },
     steps: [
       {
-        ar: 'ليختر الضيف مجال شهرته: التمثيل، أو الطبخ، أو الرياضة.',
-        en: "The guest picks what they're famous for: acting, cooking or sports.",
+        ar: 'ليقترح كل منكما جهة يثق بها.',
+        en: 'Each of you suggests a cause you trust.',
       },
       {
-        ar: 'خمسة أسئلة لكل مقابلة، والأجوبة بثقة النجوم.',
-        en: 'Five questions per interview, answered with star-level confidence.',
+        ar: 'اختارا مبلغًا صغيرًا يسهل الاستمرار عليه، فالقليل الدائم خير من الكثير المنقطع.',
+        en: 'Pick a small amount you can keep up. A little that lasts beats a lot that stops.',
+      },
+      {
+        ar: 'حدّدا يومًا ثابتًا في كل شهر.',
+        en: 'Set a fixed day each month.',
       },
     ],
-    minutes: 15,
+    minutes: 20,
     modes: ['call', 'together'],
   },
+
+  /* ---------- random: something random & fun ---------- */
   {
     id: 'moment-049',
     category: 'random',
@@ -939,8 +1028,8 @@ export const activities: Activity[] = [
     category: 'random',
     title: { ar: 'خلفية من اختيار الآخر', en: 'Wallpaper swap' },
     description: {
-      ar: 'ليختر كل منكما صورة أو عبارة تكون خلفية هاتف الآخر لمدة أسبوع، دون اعتراض.',
-      en: "Each of you chooses a photo or a quote to be the other's phone wallpaper for a week, no objections allowed.",
+      ar: 'ليختر كل منكما عبارة جميلة أو صورة لمنظر طبيعي تكون خلفية هاتف الآخر لمدة أسبوع، دون اعتراض.',
+      en: "Each of you chooses a lovely quote or a nature photo to be the other's phone wallpaper for a week, no objections allowed.",
     },
     minutes: 5,
     modes: ['call', 'together'],
@@ -957,23 +1046,12 @@ export const activities: Activity[] = [
     modes: ['together'],
   },
   {
-    id: 'moment-053',
-    category: 'random',
-    title: { ar: 'توقّعات الأسبوع', en: 'Weekly predictions' },
-    description: {
-      ar: 'ليكتب كل منكما ثلاثة توقعات طريفة عمّا سيحدث للآخر هذا الأسبوع، ثم تحقّقا منها في نهايته.',
-      en: "Each of you writes three funny predictions about the other's week, then check how they turned out at the end of it.",
-    },
-    minutes: 10,
-    modes: ['call', 'together'],
-  },
-  {
     id: 'moment-054',
     category: 'random',
     title: { ar: 'لطف لشخص ثالث', en: 'Kindness for someone else' },
     description: {
-      ar: 'افعلا معًا شيئًا لطيفًا لشخص آخر: رسالة شكر لمعلّم قديم، أو مساعدة جار، أو تبرّع صغير.',
-      en: 'Do something kind for someone else, together: a thank-you message to an old teacher, a hand for a neighbor or a small donation.',
+      ar: 'افعلا معًا شيئًا لطيفًا لشخص آخر: رسالة شكر لمعلّم قديم، أو مساعدة جار، أو صدقة صغيرة.',
+      en: 'Do something kind for someone else, together: a thank-you message to an old teacher, a hand for a neighbor or a little sadaqah.',
     },
     steps: [
       {
@@ -987,5 +1065,60 @@ export const activities: Activity[] = [
     ],
     minutes: 20,
     modes: ['call', 'together'],
+  },
+  {
+    id: 'moment-061',
+    category: 'random',
+    title: { ar: 'جرّة الامتنان', en: 'A gratitude jar' },
+    description: {
+      ar: 'خصّصا جرّة صغيرة، وليكتب فيها كل منكما كل يوم نعمة صغيرة يحمد الله عليها، ثم اقرآ الأوراق معًا آخر الشهر.',
+      en: 'Set aside a small jar, and each day each of you adds a slip with one small blessing you thank Allah for. Read them together at the end of the month.',
+    },
+    steps: [
+      {
+        ar: 'إن كنتما بعيدين، فاجعلا الجرّة ملاحظة مشتركة على الهاتف.',
+        en: "If you're apart, make the jar a shared note on your phones.",
+      },
+    ],
+    minutes: 5,
+    modes: ['call', 'together'],
+  },
+  {
+    id: 'moment-062',
+    category: 'random',
+    title: { ar: 'زيارة للأهل', en: 'A family visit' },
+    description: {
+      ar: 'اختارا قريبًا لم تزوراه منذ مدة، ورتّبا له زيارة قصيرة مع هدية بسيطة، فصلة الرحم تملأ القلب دفئًا.',
+      en: "Pick a relative you haven't visited in a while and plan a short visit with a simple gift. Keeping family ties warms the heart.",
+    },
+    steps: [
+      {
+        ar: 'اختارا الشخص معًا، واتصلا لترتيب الموعد.',
+        en: 'Choose who together, and call to set a time.',
+      },
+      {
+        ar: 'حضّرا هدية بسيطة، كحلوى أو طبق من صنعكما.',
+        en: 'Bring something simple, like sweets or a dish you made.',
+      },
+    ],
+    minutes: 60,
+    modes: ['together'],
+  },
+  {
+    id: 'moment-066',
+    category: 'random',
+    title: { ar: 'نزهة بالتناوب', en: 'Turn-by-turn walk' },
+    description: {
+      ar: 'اخرجا في نزهة قصيرة، وعند كل تقاطع يختار أحدكما الاتجاه بالتناوب، وانظرا إلى أين يأخذكما الطريق.',
+      en: 'Go for a short walk and take turns choosing the direction at every corner. See where the road takes you.',
+    },
+    steps: [
+      {
+        ar: 'توقّفا عند أول مكان لطيف تصادفانه.',
+        en: 'Stop at the first nice spot you stumble on.',
+      },
+    ],
+    minutes: 30,
+    modes: ['together'],
   },
 ]

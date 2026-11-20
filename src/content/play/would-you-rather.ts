@@ -13,16 +13,6 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     b: { ar: 'القدرة على الاختفاء', en: 'The power to turn invisible' },
   },
   {
-    id: 'wyr-002',
-    a: { ar: 'قطّة تتكلّم', en: 'A cat that can talk' },
-    b: { ar: 'كلب يقرأ الأفكار', en: 'A dog that can read minds' },
-  },
-  {
-    id: 'wyr-003',
-    a: { ar: 'موسيقى تصويرية ترافق كل لحظة', en: 'A soundtrack playing through every moment' },
-    b: { ar: 'راوٍ يعلّق على كل ما يحدث', en: 'A narrator commenting on everything that happens' },
-  },
-  {
     id: 'wyr-004',
     a: { ar: 'تذكّر كل حلم بأدق تفاصيله', en: 'Remembering every dream in vivid detail' },
     b: { ar: 'نوم عميق بلا أحلام', en: 'Deep, dreamless sleep' },
@@ -66,21 +56,6 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     },
   },
   {
-    id: 'wyr-012',
-    a: { ar: 'معرفة نهاية كل فيلم قبل بدايته', en: 'Knowing how every film ends before it starts' },
-    b: { ar: 'نسيان كل فيلم بعد مشاهدته', en: 'Forgetting every film right after watching it' },
-  },
-  {
-    id: 'wyr-013',
-    a: { ar: 'سحابة شخصية تُظلّل في الحرّ', en: 'A personal cloud for shade on hot days' },
-    b: { ar: 'مظلّة تغنّي تحت المطر', en: 'An umbrella that sings in the rain' },
-  },
-  {
-    id: 'wyr-014',
-    a: { ar: 'القدرة على كشف أي كذبة', en: 'Spotting every lie' },
-    b: { ar: 'القدرة على قراءة الأفكار', en: 'Reading every mind' },
-  },
-  {
     id: 'wyr-015',
     a: { ar: 'ثلاجة لا تفرغ أبدًا', en: 'A fridge that never runs empty' },
     b: { ar: 'خزانة تختار الملابس كل صباح', en: 'A closet that picks the outfit every morning' },
@@ -101,9 +76,9 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     b: { ar: 'ابتسامة تُذيب أي غضب', en: 'A smile that melts any bad mood' },
   },
   {
-    id: 'wyr-019',
-    a: { ar: 'رحلة عبر الزمن إلى الماضي', en: 'A time trip to the past' },
-    b: { ar: 'رحلة عبر الزمن إلى المستقبل', en: 'A time trip to the future' },
+    id: 'wyr-077',
+    a: { ar: 'يوم في مدينة قبل ألف عام', en: 'A day in a city a thousand years ago' },
+    b: { ar: 'يوم في مدينة من الخيال العلمي', en: 'A day in a sci-fi city' },
   },
   {
     id: 'wyr-020',
@@ -116,19 +91,37 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     b: { ar: 'القهوة وحدها مدى الحياة', en: 'Only coffee, forever' },
   },
   {
-    id: 'wyr-022',
-    a: { ar: 'عشاء مع رائد فضاء', en: 'Dinner with an astronaut' },
-    b: { ar: 'عشاء مع طاهٍ مشهور', en: 'Dinner with a famous chef' },
-  },
-  {
     id: 'wyr-023',
     a: { ar: 'زرّ لتخطّي اللحظات المملّة', en: 'A button to skip the boring bits' },
     b: { ar: 'زرّ لإعادة اللحظات الجميلة', en: 'A button to replay the best bits' },
   },
   {
-    id: 'wyr-024',
-    a: { ar: 'طابع بريد يحمل صورتك', en: 'A postage stamp with your face on it' },
-    b: { ar: 'شارع يحمل اسمك', en: 'A street named after you' },
+    id: 'wyr-061',
+    a: { ar: 'قطّة كسولة تنام طوال اليوم', en: 'A lazy cat that sleeps all day' },
+    b: { ar: 'ببغاء ثرثار لا يسكت أبدًا', en: 'A chatty parrot that never stops talking' },
+  },
+  {
+    id: 'wyr-063',
+    a: {
+      ar: 'معرفة نهاية كل كتاب قبل قراءته',
+      en: 'Knowing how every book ends before reading it',
+    },
+    b: { ar: 'نسيان كل كتاب بعد قراءته', en: 'Forgetting every book right after reading it' },
+  },
+  {
+    id: 'wyr-064',
+    a: { ar: 'حذاء لا تتعب معه القدمان', en: 'Shoes that never tire the feet' },
+    b: { ar: 'حقيبة لا تمتلئ أبدًا', en: 'A bag that never fills up' },
+  },
+  {
+    id: 'wyr-065',
+    a: { ar: 'ذاكرة لا تنسى أي اسم', en: 'Never forgetting a name' },
+    b: { ar: 'حسّ اتجاه لا يضيع في أي طريق', en: 'Never getting lost' },
+  },
+  {
+    id: 'wyr-066',
+    a: { ar: 'ليلة في مرصد فلكي', en: 'A night at an observatory' },
+    b: { ar: 'يوم على متن سفينة أبحاث', en: 'A day on a research ship' },
   },
 
   /* ---------- Lifestyle and travel ---------- */
@@ -188,29 +181,14 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     b: { ar: 'عشاء أنيق في مطعم راقٍ', en: 'An elegant dinner at a fine restaurant' },
   },
   {
-    id: 'wyr-036',
-    a: { ar: 'الغوص بين الشعاب المرجانية', en: 'Diving among coral reefs' },
+    id: 'wyr-078',
+    a: { ar: 'التجديف في نهر هادئ', en: 'Kayaking on a calm river' },
     b: { ar: 'التزلّج على الثلج', en: 'Skiing in the snow' },
   },
   {
     id: 'wyr-037',
     a: { ar: 'حديقة مليئة بالزهور', en: 'A garden full of flowers' },
     b: { ar: 'مكتبة تملأ الجدران', en: 'Bookshelves covering every wall' },
-  },
-  {
-    id: 'wyr-038',
-    a: { ar: 'عطلة على الشاطئ', en: 'A beach holiday' },
-    b: { ar: 'جولة بين المتاحف والأسواق القديمة', en: 'A tour of museums and old markets' },
-  },
-  {
-    id: 'wyr-039',
-    a: { ar: 'أغانٍ قديمة على الطريق', en: 'Old songs on the road' },
-    b: { ar: 'بودكاست شيّق على الطريق', en: 'A gripping podcast on the road' },
-  },
-  {
-    id: 'wyr-040',
-    a: { ar: 'أمسية ألعاب لوحية', en: 'A board game night' },
-    b: { ar: 'أمسية أفلام', en: 'A movie night' },
   },
   {
     id: 'wyr-041',
@@ -234,20 +212,56 @@ export const wouldYouRather: WouldYouRatherItem[] = [
   },
   {
     id: 'wyr-045',
-    a: { ar: 'دروس طبخ مع جدّة إيطالية', en: 'Cooking lessons with an Italian grandma' },
+    a: { ar: 'دروس طبخ من وصفات الجدّات', en: "Cooking lessons from our grandmothers' recipes" },
     b: { ar: 'دروس خطّ عربي مع خطّاط بارع', en: 'Arabic calligraphy lessons with a master' },
+  },
+  {
+    id: 'wyr-062',
+    a: { ar: 'سباق جري في الحديقة', en: 'A footrace in the park' },
+    b: { ar: 'سباق دراجات في الحديقة', en: 'A bike race in the park' },
+  },
+  {
+    id: 'wyr-067',
+    a: {
+      ar: 'بئر ماء في قرية بعيدة صدقةً جارية',
+      en: 'A water well in a faraway village, as lasting charity',
+    },
+    b: {
+      ar: 'مكتبة صغيرة في حيّ محتاج صدقةً جارية',
+      en: 'A small library in a neighborhood in need, as lasting charity',
+    },
+  },
+  {
+    id: 'wyr-068',
+    a: { ar: 'عطلة في مزرعة بين البساتين', en: 'A holiday on a farm among the orchards' },
+    b: { ar: 'عطلة في مدينة تاريخية قديمة', en: 'A holiday in an old historic city' },
+  },
+  {
+    id: 'wyr-069',
+    a: { ar: 'كتاب مسموع شيّق على الطريق', en: 'A gripping audiobook on the road' },
+    b: { ar: 'حديث طويل بلا شاشات على الطريق', en: 'A long, screen-free talk on the road' },
+  },
+  {
+    id: 'wyr-070',
+    a: { ar: 'أمسية ألغاز وأحاجٍ', en: 'An evening of riddles and puzzles' },
+    b: { ar: 'أمسية قراءة على ضوء خافت', en: 'An evening of reading by soft light' },
+  },
+  {
+    id: 'wyr-071',
+    a: { ar: 'تعلّم الرماية', en: 'Learning archery' },
+    b: { ar: 'تعلّم ركوب الخيل', en: 'Learning to ride a horse' },
+  },
+  {
+    id: 'wyr-072',
+    a: { ar: 'عمرة في رمضان', en: 'Umrah in Ramadan' },
+    b: { ar: 'عمرة في هدوء الشتاء', en: 'Umrah in the calm of winter' },
   },
 
   /* ---------- Sweet and romantic ---------- */
   {
-    id: 'wyr-046',
-    a: { ar: 'رسالة حب بخط اليد', en: 'A handwritten love letter' },
-    b: { ar: 'أغنية مُهداة على الراديو', en: 'A song dedicated on the radio' },
-  },
-  {
     id: 'wyr-047',
     a: { ar: 'مفاجأة صغيرة كل يوم', en: 'A small surprise every day' },
-    b: { ar: 'مفاجأة كبيرة مرة في السنة', en: 'One big surprise a year' },
+    b: { ar: 'مفاجأة كبيرة بين حين وآخر', en: 'One big surprise once in a while' },
   },
   {
     id: 'wyr-048',
@@ -260,9 +274,9 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     b: { ar: 'حديث طويل بعد يوم صعب', en: 'A long talk after a hard day' },
   },
   {
-    id: 'wyr-050',
-    a: { ar: 'صورة عفوية معًا', en: 'A candid photo together' },
-    b: { ar: 'صورة مرتّبة بإطلالة أنيقة', en: 'A posed photo, all dressed up' },
+    id: 'wyr-079',
+    a: { ar: 'دفتر يوميات نكتبه معًا', en: 'A journal we write together' },
+    b: { ar: 'علبة تذكارات من كل نزهة', en: 'A keepsake box from every outing' },
   },
   {
     id: 'wyr-051',
@@ -280,11 +294,6 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     b: { ar: 'جلسة طويلة على فنجان قهوة', en: 'A long chat over coffee' },
   },
   {
-    id: 'wyr-054',
-    a: { ar: 'إعادة أول موعد بكل تفاصيله', en: 'Recreating the first date, detail by detail' },
-    b: { ar: 'موعد جديد في مكان لم يُزَر من قبل', en: 'A new date somewhere never visited before' },
-  },
-  {
     id: 'wyr-055',
     a: { ar: 'رسائل صوتية طوال اليوم', en: 'Voice notes all day long' },
     b: { ar: 'مكالمة طويلة آخر الليل', en: 'One long call late at night' },
@@ -295,9 +304,15 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     b: { ar: 'وجبة جاهزة على الأريكة', en: 'Takeout on the couch' },
   },
   {
-    id: 'wyr-057',
-    a: { ar: 'ألبوم صور مطبوع للذكريات المشتركة', en: 'A printed album of shared memories' },
-    b: { ar: 'فيديو قصير لأجمل اللحظات معًا', en: 'A short video of the best moments together' },
+    id: 'wyr-080',
+    a: {
+      ar: 'رسالة نكتبها اليوم ونفتحها بعد خمس سنوات',
+      en: 'A letter we write today and open in five years',
+    },
+    b: {
+      ar: 'خريطة نعلّم عليها كل مكان زرناه معًا',
+      en: 'A map marking every place we have been together',
+    },
   },
   {
     id: 'wyr-058',
@@ -310,8 +325,29 @@ export const wouldYouRather: WouldYouRatherItem[] = [
     b: { ar: 'حبّ يُقال بالكلمات', en: 'Love said in words' },
   },
   {
-    id: 'wyr-060',
-    a: { ar: 'احتفال كبير مع الجميع', en: 'A big celebration with everyone' },
-    b: { ar: 'احتفال هادئ لشخصين فقط', en: 'A quiet celebration, just the two of you' },
+    id: 'wyr-073',
+    a: { ar: 'رسالة حب بخط اليد', en: 'A handwritten love letter' },
+    b: { ar: 'كلمات حلوة تُقال وجهًا لوجه', en: 'Sweet words said face to face' },
+  },
+  {
+    id: 'wyr-074',
+    a: {
+      ar: 'زيارة مكان أول نزهة لنا كزوجين',
+      en: 'Revisiting the spot of our first outing as a married couple',
+    },
+    b: {
+      ar: 'نزهة جديدة في مكان لم يُزَر من قبل',
+      en: 'A new outing somewhere never visited before',
+    },
+  },
+  {
+    id: 'wyr-075',
+    a: { ar: 'إفطار رمضاني كبير مع العائلة', en: 'A big Ramadan iftar with the family' },
+    b: { ar: 'إفطار رمضاني هادئ لشخصين', en: 'A quiet Ramadan iftar for two' },
+  },
+  {
+    id: 'wyr-076',
+    a: { ar: 'صباح العيد مع الأهل', en: 'Eid morning with the family' },
+    b: { ar: 'صباح العيد في نزهة خارج المدينة', en: 'Eid morning on a trip out of town' },
   },
 ]

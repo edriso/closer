@@ -148,7 +148,7 @@ export const dreams: Topic = {
         en: 'What tradition would you love to make our own?',
       },
       followUps: [
-        { ar: 'كل أسبوع أم كل سنة؟', en: 'Weekly or yearly?' },
+        { ar: 'في رمضان أم في أيامنا العادية؟', en: 'In Ramadan or on ordinary days?' },
         { ar: 'من أين جاءت الفكرة؟', en: 'Where did the idea come from?' },
       ],
     },
@@ -317,6 +317,22 @@ export const dreams: Topic = {
           en: "What's stopping us from doing it this month?",
         },
         { ar: 'من منا يتولّى التخطيط؟', en: 'Which of us takes charge of the planning?' },
+      ],
+    },
+    {
+      id: 'dreams-021',
+      subtopic: 'adventures',
+      depth: 'medium',
+      text: {
+        ar: 'لو كتب الله لنا عمرة معًا، فما أكثر ما يشتاق إليه قلبك هناك؟',
+        en: 'If Allah writes an Umrah for us together, what does your heart long for most there?',
+      },
+      followUps: [
+        { ar: 'ومن يسعدك أن يرافقنا فيها؟', en: 'And who would you love to bring along?' },
+        {
+          ar: 'ومتى يسعدك أن نبدأ الاستعداد لها؟',
+          en: 'And when would you love us to start preparing for it?',
+        },
       ],
     },
   ],

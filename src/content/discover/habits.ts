@@ -111,8 +111,8 @@ export const habits: Topic = {
       subtopic: 'home-life',
       depth: 'light',
       text: {
-        ar: 'ما الذي يريحك أكثر: بيت هادئ تمامًا أم موسيقى أو صوت في الخلفية؟',
-        en: 'What relaxes you more: a perfectly quiet home or some music or sound in the background?',
+        ar: 'ما الذي يريحك أكثر: بيت هادئ تمامًا أم شيء من الحركة والأصوات حولك؟',
+        en: 'What relaxes you more: a perfectly quiet home or a bit of life and sound around you?',
       },
       followUps: [
         {
@@ -221,8 +221,8 @@ export const habits: Topic = {
       subtopic: 'free-time',
       depth: 'light',
       text: {
-        ar: 'ما النشاط الذي يمكن أن يصبح موعدنا الأسبوعي الثابت؟',
-        en: 'What activity could become our regular weekly thing?',
+        ar: 'ما النشاط الذي يسعدك أن يصبح عادة أسبوعية ثابتة في بيتنا؟',
+        en: 'What activity would you love to become a regular weekly habit in our home?',
       },
       followUps: [
         {
@@ -245,8 +245,8 @@ export const habits: Topic = {
       },
       followUps: [
         {
-          ar: 'هل من أصدقاء يهمّك أن أعرفهم أكثر؟',
-          en: 'Are there friends you would like me to know better?',
+          ar: 'كم مرة في الشهر تبدو لقاءات الأصدقاء مناسبة لك؟',
+          en: 'How often in a month feels right for seeing friends?',
         },
         {
           ar: 'ما الذي يجعل وقت الأصدقاء مريحًا لكلينا؟',

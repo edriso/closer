@@ -120,8 +120,8 @@ export const personality: Topic = {
           en: 'When did you last feel that way?',
         },
         {
-          ar: 'من أكثر من يُفرحك بسهولة؟',
-          en: 'Who makes you happy most easily?',
+          ar: 'ما أبسط شيء يُفرحك؟',
+          en: "What's the simplest thing that makes you happy?",
         },
       ],
     },
@@ -130,13 +130,13 @@ export const personality: Topic = {
       subtopic: 'emotions',
       depth: 'medium',
       text: {
-        ar: 'ما الذي يحرّك مشاعرك بسهولة، حتى في فيلم أو أغنية؟',
-        en: 'What moves you easily, even in a film or a song?',
+        ar: 'ما الذي يحرّك مشاعرك بسهولة، ولو كان قصة قصيرة أو موقفًا عابرًا؟',
+        en: 'What moves you easily, even a short story or a passing moment?',
       },
       followUps: [
         {
-          ar: 'ما آخر مشهد حرّك قلبك؟',
-          en: "What's the last scene that touched your heart?",
+          ar: 'ما آخر موقف حرّك قلبك؟',
+          en: "What's the last moment that touched your heart?",
         },
         {
           ar: 'هل يريحك أن يرى الآخرون هذا الجانب منك؟',
@@ -177,8 +177,8 @@ export const personality: Topic = {
           en: 'What helps it pass sooner?',
         },
         {
-          ar: 'هل يشبه ذلك أحدًا من عائلتك؟',
-          en: 'Is that like anyone in your family?',
+          ar: 'وما الذي يحسن أن يعرفه من حولك عنه؟',
+          en: 'And what should the people around you know about it?',
         },
       ],
     },

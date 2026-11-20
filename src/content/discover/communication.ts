@@ -84,21 +84,21 @@ export const communication: Topic = {
       ],
     },
     {
-      id: 'communication-005',
+      id: 'communication-016',
       subtopic: 'expressing',
-      depth: 'deep',
+      depth: 'medium',
       text: {
-        ar: 'ما الكلمات التي يحتاج قلبك إلى سماعها أكثر من غيرها؟',
-        en: 'What words does your heart most need to hear?',
+        ar: 'ما نوع التشجيع الذي يرفع همّتك حين تتعثّر الأمور؟',
+        en: 'What kind of encouragement lifts you when things go wrong?',
       },
       followUps: [
         {
-          ar: 'لماذا تعني لك هذه الكلمات الكثير؟',
-          en: 'Why do these words mean so much to you?',
+          ar: 'ومن يُحسن تشجيعك بهذه الطريقة؟',
+          en: 'Who is good at encouraging you that way?',
         },
         {
-          ar: 'في أيّ الأوقات تشتدّ حاجتك إليها؟',
-          en: 'When do you need them most?',
+          ar: 'وما الذي يبدو تشجيعًا لكنه يُثقل عليك؟',
+          en: 'And what sounds like encouragement but weighs on you?',
         },
       ],
     },
@@ -126,13 +126,13 @@ export const communication: Topic = {
       subtopic: 'disagreements',
       depth: 'medium',
       text: {
-        ar: 'بعد خلاف، ما الذي يُعيد الدفء إلى قلبك أسرع؟',
-        en: 'After a disagreement, what brings the warmth back fastest for you?',
+        ar: 'بعد خلاف، ما الذي يُعيد الصفاء إلى قلبك أسرع؟',
+        en: 'After a disagreement, what helps you feel at peace again fastest?',
       },
       followUps: [
         {
-          ar: 'كلمة حلوة، أم ابتسامة، أم نزهة قصيرة؟',
-          en: 'A sweet word, a smile or a short walk?',
+          ar: 'كلمة طيبة، أم اعتذار واضح، أم وقت قصير للهدوء؟',
+          en: 'A kind word, a clear apology or a little time to settle?',
         },
         {
           ar: 'هل يهمّك من يبادر أولًا؟',

@@ -5,9 +5,12 @@
 import type { Activity, ActivityCategoryId, Question, Topic } from '../types/content'
 import { communication } from './discover/communication'
 import { expectations } from './discover/expectations'
+import { deen } from './discover/deen'
+import { family } from './discover/family'
 import { goals } from './discover/goals'
 import { habits } from './discover/habits'
 import { journey } from './discover/journey'
+import { marriage } from './discover/marriage'
 import { personality } from './discover/personality'
 import { values } from './discover/values'
 import { activities } from './moments/activities'
@@ -17,16 +20,20 @@ import { truthsThemes } from './play/truths'
 import { wouldYouRather } from './play/would-you-rather'
 import { deep } from './talk/deep'
 import { dreams } from './talk/dreams'
+import { faith } from './talk/faith'
 import { funny } from './talk/funny'
 import { light } from './talk/light'
 import { love } from './talk/love'
 import { memories } from './talk/memories'
 
-export const talkTopics: Topic[] = [light, funny, deep, memories, dreams, love]
+export const talkTopics: Topic[] = [light, funny, deep, memories, dreams, love, faith]
 export const discoverTopics: Topic[] = [
   personality,
   values,
+  deen,
   communication,
+  marriage,
+  family,
   expectations,
   habits,
   goals,

@@ -11,8 +11,8 @@ export const strings = {
   brand: { ar: 'أقرب', en: 'Closer' },
   tagline: { ar: 'أقرب قليلًا، مع كل حديث.', en: 'A little closer, every conversation.' },
   metaDescription: {
-    ar: 'مساحة دافئة للأزواج والمخطوبين: أسئلة للحديث، وألعاب لشخصين، ولحظات صغيرة لوقت أجمل معًا.',
-    en: 'A cozy space for couples: conversation questions, games for two and little moments to enjoy together.',
+    ar: 'مساحة دافئة وحلال للزوجين: أسئلة للحديث، وألعاب لشخصين، ولحظات صغيرة لوقت أجمل معًا.',
+    en: 'A cozy, halal space for married couples: conversation questions, games for two and little moments to enjoy together.',
   },
 
   // Navigation & chrome
@@ -43,8 +43,8 @@ export const strings = {
   discoverTitle: { ar: 'لنتعرّف', en: 'Discover' },
   discoverBlurb: { ar: 'لمعرفة أعمق ببعضكما', en: 'Get to know each other more deeply' },
   discoverLead: {
-    ar: 'أسئلة أعمق لتفهما بعضكما: القيم، والتوقعات، وطريقة التفكير.',
-    en: 'Deeper questions to understand each other: values, expectations and the way you think.',
+    ar: 'أسئلة أعمق لتفهما بعضكما: القيم، والتوقعات، وطريقة التفكير. تصلح للزوجين، وللمقبلين على الزواج.',
+    en: 'Deeper questions to understand each other: values, expectations and the way you think. For spouses, and for two people preparing for marriage.',
   },
   momentsTitle: { ar: 'لحظات', en: 'Moments' },
   momentsBlurb: { ar: 'أنشطة صغيرة لوقت جميل', en: 'Little activities for a lovely time' },
@@ -181,26 +181,30 @@ export const strings = {
   whoWrong: { ar: 'ليس تمامًا', en: 'Not quite' },
   whoScore: { ar: 'تخمينات صائبة', en: 'Correct guesses' },
 
-  // Two truths and a lie
-  truthsTitle: { ar: 'حقيقتان وكذبة', en: 'Two truths and a lie' },
+  // Two truths and a wish
+  truthsTitle: { ar: 'حقيقتان وأمنية', en: 'Two truths and a wish' },
   truthsDescription: {
-    ar: 'ثلاث معلومات، واحدة منها مختلَقة. هل تكتشفانها؟',
-    en: 'Three facts, one made up. Can you spot it?',
+    ar: 'ثلاثة أشياء: اثنان حدثا فعلًا، وواحد ما زال أمنية. هل تكتشفان الأمنية؟',
+    en: 'Three things: two really happened, one is only a wish. Can you spot it?',
   },
   truthsTheme: { ar: 'الموضوع', en: 'Theme' },
   truthsTell: {
-    ar: 'على {name}: حقيقتان وكذبة عن هذا الموضوع، بأيّ ترتيب.',
-    en: '{name}: share two truths and a lie about this theme, in any order.',
+    ar: 'على {name}: ثلاث عبارات قصيرة عن هذا الموضوع، بأيّ ترتيب: اثنتان حدثتا فعلًا، وواحدة أمنية فقط.',
+    en: '{name}: say three short phrases about this theme, in any order: two that really happened and one that is only a wish.',
   },
-  truthsGuess: { ar: 'وعلى {name}: اكتشاف الكذبة.', en: '{name}: spot the lie.' },
+  truthsGuess: { ar: 'وعلى {name}: اكتشاف الأمنية.', en: '{name}: spot the wish.' },
+  truthsReveal: {
+    ar: 'ثم على {name}: كشف الأمنية، وحكاية الحقيقتين.',
+    en: 'Then {name} reveals the wish and the story behind the two truths.',
+  },
   truthsThink: {
-    ar: 'خذا لحظة للتفكير، فلا داعي للعجلة.',
-    en: 'Take a moment to think. No rush.',
+    ar: 'عبارات قصيرة مثل «رحلة إلى الجبل»، لا «سافرتُ إلى الجبل». ولا داعي للعجلة.',
+    en: 'Short phrases like "a trip to the mountains", not "I went to the mountains". No rush.',
   },
-  truthsSpotted: { ar: 'اكتُشفت الكذبة', en: 'Lie spotted' },
-  truthsSurvived: { ar: 'نجت الكذبة!', en: 'The lie survived!' },
+  truthsSpotted: { ar: 'اكتُشفت الأمنية', en: 'Wish spotted' },
+  truthsSurvived: { ar: 'بقيت الأمنية مخفية!', en: 'The wish stayed hidden!' },
   truthsAnotherTheme: { ar: 'موضوع آخر', en: 'Another theme' },
-  truthsScore: { ar: 'كذبات مكشوفة', en: 'Lies spotted' },
+  truthsScore: { ar: 'أمنيات مكشوفة', en: 'Wishes spotted' },
 
   // Moments
   worksOnCall: { ar: 'يصلح للمكالمة', en: 'Works on a call' },
@@ -239,8 +243,8 @@ export const strings = {
   // About
   aboutTitle: { ar: 'عن أقرب', en: 'About Closer' },
   aboutLead: {
-    ar: 'أقرب مساحة بسيطة ودافئة للأزواج والمخطوبين، تساعدكما على قضاء وقت أجمل معًا من خلال الحديث واللعب واللحظات الصغيرة.',
-    en: 'Closer is a simple, cozy space for couples, engaged or married, to spend better time together through conversation, play and little moments.',
+    ar: 'أقرب مساحة بسيطة ودافئة للزوجين المسلمين، تساعدكما على قضاء وقت أجمل معًا بالحديث واللعب واللحظات الصغيرة، فيما يرضي الله. وأسئلة «لنتعرّف» تصلح أيضًا للمقبلين على الزواج، في جلسة تعارف شرعية بعلم الأهل.',
+    en: 'Closer is a simple, cozy space for Muslim married couples to spend better time together through conversation, play and little moments, in ways that please Allah. The Discover questions also suit two people getting to know each other for marriage, in a proper setting with their families’ knowledge.',
   },
   aboutPrinciplesTitle: { ar: 'ما نؤمن به', en: 'What we believe' },
   aboutP1Title: { ar: 'حديث لا استجواب', en: 'Conversation, not interrogation' },
@@ -263,10 +267,15 @@ export const strings = {
     ar: 'كل سؤال مكتوب بعناية بالعربية والإنجليزية، بلا تكرار.',
     en: 'Every question is carefully written in Arabic and English, with no filler.',
   },
+  aboutP5Title: { ar: 'حلال من الأساس', en: 'Halal by design' },
+  aboutP5: {
+    ar: 'لا أعياد ميلاد، ولا موسيقى، ولا رهان، ولا كذب ولو مزاحًا، ولا ما يخدش الحياء. كل سؤال ولعبة ولحظة راجعناها على ضوء الضوابط الشرعية.',
+    en: 'No birthdays, music, betting, lying (even as a joke) or anything immodest. Every question, game and moment is checked against Islamic guidelines.',
+  },
   aboutInspirationTitle: { ar: 'مصادر الإلهام', en: 'Inspiration' },
   aboutInspiration: {
-    ar: 'استلهمنا فكرة التدرّج في العمق من دراسة «الأسئلة الستة والثلاثين» لآرون وزملائه، ومواضيع ما قبل الزواج من استبيانات الإرشاد الأسري. أما المحتوى نفسه فمكتوب خصيصًا لأقرب.',
-    en: 'The gently deepening arc is inspired by Aron et al.’s “36 Questions” study, and the premarital topics by family counseling questionnaires. All the content itself is written originally for Closer.',
+    ar: 'استلهمنا فكرة التدرّج في العمق من دراسة «الأسئلة الستة والثلاثين» لآرون وزملائه، ومواضيع ما قبل الزواج من استبيان ما قبل الزواج الذي أعدّه معهد الأسرة والشباب (The FYI). أما المحتوى نفسه فمكتوب خصيصًا لأقرب، وهو اجتهاد في اتباع الضوابط الشرعية وليس فتوى، فاسألا أهل العلم الثقات عمّا يخصّكما.',
+    en: 'The gently deepening arc is inspired by Aron et al.’s “36 Questions” study, and the premarital topics by The Family & Youth Institute’s (The FYI) premarital questionnaire. All the content itself is written originally for Closer. It follows mainstream Islamic guidance but isn’t a fatwa, so ask a trusted scholar about your own situation.',
   },
   aboutOpenSource: { ar: 'أقرب مشروع مفتوح المصدر.', en: 'Closer is open source.' },
   viewOnGithub: { ar: 'الشيفرة على GitHub', en: 'Source on GitHub' },

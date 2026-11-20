@@ -1,4 +1,4 @@
-import { HeartHandshake, MessageCircleHeart, ShieldCheck, Sparkles } from 'lucide-react'
+import { HeartHandshake, MessageCircleHeart, ShieldCheck, Sparkles, Sunrise } from 'lucide-react'
 import { ButtonLink } from '../components/ui/Button'
 import card from '../components/ui/Card.module.css'
 import { PageHeader } from '../components/ui/PageHeader'
@@ -14,6 +14,7 @@ export function AboutPage() {
     { Icon: HeartHandshake, tone: 'rose', title: t('aboutP2Title'), body: t('aboutP2') },
     { Icon: ShieldCheck, tone: 'mint', title: t('aboutP3Title'), body: t('aboutP3') },
     { Icon: Sparkles, tone: 'sky', title: t('aboutP4Title'), body: t('aboutP4') },
+    { Icon: Sunrise, tone: 'peach', title: t('aboutP5Title'), body: t('aboutP5') },
   ] as const
 
   return (

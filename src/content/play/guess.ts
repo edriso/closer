@@ -22,30 +22,17 @@ export const guessPrompts: GuessItem[] = [
     text: { ar: 'المدينة الأولى في قائمة الأحلام', en: 'The top city on the travel wish list' },
   },
   { id: 'guess-004', text: { ar: 'اللون الأقرب إلى القلب', en: 'Favorite color' } },
-  {
-    id: 'guess-005',
-    text: { ar: 'الفيلم الذي لا يُملّ من إعادته', en: 'The movie that never gets old' },
-  },
   { id: 'guess-006', text: { ar: 'المشروب المعتاد في الصباح', en: 'The go-to morning drink' } },
   {
     id: 'guess-007',
     text: { ar: 'أكثر ما كان يُخيف في الطفولة', en: 'The biggest childhood fear' },
   },
   {
-    id: 'guess-008',
-    text: { ar: 'الحلوى التي لا تُقاوَم', en: 'The dessert that is impossible to resist' },
-  },
-  { id: 'guess-009', text: { ar: 'فصل السنة المفضّل', en: 'Favorite season of the year' } },
-  {
     id: 'guess-010',
     text: { ar: 'المادة الدراسية المفضّلة أيام المدرسة', en: 'Favorite subject back in school' },
   },
   { id: 'guess-011', text: { ar: 'مهنة الأحلام في الطفولة', en: 'The dream job as a kid' } },
   { id: 'guess-012', text: { ar: 'الحيوان الأقرب إلى القلب', en: 'Favorite animal' } },
-  {
-    id: 'guess-013',
-    text: { ar: 'الأغنية الأكثر ترديدًا هذه الأيام', en: 'The song most hummed these days' },
-  },
   { id: 'guess-014', text: { ar: 'الأكلة المرفوضة تمامًا', en: 'The one food that is a firm no' } },
   {
     id: 'guess-015',
@@ -58,13 +45,6 @@ export const guessPrompts: GuessItem[] = [
   {
     id: 'guess-017',
     text: { ar: 'نوع الهدية الأكثر إسعادًا', en: 'The kind of gift that brings the most joy' },
-  },
-  {
-    id: 'guess-018',
-    text: {
-      ar: 'الشخصية الكرتونية المفضّلة في الطفولة',
-      en: 'Favorite cartoon character growing up',
-    },
   },
   {
     id: 'guess-019',
@@ -81,13 +61,6 @@ export const guessPrompts: GuessItem[] = [
     text: { ar: 'الطبق المميّز عند الطبخ', en: 'The signature dish in the kitchen' },
   },
   {
-    id: 'guess-024',
-    text: {
-      ar: 'أول ما يُلاحَظ في الناس عند اللقاء الأول',
-      en: 'The first thing noticed about people on meeting them',
-    },
-  },
-  {
     id: 'guess-025',
     text: { ar: 'الكتاب أو القصة الأعمق أثرًا', en: 'The book or story that left the deepest mark' },
   },
@@ -97,7 +70,6 @@ export const guessPrompts: GuessItem[] = [
   },
   { id: 'guess-027', text: { ar: 'الركن المفضّل في البيت', en: 'Favorite spot at home' } },
   { id: 'guess-028', text: { ar: 'المهارة التي يُتمنّى إتقانها', en: 'The skill most wished for' } },
-  { id: 'guess-029', text: { ar: 'الرقم المحظوظ', en: 'The lucky number' } },
   {
     id: 'guess-030',
     text: { ar: 'أول من يُتّصل به عند سماع خبر سعيد', en: 'The first person called with good news' },
@@ -114,16 +86,12 @@ export const guessPrompts: GuessItem[] = [
     text: { ar: 'اسم أول صديق مقرّب في الطفولة', en: 'Name of the first close childhood friend' },
   },
   {
-    id: 'guess-033',
-    text: { ar: 'الحلوى المفضّلة أيام المدرسة', en: 'The favorite treat back in school days' },
-  },
-  {
     id: 'guess-034',
     text: { ar: 'الطريقة الأسرع لتحسين المزاج', en: 'The quickest mood booster' },
   },
   {
     id: 'guess-035',
-    text: { ar: 'الرياضة المفضّلة مشاهدةً أو ممارسةً', en: 'Favorite sport to watch or play' },
+    text: { ar: 'الرياضة المفضّلة ممارسةً', en: 'Favorite sport to play' },
   },
   { id: 'guess-036', text: { ar: 'الحشرة الأكثر إثارة للرعب', en: 'The most terrifying bug' } },
   { id: 'guess-037', text: { ar: 'الطلب المعتاد في المقهى', en: 'The usual café order' } },
@@ -139,11 +107,6 @@ export const guessPrompts: GuessItem[] = [
     text: { ar: 'اللقب الذي كان يُنادى به في الصغر', en: 'The childhood nickname' },
   },
   {
-    id: 'guess-040',
-    text: { ar: 'المناسبة المفضّلة في السنة', en: 'Favorite occasion of the year' },
-  },
-  { id: 'guess-041', text: { ar: 'المطرب أو الفرقة المفضّلة', en: 'Favorite singer or band' } },
-  {
     id: 'guess-042',
     text: { ar: 'المهمة التي تُؤجَّل دائمًا', en: 'The chore that always gets put off' },
   },
@@ -157,14 +120,6 @@ export const guessPrompts: GuessItem[] = [
     text: { ar: 'أسعد لحظة في العام الماضي', en: 'The happiest moment of the past year' },
   },
   {
-    id: 'guess-046',
-    text: { ar: 'القوة الخارقة الأكثر إغراءً', en: 'The most tempting superpower' },
-  },
-  {
-    id: 'guess-047',
-    text: { ar: 'الشيء الذي لا يغادر الحقيبة أبدًا', en: 'The one thing that never leaves the bag' },
-  },
-  {
     id: 'guess-048',
     text: { ar: 'المكان المفضّل للخروج معًا', en: 'The favorite place to go out together' },
   },
@@ -175,5 +130,44 @@ export const guessPrompts: GuessItem[] = [
   {
     id: 'guess-050',
     text: { ar: 'العمر الذي يستحق العودة إليه', en: 'The age most worth going back to' },
+  },
+  { id: 'guess-054', text: { ar: 'القارئ المفضّل لتلاوة القرآن', en: 'Favorite Quran reciter' } },
+  { id: 'guess-055', text: { ar: 'الوقت الأحبّ في اليوم', en: 'Favorite time of day' } },
+  {
+    id: 'guess-056',
+    text: { ar: 'الطبق المفضّل من مطبخ العائلة', en: 'The favorite dish from the family kitchen' },
+  },
+  {
+    id: 'guess-058',
+    text: {
+      ar: 'الصحابي أو الصحابية الأقرب إلى القلب',
+      en: 'The Companion of the Prophet ﷺ closest to the heart',
+    },
+  },
+  {
+    id: 'guess-059',
+    text: { ar: 'المشروب المفضّل على مائدة الإفطار', en: 'The favorite drink at iftar' },
+  },
+  {
+    id: 'guess-060',
+    text: { ar: 'حلوى العيد التي لا بد منها', en: 'The Eid sweet that has to be there' },
+  },
+  { id: 'guess-061', text: { ar: 'الرمز التعبيري الأكثر استخدامًا', en: 'The most-used emoji' } },
+  { id: 'guess-062', text: { ar: 'الزهرة المفضّلة', en: 'Favorite flower' } },
+  {
+    id: 'guess-063',
+    text: { ar: 'عدد المنبّهات اللازمة للاستيقاظ', en: 'How many alarms it takes to wake up' },
+  },
+  {
+    id: 'guess-064',
+    text: { ar: 'المقعد المفضّل في السفر: النافذة أم الممر', en: 'Window seat or aisle seat' },
+  },
+  {
+    id: 'guess-065',
+    text: { ar: 'الوجبة الخفيفة المعتادة في السفر بالسيارة', en: 'The go-to road-trip snack' },
+  },
+  {
+    id: 'guess-066',
+    text: { ar: 'العبارة الأكثر تكرارًا على اللسان', en: 'The most-repeated everyday phrase' },
   },
 ]

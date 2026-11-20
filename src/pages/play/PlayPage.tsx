@@ -1,4 +1,4 @@
-import { Dices, HeartHandshake, VenetianMask } from 'lucide-react'
+import { HeartHandshake, Lightbulb, Scale } from 'lucide-react'
 import { SectionArt } from '../../components/art/SectionArt'
 import { List, ListRow } from '../../components/ui/List'
 import { PageHeader } from '../../components/ui/PageHeader'
@@ -19,7 +19,7 @@ export function PlayPage() {
         <ListRow
           to="/play/would-you-rather"
           tone="sky"
-          icon={<Dices />}
+          icon={<Scale />}
           title={t('wyrTitle')}
           subtitle={t('wyrDescription')}
         />
@@ -33,7 +33,7 @@ export function PlayPage() {
         <ListRow
           to="/play/two-truths"
           tone="mint"
-          icon={<VenetianMask />}
+          icon={<Lightbulb />}
           title={t('truthsTitle')}
           subtitle={t('truthsDescription')}
         />

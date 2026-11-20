@@ -73,6 +73,6 @@ Topic filters (`?sub=` and `?depth=`) live in the URL, so a filtered deck can be
 
 ## Testing
 
-- `src/content/content.test.ts` checks content integrity: translations present, the right script per language, unique IDs, valid subtopics, `؟`/`?` endings, banned gendered wording and minimum volume.
+- `src/content/content.test.ts` checks content integrity: translations present, the right script per language, unique IDs, valid subtopics, `؟`/`?` endings, banned gendered wording, an off-limits word list from `docs/ISLAMIC_GUIDELINES.md` and minimum volume.
 - `src/lib/*.test.ts` covers the shuffle fairness, the stable "of the day" pick and the deck engine (no repeats, resume, reshuffle).
 - `src/i18n/plural.test.ts` covers Arabic plural agreement.

@@ -6,7 +6,7 @@ export const deep: Topic = {
   tone: 'indigo',
   title: { ar: 'عميق وهادئ', en: 'Deep & meaningful' },
   description: {
-    ar: 'أسئلة هادئة تقرّب القلوب وتكشف ما في الأعماق.',
+    ar: 'أسئلة هادئة تقرّب القلوب وتفتح باب الحديث عمّا يهمّ.',
     en: 'Quieter questions that bring your hearts closer.',
   },
   subtopics: [
@@ -179,10 +179,8 @@ export const deep: Topic = {
         en: 'What small decision turned out to be a huge one?',
       },
       followUps: [
-        {
-          ar: 'كيف كانت الحياة ستبدو لو كان القرار مختلفًا؟',
-          en: 'How might life look if it had gone the other way?',
-        },
+        { ar: 'متى اتضح لك حجمه الحقيقي؟', en: 'When did you see how big it really was?' },
+        { ar: 'وما الذي علّمك إياه؟', en: 'And what did it teach you?' },
       ],
     },
     {
@@ -233,11 +231,11 @@ export const deep: Topic = {
       subtopic: 'life',
       depth: 'medium',
       text: {
-        ar: 'ما الذي يستحق أن نحتفل به أكثر مما نفعل؟',
-        en: 'What deserves more celebrating than we usually give it?',
+        ar: 'ما الإنجاز الصغير في أيامنا الذي يستحق أن نفرح به أكثر؟',
+        en: 'What small everyday win of ours deserves more joy than we give it?',
       },
       followUps: [
-        { ar: 'كيف يكون الاحتفال به؟', en: 'What would the celebration look like?' },
+        { ar: 'كيف نفرح به ببساطة؟', en: 'How could we mark it, simply?' },
         { ar: 'هل نبدأ هذا الأسبوع؟', en: 'Shall we start this week?' },
       ],
     },
@@ -308,12 +306,12 @@ export const deep: Topic = {
       subtopic: 'feelings',
       depth: 'medium',
       text: {
-        ar: 'ما الأغنية أو القصيدة التي تقول ما في قلبك أفضل من أي كلام؟',
-        en: 'What song or poem says what is in your heart better than any words?',
+        ar: 'ما القصيدة أو الكلمات التي تقول ما في قلبك أفضل من أي كلام؟',
+        en: 'What poem or words say what is in your heart better than anything else?',
       },
       followUps: [
         { ar: 'أيّ سطر فيها تحديدًا؟', en: 'Which line exactly?' },
-        { ar: 'هل نسمعها معًا الآن؟', en: 'Shall we listen to it together now?' },
+        { ar: 'هل نقرؤها معًا الآن؟', en: 'Shall we read it together now?' },
       ],
     },
     {

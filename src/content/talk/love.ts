@@ -95,7 +95,7 @@ export const love: Topic = {
       subtopic: 'appreciation',
       depth: 'deep',
       text: {
-        ar: 'ما الذي تغيّر في نظرتك إليّ مع الوقت، ويُسعدك؟',
+        ar: 'ما الذي تغيّر في نظرتك إليّ مع الوقت وصار يُسعدك؟',
         en: 'What has changed, in a way you love, in how you see me over time?',
       },
       followUps: [
@@ -117,6 +117,19 @@ export const love: Topic = {
           en: 'How could I thank you for it in a way that feels like you?',
         },
         { ar: 'هل لاحظه أحد من قبل؟', en: 'Has anyone noticed it before?' },
+      ],
+    },
+    {
+      id: 'love-023',
+      subtopic: 'appreciation',
+      depth: 'light',
+      text: {
+        ar: 'ما الكلمة الطيبة مني التي يسعدك سماعها أكثر؟',
+        en: 'Which kind word from me would you love to hear more often?',
+      },
+      followUps: [
+        { ar: 'متى يكون وقعها أجمل؟', en: 'When does it land best?' },
+        { ar: 'هل أقولها لك الآن؟', en: 'Shall I say it now?' },
       ],
     },
 
@@ -142,8 +155,8 @@ export const love: Topic = {
       subtopic: 'love-language',
       depth: 'medium',
       text: {
-        ar: 'ما المفاجأة البسيطة التي تُسعدك في يوم عادي: ورقة صغيرة، أم أغنية، أم طبق مفضّل؟',
-        en: 'What simple surprise delights you on an ordinary day: a little note, a song or a favorite dish?',
+        ar: 'ما المفاجأة البسيطة التي تُسعدك في يوم عادي: ورقة صغيرة، أم رسالة صوتية، أم طبق مفضّل؟',
+        en: 'What simple surprise delights you on an ordinary day: a little note, a voice note or a favorite dish?',
       },
       followUps: [
         { ar: 'متى وصلتك آخر مفاجأة كهذه؟', en: 'When did the last one like that reach you?' },
@@ -202,12 +215,12 @@ export const love: Topic = {
       ],
     },
     {
-      id: 'love-013',
+      id: 'love-021',
       subtopic: 'love-language',
       depth: 'medium',
       text: {
-        ar: 'كيف يبدو الاحتفال المثالي بيوم ميلادك؟',
-        en: 'What does your ideal birthday celebration look like?',
+        ar: 'كيف يبدو يوم مثالي نقضيه معًا دون أي مناسبة؟',
+        en: 'What does a perfect day together look like, for no occasion at all?',
       },
       followUps: [
         {
@@ -215,8 +228,8 @@ export const love: Topic = {
           en: 'A surprise, or a plan you know about in advance?',
         },
         {
-          ar: 'وما أجمل يوم ميلاد ما زال في ذاكرتك؟',
-          en: 'And which birthday is still your favorite memory?',
+          ar: 'وما أجمل يوم عادي بيننا ما زال في ذاكرتك؟',
+          en: 'And which ordinary day of ours is still a favorite memory?',
         },
       ],
     },
@@ -256,8 +269,8 @@ export const love: Topic = {
       subtopic: 'us',
       depth: 'deep',
       text: {
-        ar: 'ما الذي علّمك إياه الحبّ منذ بدأت قصتنا؟',
-        en: 'What has love taught you since our story began?',
+        ar: 'ما الذي علّمك إياه الحبّ منذ زواجنا؟',
+        en: 'What has love taught you since we married?',
       },
       followUps: [
         { ar: 'هل فاجأك ذلك؟', en: 'Did it surprise you?' },
@@ -322,6 +335,19 @@ export const love: Topic = {
           en: 'How could it stay alive on ordinary days?',
         },
         { ar: 'متى يحين موعد تجديده؟', en: 'When should we renew it?' },
+      ],
+    },
+    {
+      id: 'love-022',
+      subtopic: 'us',
+      depth: 'deep',
+      text: {
+        ar: 'جعل الله بيننا مودّة ورحمة، فمتى تظهر الرحمة بيننا أوضح ما تكون برأيك؟',
+        en: 'Allah placed affection and mercy between us: when does the mercy show most clearly, in your view?',
+      },
+      followUps: [
+        { ar: 'هل يحضرك موقف قريب؟', en: 'Does a recent moment come to mind?' },
+        { ar: 'وكيف نزيدها في الأيام المزدحمة؟', en: 'And how can we grow it on busy days?' },
       ],
     },
   ],

@@ -112,6 +112,21 @@ export const expectations: Topic = {
       ],
     },
     {
+      id: 'expectations-021',
+      subtopic: 'money',
+      depth: 'medium',
+      text: {
+        ar: 'ما رأيك في الدَّين، وكيف نعيش بما يكفينا دون أن نحتاج إليه؟',
+        en: "How do you feel about debt, and how could we live within our means so we don't need it?",
+      },
+      followUps: [
+        {
+          ar: 'ما الذي يساعدنا على الادّخار للطوارئ؟',
+          en: 'What would help us keep some savings for emergencies?',
+        },
+      ],
+    },
+    {
       id: 'expectations-006',
       subtopic: 'family',
       depth: 'light',
@@ -140,8 +155,8 @@ export const expectations: Topic = {
       },
       followUps: [
         {
-          ar: 'وماذا عن المناسبات والأعياد؟',
-          en: 'And what about holidays and special occasions?',
+          ar: 'وماذا عن العيدين والمناسبات العائلية؟',
+          en: 'And what about Eid and family occasions?',
         },
         {
           ar: 'كيف نوزّع وقتنا بعدل بين كل من يهمّنا؟',
@@ -159,31 +174,12 @@ export const expectations: Topic = {
       },
       followUps: [
         {
-          ar: 'ما الذي يكسب قلوب أهلك عادةً؟',
-          en: "What usually wins your family's heart?",
+          ar: 'ما الحكاية التي تختصر روح عائلتك؟',
+          en: "What story captures your family's spirit?",
         },
         {
           ar: 'وهل من موضوع يحسن تجنّبه في الجلسات العائلية؟',
           en: 'Is there a topic best avoided at family gatherings?',
-        },
-      ],
-    },
-    {
-      id: 'expectations-009',
-      subtopic: 'family',
-      depth: 'medium',
-      text: {
-        ar: 'كيف نجمع بين القرب من الأهل والحفاظ على خصوصيتنا؟',
-        en: 'How can we stay close to family while keeping our privacy as a couple?',
-      },
-      followUps: [
-        {
-          ar: 'ما الأمور التي يحسن أن تبقى بيننا فقط؟',
-          en: 'What should stay just between us?',
-        },
-        {
-          ar: 'وكيف نقول ذلك بلطف إن لزم الأمر؟',
-          en: 'And how could we say so kindly, if needed?',
         },
       ],
     },
@@ -364,10 +360,6 @@ export const expectations: Topic = {
         en: 'What kind of family atmosphere would you love in our home, however many of us there are?',
       },
       followUps: [
-        {
-          ar: 'ما الذي يستحق أن ينتقل إليه من بيت طفولتك؟',
-          en: 'What from your childhood home deserves to carry over into it?',
-        },
         {
           ar: 'وما العادة الصغيرة التي تصنع هذه الأجواء كل يوم؟',
           en: 'And what small daily habit would create that feeling?',

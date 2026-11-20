@@ -4,7 +4,7 @@ import type { Topic } from '../../types/content'
  * The closeness journey: 36 questions in three stages that grow gently deeper.
  * Inspired by the escalating self-disclosure structure of Aron et al. (1997),
  * "36 Questions for Increasing Closeness". All questions are original to Closer
- * and written for couples who already know each other.
+ * and written for spouses.
  */
 export const journey: Topic = {
   id: 'journey',
@@ -13,8 +13,8 @@ export const journey: Topic = {
   ordered: true,
   title: { ar: 'رحلة القُرب', en: 'The closeness journey' },
   description: {
-    ar: '٣٦ سؤالًا في ثلاث مراحل تزداد عمقًا بلطف. الأجمل أن تكون في جلسة واحدة، مع التناوب على الإجابة.',
-    en: '36 questions in three stages that gently grow deeper. Best done in one sitting, taking turns to answer.',
+    ar: 'للزوجين: ٣٦ سؤالًا في ثلاث مراحل تزداد عمقًا بلطف. الأجمل أن تكون في جلسة واحدة، مع التناوب على الإجابة.',
+    en: 'For spouses: 36 questions in three stages that gently grow deeper. Best done in one sitting, taking turns to answer.',
   },
   subtopics: [
     { id: 'stage-1', title: { ar: 'المرحلة الأولى', en: 'Stage one' } },
@@ -44,12 +44,12 @@ export const journey: Topic = {
       followUps: [{ ar: 'وما أول استخدام لها؟', en: "What's the first thing you'd use it for?" }],
     },
     {
-      id: 'journey-003',
+      id: 'journey-037',
       subtopic: 'stage-1',
       depth: 'light',
       text: {
-        ar: 'ما الأغنية التي تُعيدك فورًا إلى مرحلة معيّنة من حياتك؟',
-        en: 'What song instantly takes you back to a certain time in your life?',
+        ar: 'ما الرائحة التي تُعيدك فورًا إلى مرحلة معيّنة من حياتك؟',
+        en: 'What scent instantly takes you back to a certain time in your life?',
       },
       followUps: [
         { ar: 'ما الذي كان يحدث في حياتك وقتها؟', en: 'What was going on in your life back then?' },
@@ -223,8 +223,8 @@ export const journey: Topic = {
       subtopic: 'stage-2',
       depth: 'medium',
       text: {
-        ar: 'ما الذي تغيّر فيك منذ بداية علاقتنا؟',
-        en: 'What has changed in you since our relationship began?',
+        ar: 'ما الذي تغيّر فيك منذ زواجنا؟',
+        en: 'What has changed in you since we married?',
       },
       followUps: [{ ar: 'وهل هو تغيير يُسعدك؟', en: 'Is it a change you like?' }],
     },
@@ -243,8 +243,8 @@ export const journey: Topic = {
       subtopic: 'stage-2',
       depth: 'medium',
       text: {
-        ar: 'كيف يختلف الحب في حياتك اليوم عن صورته في خيالك قبل سنوات؟',
-        en: 'How is love in your life today different from how you pictured it years ago?',
+        ar: 'كيف يختلف الزواج في واقعك اليوم عن صورته في خيالك قبل سنوات؟',
+        en: 'How is married life today different from how you pictured it years ago?',
       },
     },
     {
@@ -312,13 +312,14 @@ export const journey: Topic = {
       followUps: [{ ar: 'ومتى يظهر ذلك أكثر؟', en: 'When does it show the most?' }],
     },
     {
-      id: 'journey-026',
+      id: 'journey-038',
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الشيء الذي يُسعدك أن أعرفه عنك، ولم أسمعه منك من قبل؟',
-        en: "What's something about you that you'd love me to know, that I haven't heard from you before?",
+        ar: 'ما الجانب منك الذي يسعدك أن أفهمه أكثر؟',
+        en: 'What side of you would you love me to understand better?',
       },
+      followUps: [{ ar: 'وما الذي يساعدني على ذلك؟', en: 'What would help me get there?' }],
     },
     {
       id: 'journey-027',
@@ -366,8 +367,8 @@ export const journey: Topic = {
       subtopic: 'stage-3',
       depth: 'deep',
       text: {
-        ar: 'ما الذي صار أسهل عليك منذ بدأت قصتنا؟',
-        en: 'What has become easier for you since our story began?',
+        ar: 'ما الذي صار أسهل عليك منذ أن جمعنا الله؟',
+        en: 'What has become easier for you since Allah brought us together?',
       },
       followUps: [{ ar: 'وهل من موقف يشهد على ذلك؟', en: 'Is there a moment that shows it?' }],
     },

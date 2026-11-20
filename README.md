@@ -7,7 +7,8 @@
 **أقرب قليلًا، مع كل حديث.**
 _A little closer, every conversation._
 
-A cozy, bilingual (Arabic-first and English) space for couples, engaged or married, to talk, play and get to know each other better.
+A cozy, halal, bilingual (Arabic-first and English) space for Muslim married couples to talk, play and get to know each other better.
+Its Discover questions also help two people preparing for marriage.
 No accounts. No tracking. No AI. Just good time together.
 
 </div>
@@ -16,19 +17,25 @@ No accounts. No tracking. No AI. Just good time together.
 
 ## What's inside
 
-| Section               | What it offers                                                                                                                                                                                                                     |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Talk** · لنتحدّث     | 130 conversation questions across 6 topics (Light, Funny, Deep, Memories, Dreams, Love), each with subtopics, a depth filter and "Tell me more" follow-ups. There's also a shuffled mix of everything.                             |
-| **Discover** · لنتعرّف | 95 deeper questions on personality, values, communication, expectations (premarital-style: money, families, home, children), habits and life goals. Also **The closeness journey**: 36 questions in three gently deepening stages. |
-| **Play** · لنلعب      | Three games for two: _Would you rather?_ (60 pairs), _Who knows who better?_ (50 prompts) and _Two truths and a lie_ (30 themes).                                                                                                  |
-| **Moments** · لحظات   | 54 small ready-made activities in 6 categories: 5-minute moments, date ideas, mini challenges, memory lane, plan your dream day and something random. Most work on a call too.                                                     |
+| Section               | What it offers                                                                                                                                                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Talk** · لنتحدّث     | 162 conversation questions across 7 topics (Light, Funny, Deep, Memories, Dreams, Love, Our faith), each with subtopics, a depth filter and "Tell me more" follow-ups. There's also a shuffled mix of everything.                                                              |
+| **Discover** · لنتعرّف | 148 premarital-style questions across 9 topics: personality, values, faith in our life, communication, marriage and beginnings, family and in-laws, expectations, habits and goals. Plus **The closeness journey** for spouses: 36 questions in three gently deepening stages. |
+| **Play** · لنلعب      | Three games for two: _Would you rather?_ (63 pairs), _Who knows who better?_ (50 prompts) and _Two truths and a wish_ (29 themes), where nobody has to lie, even as a joke.                                                                                                    |
+| **Moments** · لحظات   | 59 small ready-made activities in 6 categories: 5-minute moments, date ideas for spouses, mini challenges, memory lane, plan your dream day and something random. Praying together, a du'a list, a friendly race and a sadaqah plan are in there too.                          |
 
 Plus: **Surprise us** (a random question, game or moment), **Question of the day**, **Favorites**, an _On a call / Together_ mode, a day-sky and night-sky theme, and full RTL/LTR support.
 
+### Who it's for
+
+- **Talk, Play, Moments and the Journey** are for married couples, including a couple whose nikah is done and who are waiting for the wedding.
+- **Discover** also suits two people seriously considering marriage, talking in a proper setting with their families' knowledge. Its questions stay practical and respectful: no romance, nothing physical, no confessions.
+
 ### Product principles
 
-- **Conversation, not interrogation.** Nothing is mandatory, skipping is always one tap away, and deep questions are optional.
-- **Connection, not competition.** Games keep score lightly. The point is laughing and learning.
+- **Halal by design.** No birthdays, music, betting, lying (even as a joke), horoscopes, exes or anything immodest. Every item follows [docs/ISLAMIC_GUIDELINES.md](docs/ISLAMIC_GUIDELINES.md), and a content test catches the obvious slips.
+- **Conversation, not interrogation.** Nothing is mandatory, skipping is always one tap away, and deep questions are optional. Nobody is asked to confess a past sin or rate their faith.
+- **Connection, not competition.** Games keep score lightly, with nothing at stake. The point is laughing and learning.
 - **Privacy first.** No accounts, no analytics, no servers. Favorites, names and preferences live in the browser's `localStorage`.
 - **Quality over quantity.** Every item is written originally in both languages and checked by automated content tests. See [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md).
 
@@ -75,7 +82,7 @@ src/
 │   ├── game/       Shared game pieces (players setup, stage, results)
 │   ├── layout/     Header, bottom tab bar, home footer, theme/lang sync
 │   └── ui/         Buttons, chips, cards, mode picker, favorites, feedback
-├── content/        All content as typed data, plus integrity tests
+├── content/        All content as typed data, plus integrity and off-limits word tests
 ├── hooks/          Persistent stores, preferences, favorites, arrow keys
 ├── i18n/           UI strings (ar/en), the t() hook, Arabic plural rules
 ├── lib/            Storage, shuffling, decks, sharing
@@ -103,7 +110,7 @@ Content lives in `src/content/` as typed TypeScript. Every item carries Arabic a
 }
 ```
 
-Before writing, read the [content guide](docs/CONTENT_GUIDE.md). Arabic is easy Modern Standard Arabic and is **gender-neutral by construction**. Then run `npm test`: the content tests catch missing translations, duplicate IDs, broken subtopics and some gendered wording.
+Before writing, read the [Islamic guidelines](docs/ISLAMIC_GUIDELINES.md) (what may appear at all, and who each section is for) and the [content guide](docs/CONTENT_GUIDE.md) (voice and language). Arabic is easy Modern Standard Arabic and is **gender-neutral by construction**. Then run `npm test`: the content tests catch missing translations, duplicate IDs, broken subtopics, some gendered wording and a list of off-limits words.
 
 ## Deployment
 
@@ -125,4 +132,6 @@ Closer is free and open source under the [MIT License](LICENSE), covering both t
 
 ## Credits
 
-The gently deepening arc of _The closeness journey_ is inspired by Aron et al. (1997), _The Experimental Generation of Interpersonal Closeness_ (popularized as the "36 Questions"). The premarital topics are informed by family-counseling questionnaires. All the content itself is written originally for Closer.
+The gently deepening arc of _The closeness journey_ is inspired by Aron et al. (1997), _The Experimental Generation of Interpersonal Closeness_ (popularized as the "36 Questions"), adapted for spouses. The premarital topics are informed by [The FYI's premarital questionnaire](https://thefyi.org/the-fyis-premarital-questionnaire/) from The Family & Youth Institute. All the content itself is written originally for Closer.
+
+The content follows mainstream Islamic guidance, with sources listed in [docs/ISLAMIC_GUIDELINES.md](docs/ISLAMIC_GUIDELINES.md). It isn't a fatwa: for your own situation, ask a scholar you trust.

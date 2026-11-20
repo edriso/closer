@@ -102,6 +102,7 @@ function Game({
       <div className={styles.verdict}>
         <p className={styles.instructions}>{t('truthsTell', { name: players[teller] })}</p>
         <p className={styles.instructions}>{t('truthsGuess', { name: players[guesser] })}</p>
+        <p className={styles.instructions}>{t('truthsReveal', { name: players[teller] })}</p>
         <p className={styles.hint}>{t('truthsThink')}</p>
       </div>
       <div className={styles.row}>

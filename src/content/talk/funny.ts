@@ -16,35 +16,6 @@ export const funny: Topic = {
   ],
   questions: [
     {
-      id: 'funny-001',
-      subtopic: 'imagine',
-      depth: 'light',
-      text: {
-        ar: 'لو كانت حياتنا مسلسلًا كوميديًا، فما اسمه، ومن يؤدي دور كلٍّ منا؟',
-        en: 'If our life were a sitcom, what would it be called, and who would play us?',
-      },
-      followUps: [
-        { ar: 'ما الحلقة الأكثر مشاهدة فيه؟', en: 'What is the most-watched episode?' },
-        {
-          ar: 'وما العبارة التي تتكرر في كل حلقة؟',
-          en: 'And what is the catchphrase in every episode?',
-        },
-      ],
-    },
-    {
-      id: 'funny-002',
-      subtopic: 'imagine',
-      depth: 'light',
-      text: {
-        ar: 'لو كان لكل إنسان موسيقى خلفية ترافقه طوال اليوم، فما الموسيقى التي تُعزف لك؟',
-        en: 'If everyone had a background soundtrack all day, what would yours be?',
-      },
-      followUps: [
-        { ar: 'وما الذي يُعزف حين يرنّ المنبّه؟', en: 'And what plays when the alarm goes off?' },
-        { ar: 'وكيف تتغيّر حين يحين وقت الطعام؟', en: 'How does it change when food arrives?' },
-      ],
-    },
-    {
       id: 'funny-003',
       subtopic: 'imagine',
       depth: 'light',
@@ -58,32 +29,19 @@ export const funny: Topic = {
       ],
     },
     {
-      id: 'funny-004',
+      id: 'funny-026',
       subtopic: 'imagine',
       depth: 'light',
       text: {
-        ar: 'لو أُقيم لك تمثال في ساحة المدينة، فبأي وضعية يكون؟',
-        en: 'If a statue of you stood in the town square, what pose would it be in?',
-      },
-      followUps: [
-        { ar: 'وما العبارة المنقوشة تحته؟', en: 'And what would the plaque say?' },
-        { ar: 'ومن أول من يلتقط صورة بجانبه؟', en: 'Who would be first to take a selfie with it?' },
-      ],
-    },
-    {
-      id: 'funny-005',
-      subtopic: 'imagine',
-      depth: 'light',
-      text: {
-        ar: 'لو كان لك برنامج طبخ على التلفاز، فما اسمه، وما طبقه الشهير؟',
-        en: 'If you had a TV cooking show, what would it be called, and what is the signature dish?',
+        ar: 'لو كان لك مطعم صغير، فما اسمه، وما طبقه الشهير؟',
+        en: 'If you had a little restaurant, what would it be called, and what is the signature dish?',
       },
       followUps: [
         {
-          ar: 'ما الكارثة التي تقع في الحلقة الأولى؟',
-          en: 'What disaster happens in episode one?',
+          ar: 'ما الكارثة التي تقع في يوم الافتتاح؟',
+          en: 'What disaster happens on opening day?',
         },
-        { ar: 'ومن الضيف الأول؟', en: 'And who is the first guest?' },
+        { ar: 'ومن أول زبون؟', en: 'And who is the first customer?' },
       ],
     },
     {
@@ -96,7 +54,7 @@ export const funny: Topic = {
       },
       followUps: [
         { ar: 'وما القوة الإضافية التي تُنقذك فيها؟', en: 'What power-up saves you?' },
-        { ar: 'ومن الخصم في المرحلة الأخيرة؟', en: 'And who is the final boss?' },
+        { ar: 'وما الخصم في المرحلة الأخيرة؟', en: 'And what is the final boss?' },
       ],
     },
     {
@@ -108,7 +66,7 @@ export const funny: Topic = {
         en: 'If we had a coat of arms like old kingdoms, what would be on it, and what would our motto be?',
       },
       followUps: [
-        { ar: 'وما الحيوان الذي يحرسه؟', en: 'Which animal guards it?' },
+        { ar: 'وأي نبتة أو شيء يتوسّطه؟', en: 'What plant or object sits in the middle?' },
         { ar: 'وما ألوانه؟', en: 'And what are its colors?' },
       ],
     },
@@ -142,37 +100,11 @@ export const funny: Topic = {
       ],
     },
     {
-      id: 'funny-010',
-      subtopic: 'what-if',
-      depth: 'light',
-      text: {
-        ar: 'ماذا لو صار علينا أن نتواصل بالغناء فقط ليوم كامل؟',
-        en: 'What if we could only talk to each other by singing for a whole day?',
-      },
-      followUps: [
-        { ar: 'أي جملة ستكون الأصعب غناءً؟', en: 'Which sentence would be hardest to sing?' },
-        { ar: 'وعلى أي لحن؟', en: 'And to what tune?' },
-      ],
-    },
-    {
-      id: 'funny-011',
-      subtopic: 'what-if',
-      depth: 'light',
-      text: {
-        ar: 'ماذا لو تبادلنا الأجساد ليوم واحد، فما أول ما يخطر ببالك فعله؟',
-        en: 'What if we swapped bodies for a day: what is the first thing you would do?',
-      },
-      followUps: [
-        { ar: 'وما الذي سيكشف الأمر فورًا؟', en: 'What would give you away immediately?' },
-        { ar: 'وما أصعب عادة مني في التقليد؟', en: 'Which of my habits would be hardest to copy?' },
-      ],
-    },
-    {
       id: 'funny-012',
       subtopic: 'what-if',
       depth: 'light',
       text: {
-        ar: 'ماذا لو نطق الأثاث فجأة، فأي قطعة تعرف عنك أكثر الأسرار؟',
+        ar: 'ماذا لو نطق الأثاث فجأة، فأي قطعة تعرف عاداتك أكثر من غيرها؟',
         en: 'What if the furniture suddenly started talking: which piece knows the most about you?',
       },
       followUps: [
@@ -198,7 +130,7 @@ export const funny: Topic = {
         en: 'What if you could pause time for ten minutes a day: how would you spend them?',
       },
       followUps: [
-        { ar: 'هل في الخطة مقلب صغير؟', en: 'Is there a little prank in the plan?' },
+        { ar: 'هل في الخطة قيلولة صغيرة؟', en: 'Is there a little nap in the plan?' },
         { ar: 'وهل يكون لي نصيب منها؟', en: 'And do I get a share of those minutes?' },
       ],
     },
@@ -248,7 +180,7 @@ export const funny: Topic = {
       },
       followUps: [
         { ar: 'ومتى انكشفت الحقيقة؟', en: 'When did you learn the truth?' },
-        { ar: 'ومن كان وراء هذه الفكرة؟', en: 'Who was behind it?' },
+        { ar: 'وهل ما زال جزء منك يصدّقه؟', en: 'Does a tiny part of you still believe it?' },
       ],
     },
     {
@@ -259,7 +191,7 @@ export const funny: Topic = {
         ar: 'ما الموهبة الغريبة التي لا يعرفها عنك كثيرون؟',
         en: 'What odd talent do few people know you have?',
       },
-      followUps: [{ ar: 'هل من عرض صغير الآن؟', en: 'How about a quick demo right now?' }],
+      followUps: [{ ar: 'ومتى اكتشفتها؟', en: 'When did you discover it?' }],
     },
     {
       id: 'funny-020',
@@ -272,6 +204,74 @@ export const funny: Topic = {
       followUps: [
         { ar: 'وما الرقم القياسي المسجّل باسمك؟', en: 'What is your world record?' },
         { ar: 'ومن أقوى المنافسين؟', en: 'And who is your toughest rival?' },
+      ],
+    },
+    {
+      id: 'funny-021',
+      subtopic: 'imagine',
+      depth: 'light',
+      text: {
+        ar: 'لو كتبنا كتابًا طريفًا عن حياتنا، فما عنوانه؟',
+        en: 'If we wrote a funny book about our life, what would it be called?',
+      },
+      followUps: [
+        { ar: 'وما عنوان الفصل الأطرف فيه؟', en: 'What is the funniest chapter called?' },
+        {
+          ar: 'وما العبارة التي تتكرر في كل فصل؟',
+          en: 'And what line keeps coming up in every chapter?',
+        },
+      ],
+    },
+    {
+      id: 'funny-022',
+      subtopic: 'imagine',
+      depth: 'light',
+      text: {
+        ar: 'لو ظهرت فوق رأس كل إنسان لافتة صغيرة تصف مزاجه، فماذا تقول لافتتك الآن؟',
+        en: 'If everyone had a little sign above their head showing their mood, what would yours say now?',
+      },
+      followUps: [
+        { ar: 'وماذا تقول حين يرنّ المنبّه؟', en: 'And what does it say when the alarm goes off?' },
+        { ar: 'وحين يصل الطعام؟', en: 'And when the food arrives?' },
+      ],
+    },
+    {
+      id: 'funny-023',
+      subtopic: 'imagine',
+      depth: 'light',
+      text: {
+        ar: 'لو سُمّي شارع في المدينة باسمك، فبماذا يشتهر؟',
+        en: 'If a street in town were named after you, what would it be famous for?',
+      },
+      followUps: [
+        { ar: 'وماذا تقول اللافتة عند مدخله؟', en: 'And what does the sign at its entrance say?' },
+        { ar: 'وما أول محل فيه؟', en: 'And what is the first shop on it?' },
+      ],
+    },
+    {
+      id: 'funny-024',
+      subtopic: 'what-if',
+      depth: 'light',
+      text: {
+        ar: 'ماذا لو صار علينا أن نتفاهم بالإشارات فقط ليوم كامل؟',
+        en: 'What if we could only talk to each other in gestures for a whole day?',
+      },
+      followUps: [
+        { ar: 'أي جملة ستكون الأصعب؟', en: 'Which sentence would be the hardest?' },
+        { ar: 'ومن منا سيستسلم أولًا؟', en: 'And which of us would give up first?' },
+      ],
+    },
+    {
+      id: 'funny-025',
+      subtopic: 'what-if',
+      depth: 'light',
+      text: {
+        ar: 'ماذا لو تبادلنا مهام البيت ليوم واحد، فبأي مهمة تكون البداية؟',
+        en: 'What if we swapped household jobs for a day: which one would you start with?',
+      },
+      followUps: [
+        { ar: 'وأي مهمة من مهامي ستكون الأصعب؟', en: 'Which of my jobs would be the hardest?' },
+        { ar: 'ومن منا سيطلب النجدة أولًا؟', en: 'And which of us would call for help first?' },
       ],
     },
   ],

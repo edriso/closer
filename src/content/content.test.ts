@@ -21,6 +21,19 @@ const ARABIC = /[؀-ۿ]/
 const AVOID = /(شريكك|شريكتك|حبيبك|حبيبتك|تحبين|تفضلين|تفضّلين|نصفك الآخر)/
 /** Cards are read aloud by one partner, so the asker is "me", never a third person. */
 const THIRD_PERSON_EN = /\b(your other half|your partner)\b/i
+/**
+ * Topics Closer keeps out on Islamic grounds (docs/ISLAMIC_GUIDELINES.md). A word list can't
+ * judge meaning, so this only catches the obvious slips; a human review still decides.
+ */
+const OFF_LIMITS_EN =
+  /\b(birthdays?|anniversar(y|ies)|valentine'?s?|christmas|halloween|new year'?s|horoscopes?|zodiac|star signs?|luck|lucky|fortune[- ]tell\w*|magic\w*|genie|spells?|music\w*|songs?|sing|singing|karaoke|playlists?|danc\w*|concerts?|movies?|films?|cinema|series|netflix|wine|beer|alcohol|cocktails?|shisha|hookah|pork|bets?|betting|wagers?|lottery|casino|dice|poker|lies|lie|lying|liar|bluff\w*|pranks?|exes|ex|crush\w*|dating|kiss\w*|cuddl\w*|dogs?|puppy|selfies?|portraits?)\b/i
+const OFF_LIMITS_AR =
+  /(ميلاد|عيد الحب|رأس السنة|الكريسماس|الهالوين|الأبراج|برجك|موسيق|أغنية|أغنيات|أغاني|غناء|الغناء|رقص|كاريوكي|فيلم|أفلام|مسلسل|سينما|خمر|نبيذ|كحول|شيشة|أرجيلة|خنزير|قمار|رهان|مراهنة|يانصيب|نرد|كذب|كذبة|مقلب|الحب الأول|حبيب سابق|علاقة سابقة|ارتباط سابق|إعجاب بمشهور|تقبيل|كلب|سيلفي)/
+
+function checkHalal(value: Localized, where: string) {
+  expect(OFF_LIMITS_EN.exec(value.en)?.[0], `${where} (en): ${value.en}`).toBeUndefined()
+  expect(OFF_LIMITS_AR.exec(value.ar)?.[0], `${where} (ar): ${value.ar}`).toBeUndefined()
+}
 
 function checkLocalized(value: Localized, where: string) {
   expect(value.ar.trim(), `${where} (ar) is empty`).not.toBe('')
@@ -31,6 +44,7 @@ function checkLocalized(value: Localized, where: string) {
   expect(THIRD_PERSON_EN.test(value.en), `${where} (en) should say "me": ${value.en}`).toBe(false)
   expect(value.ar, `${where} (ar) has stray whitespace`).toBe(value.ar.trim())
   expect(value.en, `${where} (en) has stray whitespace`).toBe(value.en.trim())
+  checkHalal(value, where)
 }
 
 describe('content', () => {

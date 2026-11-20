@@ -1,8 +1,8 @@
 # AGENTS.md
 
-Guidance for AI coding agents working on **Closer** (أقرب): a static, bilingual (Arabic-first + English) couples conversation and games site, built with React 19, TypeScript 7 and Vite 8, and deployed to GitHub Pages at `https://edriso.github.io/closer/`.
+Guidance for AI coding agents working on **Closer** (أقرب): a static, bilingual (Arabic-first + English), halal conversation and games site for Muslim married couples, built with React 19, TypeScript 7 and Vite 8, and deployed to GitHub Pages at `https://edriso.github.io/closer/`.
 
-Read `README.md` for the product, `docs/ARCHITECTURE.md` for the internals and `docs/CONTENT_GUIDE.md` before touching any content.
+Read `README.md` for the product, `docs/ARCHITECTURE.md` for the internals, and both `docs/ISLAMIC_GUIDELINES.md` and `docs/CONTENT_GUIDE.md` before touching any content.
 
 ## Commands
 
@@ -23,9 +23,10 @@ Always finish with `npm run check` and `npm run build`. Both must pass.
 3. **RTL-safe CSS.** Use logical properties only (`margin-inline-*`, `padding-block-*`, `inset-inline-*`, `text-align: start`). Swap directional icons with `dir` from `useI18n()`.
 4. **Privacy.** There is no backend, no analytics, no third-party requests and no external fonts or CDNs. Persist only via `src/lib/storage.ts` (always guarded).
 5. **Content IDs are permanent.** Favorites are stored by ID. Never renumber, reuse or rename an ID; to retire an item, delete it.
-6. **Family-friendly content.** It can be romantic but never sexual. No guilt, pressure or exes, and no assumptions about marriage, children, wealth, living parents or faith.
-7. **Minimal and accessible.** Respect `prefers-reduced-motion`, keep visible focus states and tap targets of at least 40px, and label icon-only buttons with `aria-label`. When a focused control disappears, move focus somewhere sensible (see `useFocusOnMount`, and use `aria-disabled` rather than `disabled` on buttons that can hold focus).
-8. **Calm, uncluttered UI.** One primary action per screen. Inner pages use a single narrow column. Navigation uses a featured card plus grouped list rows, not grids of cards. Secondary controls hide behind progressive disclosure (the deck's "Options", expandable activity rows). The footer appears on Home only. Before adding UI, ask whether it can be removed instead.
+6. **Halal, always.** Every question, follow-up, game, activity and UI string follows `docs/ISLAMIC_GUIDELINES.md`. In short, never: birthdays or other non-Islamic festivals, music or dancing, lying even as a joke, bets or stakes, horoscopes, luck or magic, exes, crushes or confessing past sins, anything intimate, immodesty, alcohol or haram food, movie nights, backbiting or mockery, portraits of people, dogs as pets, mixed-gender socialising, riba-normal money, or showing off. When in doubt, leave it out.
+7. **Know who each section is for.** Talk, Play, Moments and the Journey are for spouses: warm and affectionate, never sexual. Discover topics must also suit two people considering marriage (non-mahram, family aware), so no romance, flirting or anything physical there. Assume a Muslim couple, but never assume children, wealth, living parents or health. No guilt or pressure.
+8. **Minimal and accessible.** Respect `prefers-reduced-motion`, keep visible focus states and tap targets of at least 40px, and label icon-only buttons with `aria-label`. When a focused control disappears, move focus somewhere sensible (see `useFocusOnMount`, and use `aria-disabled` rather than `disabled` on buttons that can hold focus).
+9. **Calm, uncluttered UI.** One primary action per screen. Inner pages use a single narrow column. Navigation uses a featured card plus grouped list rows, not grids of cards. Secondary controls hide behind progressive disclosure (the deck's "Options", expandable activity rows). The footer appears on Home only. Before adding UI, ask whether it can be removed instead.
 
 ## Conventions
 
@@ -41,7 +42,7 @@ Always finish with `npm run check` and `npm run build`. Both must pass.
 
 ### Add questions to a topic
 
-Append items to `src/content/<section>/<topic>.ts` with the next free ID (e.g. `love-021`), a valid `subtopic`, a `depth` and 1–3 `followUps`. Run `npm test`.
+Append items to `src/content/<section>/<topic>.ts` with the next free ID (e.g. `love-021`), a valid `subtopic`, a `depth` and 1–3 `followUps`. Check each one against `docs/ISLAMIC_GUIDELINES.md`, then run `npm test` (its off-limits word list catches only obvious slips).
 
 ### Add a new topic
 
@@ -52,9 +53,10 @@ Append items to `src/content/<section>/<topic>.ts` with the next free ID (e.g. `
 
 ### Add a game
 
-1. Add a typed data file in `src/content/play/` and export it from `src/content/index.ts`.
-2. Build the page in `src/pages/play/` using `PlayersSetup`, `GameStage`, `GameEnd`/`Scoreboard` and `takeFromDeck` for no-repeat prompts.
-3. Add a route in `src/app/router.tsx`, a card in `PlayPage.tsx` and strings in `strings.ts`.
+1. Check the idea against `docs/ISLAMIC_GUIDELINES.md`: no game may need a lie (even a playful one), a wager, a stake or chance for a prize.
+2. Add a typed data file in `src/content/play/` and export it from `src/content/index.ts`.
+3. Build the page in `src/pages/play/` using `PlayersSetup`, `GameStage`, `GameEnd`/`Scoreboard` and `takeFromDeck` for no-repeat prompts.
+4. Add a route in `src/app/router.tsx` and the path in `vite.config.ts` (`staticPages`), a card in `PlayPage.tsx` and strings in `strings.ts`.
 
 ### Add a UI string
 

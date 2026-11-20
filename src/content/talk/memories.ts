@@ -138,23 +138,7 @@ export const memories: Topic = {
       },
       followUps: [
         { ar: 'من كان معك في تلك اللحظة؟', en: 'Who was there with you?' },
-        { ar: 'هل كانت عاقبته تستحق الضحكة؟', en: 'Was the consequence worth the laugh?' },
-      ],
-    },
-    {
-      id: 'memories-009',
-      subtopic: 'school',
-      depth: 'medium',
-      text: {
-        ar: 'أيّ صديق من أيام الدراسة ما زال يخطر ببالك أحيانًا؟',
-        en: 'Which friend from your school days still crosses your mind?',
-      },
-      followUps: [
-        { ar: 'ما سرّ تلك الصداقة؟', en: 'What made that friendship work?' },
-        {
-          ar: 'لو تجدّد اللقاء اليوم، فما الذي يهمّك أن يعرفه عنك؟',
-          en: 'If you met today, what would you want them to know about you?',
-        },
+        { ar: 'وهل ما زال يُضحكك حتى اليوم؟', en: 'Does it still make you laugh today?' },
       ],
     },
     {
@@ -168,6 +152,19 @@ export const memories: Topic = {
       followUps: [
         { ar: 'من كان أول من عرف بها؟', en: 'Who was the first to hear about it?' },
         { ar: 'هل ما زال لتلك اللحظة أثر فيك؟', en: 'Does it still shape you in some way?' },
+      ],
+    },
+    {
+      id: 'memories-021',
+      subtopic: 'school',
+      depth: 'medium',
+      text: {
+        ar: 'ما الذي بقي فيك من صداقات أيام الدراسة؟',
+        en: 'What have your school friendships left in you?',
+      },
+      followUps: [
+        { ar: 'ما أجمل درس منها؟', en: 'What was the best lesson from them?' },
+        { ar: 'وهل ما زال لها أثر في يومك؟', en: 'Do they still shape your days?' },
       ],
     },
 
@@ -196,8 +193,8 @@ export const memories: Topic = {
       subtopic: 'family',
       depth: 'light',
       text: {
-        ar: 'أيّ مناسبة من طفولتك يشتاق إليها قلبك أكثر: رمضان، أم العيد، أم غيرهما؟',
-        en: 'Which celebration from your childhood does your heart miss most: Ramadan, Eid or another?',
+        ar: 'أيّ أيام طفولتك يشتاق إليها قلبك أكثر: ليالي رمضان أم صباح العيد؟',
+        en: 'Which childhood days does your heart miss most: Ramadan nights or Eid mornings?',
       },
       followUps: [
         {
@@ -205,7 +202,7 @@ export const memories: Topic = {
           en: 'What smell or sound do you link to it?',
         },
         {
-          ar: 'ما الطقس الذي يستحق أن يعود منها؟',
+          ar: 'ما العادة التي تستحق أن تعود منها؟',
           en: 'Which tradition from it deserves a comeback?',
         },
       ],
@@ -252,6 +249,32 @@ export const memories: Topic = {
         { ar: 'هل له مكان في حياتك اليوم؟', en: 'Does it have a place in your life today?' },
       ],
     },
+    {
+      id: 'memories-022',
+      subtopic: 'family',
+      depth: 'light',
+      text: {
+        ar: 'ما أول ذكرى لك مع الصيام في طفولتك؟',
+        en: 'What is your first memory of fasting as a child?',
+      },
+      followUps: [
+        { ar: 'من كان يشجّعك حينها؟', en: 'Who cheered you on back then?' },
+        { ar: 'وكيف كان ذلك الإفطار؟', en: 'And what was that iftar like?' },
+      ],
+    },
+    {
+      id: 'memories-023',
+      subtopic: 'family',
+      depth: 'light',
+      text: {
+        ar: 'ما أجمل عيدية وصلتك في طفولتك؟',
+        en: 'What was the best Eid gift you got as a child?',
+      },
+      followUps: [
+        { ar: 'ممّن كانت؟', en: 'Who was it from?' },
+        { ar: 'وفيمَ ذهبت؟', en: 'And what did it go on?' },
+      ],
+    },
 
     /* ---------- Our story ---------- */
     {
@@ -259,8 +282,8 @@ export const memories: Topic = {
       subtopic: 'us',
       depth: 'light',
       text: {
-        ar: 'ما أول حديث طويل بيننا ما زال حاضرًا في ذاكرتك؟',
-        en: 'What is the first long conversation between us that you still remember?',
+        ar: 'ما أول حديث طويل بيننا بعد الزواج ما زال حاضرًا في ذاكرتك؟',
+        en: 'What is the first long conversation we had as a married couple that you still remember?',
       },
       followUps: [
         { ar: 'عمّ كان الحديث؟', en: 'What was it about?' },
@@ -285,12 +308,12 @@ export const memories: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'ما اللحظة التي اتضح لك فيها أن هذه العلاقة مختلفة؟',
-        en: 'What moment made it clear to you that this relationship was different?',
+        ar: 'ما اللحظة التي اطمأنّ فيها قلبك إلى أن اختيارنا لبعضنا كان صوابًا؟',
+        en: 'What moment made your heart feel sure that choosing each other was right?',
       },
       followUps: [
         { ar: 'أين كنا حينها؟', en: 'Where were we at the time?' },
-        { ar: 'من كان أول من عرف بشعورك؟', en: 'Who was the first to know how you felt?' },
+        { ar: 'وهل وصلني ذلك منك يومها؟', en: 'Did I know it back then?' },
       ],
     },
     {
@@ -298,15 +321,15 @@ export const memories: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'لو اختُصرت قصتنا حتى الآن في صورة واحدة، فأيّ صورة تكون؟',
-        en: 'If one photo summed up our story so far, which would it be?',
+        ar: 'لو اختُصرت قصتنا حتى الآن في مشهد واحد، فأيّ مشهد يكون؟',
+        en: 'If one scene summed up our story so far, which would it be?',
       },
       followUps: [
         {
-          ar: 'ما الذي لا يظهر في الصورة لكنه حاضر فيها؟',
-          en: "What's in that moment that the photo doesn't show?",
+          ar: 'ما التفصيلة فيه التي لا يلاحظها أحد غيرنا؟',
+          en: 'What detail in it would nobody notice but us?',
         },
-        { ar: 'هل نختار كلانا الصورة نفسها؟', en: 'Would we both pick the same one?' },
+        { ar: 'هل نختار كلانا المشهد نفسه؟', en: 'Would we both pick the same one?' },
       ],
     },
     {
@@ -314,12 +337,28 @@ export const memories: Topic = {
       subtopic: 'us',
       depth: 'medium',
       text: {
-        ar: 'ما الرسالة أو الكلمة من أيامنا الأولى التي ما زالت تُسعدك؟',
-        en: 'What message or word from our early days together still makes you happy?',
+        ar: 'ما الرسالة أو الكلمة من أيام زواجنا الأولى التي ما زالت تُسعدك؟',
+        en: 'What message or word from the early days of our marriage still makes you happy?',
       },
       followUps: [
         { ar: 'هل ما زالت محفوظة في مكان ما؟', en: 'Is it still saved somewhere?' },
         { ar: 'ما الذي جعلها تعني لك الكثير؟', en: 'What made it mean so much to you?' },
+      ],
+    },
+    {
+      id: 'memories-024',
+      subtopic: 'us',
+      depth: 'light',
+      text: {
+        ar: 'ما أجمل مناسبة عائلية حضرناها معًا حتى الآن؟',
+        en: 'What is the loveliest family occasion we have shared so far?',
+      },
+      followUps: [
+        { ar: 'ما التفصيلة التي بقيت معك منها؟', en: 'What detail has stayed with you?' },
+        {
+          ar: 'وما الذي يسعدك أن يتكرر في المرة القادمة؟',
+          en: 'And what would you love to happen again next time?',
+        },
       ],
     },
   ],

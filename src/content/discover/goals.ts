@@ -107,6 +107,25 @@ export const goals: Topic = {
       ],
     },
     {
+      id: 'goals-017',
+      subtopic: 'work',
+      depth: 'medium',
+      text: {
+        ar: 'ما رأيك في أن يكون لك مشروعك الخاص يومًا ما؟',
+        en: 'How do you feel about having a business of your own one day?',
+      },
+      followUps: [
+        {
+          ar: 'ما الفكرة التي تراودك؟',
+          en: 'What idea comes to mind?',
+        },
+        {
+          ar: 'وما القدر من المخاطرة الذي يريحنا؟',
+          en: 'And how much risk would we be comfortable with?',
+        },
+      ],
+    },
+    {
       id: 'goals-006',
       subtopic: 'growth',
       depth: 'light',
@@ -158,8 +177,8 @@ export const goals: Topic = {
           en: 'What lesson did it leave you with?',
         },
         {
-          ar: 'ومن كان إلى جانبك حينها؟',
-          en: 'Who was by your side then?',
+          ar: 'وكيف يظهر أثرها فيك اليوم؟',
+          en: 'How does it show in you today?',
         },
       ],
     },
@@ -255,8 +274,8 @@ export const goals: Topic = {
       subtopic: 'legacy',
       depth: 'medium',
       text: {
-        ar: 'ماذا يسعدك أن يُقال عن علاقتنا بعد سنوات طويلة؟',
-        en: 'Years from now, what would you love people to say about our relationship?',
+        ar: 'ماذا يسعدك أن يُقال عن بيتنا بعد سنوات طويلة؟',
+        en: 'Years from now, what would you love people to say about our home?',
       },
       followUps: [
         {
